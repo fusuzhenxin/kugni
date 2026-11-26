@@ -1,0 +1,181 @@
+/* Migrated from page-art.css; public site only. */
+@scope (.public-site) {
+  /* Themed illustration accents stay within existing headings. */
+  .page-art {
+    width: 170px;
+    height: 112px;
+    flex: 0 0 170px;
+    pointer-events: none;
+    isolation: isolate;
+    line-height: 0;
+  }
+  .page-art svg {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: none;
+    overflow: visible;
+  }
+  .wk-head.has-page-art {
+    gap: 16px;
+  }
+  .wk-head.has-page-art > div:first-child {
+    flex: 1;
+    min-width: 0;
+  }
+  .wk-head.has-page-art > .wk-actions {
+    order: 2;
+    flex-shrink: 0;
+  }
+  .wk-head.has-page-art > .page-art {
+    order: 1;
+  }
+  .page-head.has-page-art {
+    gap: 22px;
+  }
+  .page-head.has-page-art > div:first-child {
+    flex: 1;
+    min-width: 0;
+  }
+  .page-head.has-page-art > .page-art {
+    order: 1;
+  }
+  .atlas-heading.has-page-art {
+    position: relative;
+    min-height: 139px;
+    padding-right: 260px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .atlas-heading > .page-art {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    width: 235px;
+    height: 154px;
+  }
+  .plan-recommend.has-page-art {
+    position: relative;
+    padding-right: 315px;
+  }
+  .plan-recommend > .page-art {
+    position: absolute;
+    right: 132px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 170px;
+    height: 112px;
+  }
+  .plan-recommend.has-page-art > .btn {
+    position: absolute;
+    right: 28px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .cost-heading.has-page-art {
+    gap: 20px;
+  }
+  .cost-heading.has-page-art > div:first-child {
+    flex: 1;
+    min-width: 0;
+  }
+  .cost-heading > .page-art {
+    width: 160px;
+    height: 105px;
+    flex-basis: 160px;
+  }
+  .cost-heading > .demo-data-pill {
+    order: 2;
+  }
+  .catalog-directory-head > .page-art {
+    width: 130px;
+    height: 85px;
+    flex-basis: 130px;
+    order: 1;
+    margin: -20px 0;
+  }
+  .catalog-directory-head > .catalog-source {
+    order: 2;
+    margin-left: 0;
+  }
+  .catalog-directory-head > div:first-child {
+    margin-right: auto;
+  }
+  .connection-intro.has-page-art {
+    position: relative;
+  }
+  .connection-intro > .page-art-home {
+    position: absolute;
+    left: -18px;
+    top: 78px;
+    width: 190px;
+    height: 125px;
+    opacity: 0.9;
+  }
+  :scope[data-theme="dark"] .page-art {
+    opacity: 0.85;
+  }
+  @media (max-width: 1190px) {
+    .wk-head.has-page-art > .page-art {
+      width: 130px;
+      height: 86px;
+      flex-basis: 130px;
+    }
+    .connection-intro > .page-art-home {
+      width: 135px;
+      height: 89px;
+      left: 0;
+      top: 64px;
+    }
+  }
+  @media (max-width: 1050px) {
+    .wk-head.has-page-art > .page-art,
+    .page-head.has-page-art > .page-art,
+    .cost-heading > .page-art,
+    .catalog-directory-head > .page-art,
+    .connection-intro > .page-art-home {
+      display: none;
+    }
+    .atlas-heading.has-page-art {
+      min-height: 0;
+      padding-right: 190px;
+    }
+    .atlas-heading > .page-art {
+      width: 175px;
+      height: 115px;
+      right: 0;
+      top: -10px;
+    }
+    .plan-recommend.has-page-art {
+      padding-right: 170px;
+    }
+    .plan-recommend > .page-art {
+      display: none;
+    }
+  }
+  @media (max-width: 650px) {
+    .atlas-heading.has-page-art {
+      padding-right: 0;
+    }
+    .atlas-heading > .page-art {
+      display: none;
+    }
+    .plan-recommend.has-page-art {
+      padding-right: 20px;
+    }
+    .plan-recommend.has-page-art > .btn {
+      position: static;
+      transform: none;
+    }
+    .plan-recommend.has-page-art {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .wk-head.has-page-art {
+      gap: 18px;
+    }
+  }
+}

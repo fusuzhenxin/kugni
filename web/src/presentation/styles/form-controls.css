@@ -1,0 +1,357 @@
+/* Migrated from form-controls.css; public site only. */
+@scope (.public-site) {
+  /* Shared form menus retain native values, validation and keyboard behavior. */
+  :scope
+    :scope
+    input:is([type="checkbox"], [type="radio"]):not(.member-switch input) {
+    appearance: none;
+    display: inline-grid;
+    place-items: center;
+    vertical-align: middle;
+    flex-shrink: 0;
+    width: 14px;
+    height: 14px;
+    min-height: 0;
+    padding: 0;
+    margin: 0;
+    border: 1px solid color-mix(in srgb, var(--muted) 45%, var(--line));
+    border-radius: 4px;
+    background: var(--paper);
+    color: #fff;
+    cursor: pointer;
+    box-shadow: none;
+  }
+  :scope :scope input[type="radio"]:not(.member-switch input) {
+    border-radius: 50%;
+  }
+  :scope
+    :scope
+    input:is([type="checkbox"], [type="radio"]):not(
+      .member-switch input
+    ):checked,
+  :scope :scope input[type="checkbox"]:not(.member-switch input):indeterminate {
+    border-color: var(--accent);
+    background: var(--accent);
+  }
+  :scope :scope input[type="checkbox"]:not(.member-switch input):checked:after {
+    content: "";
+    width: 11px;
+    height: 11px;
+    background: currentColor;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='m3 8 3 3 7-7' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+      center/contain no-repeat;
+  }
+  :scope :scope input[type="radio"]:checked:after {
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: currentColor;
+  }
+  :scope :scope input[type="checkbox"]:indeterminate:after {
+    content: "";
+    width: 7px;
+    height: 2px;
+    background: currentColor;
+  }
+  :scope
+    :scope
+    input:is([type="checkbox"], [type="radio"]):not(
+      .member-switch input
+    ):focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+  }
+  :scope
+    :scope
+    input:is([type="checkbox"], [type="radio"]):not(
+      .member-switch input
+    ):disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  :scope .member-auth-agreement input[type="checkbox"] {
+    margin-top: 3px;
+  }
+  @supports (appearance: base-select) {
+    select:not([multiple]):not([size]),
+    select:not([multiple]):not([size])::picker(select) {
+      appearance: base-select;
+    }
+    select:not([multiple]):not([size]) {
+      cursor: pointer;
+      gap: 12px;
+      align-items: center;
+      white-space: nowrap;
+      min-width: 0;
+    }
+    select::picker-icon {
+      content: "";
+      color: var(--muted);
+      background: currentColor;
+      width: 13px;
+      height: 13px;
+      flex-shrink: 0;
+      align-self: center;
+      margin-inline-start: auto;
+      mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='m5 8 5 5 5-5' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+        center/contain no-repeat;
+      transition: transform 0.15s;
+    }
+    select:open::picker-icon {
+      transform: rotate(180deg);
+      color: var(--accent);
+    }
+    select:not([multiple]):not([size])::picker(select) {
+      box-sizing: border-box;
+      background: var(--paper);
+      color: var(--ink);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 5px;
+      box-shadow: 0 10px 32px #172b4d16;
+      min-width: anchor-size(width);
+      max-width: min(480px, calc(100vw - 24px));
+      max-height: min(320px, calc(100dvh - 32px));
+      position: fixed;
+      position-anchor: auto;
+      position-area: none;
+      position-try-order: normal;
+      inset: auto;
+      top: anchor(bottom);
+      left: anchor(left);
+      position-try-fallbacks:
+        flip-block,
+        flip-inline,
+        flip-block flip-inline;
+      overflow: auto;
+      overscroll-behavior: contain;
+      margin-block: 6px;
+      scrollbar-width: thin;
+      scrollbar-color: var(--line) transparent;
+    }
+    select option {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      min-height: 35px;
+      padding: 8px 10px;
+      border: 0;
+      border-radius: 5px;
+      background: transparent;
+      color: var(--ink);
+      font:
+        400 var(--font-small) / 1.6 Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        "Microsoft YaHei",
+        sans-serif;
+      white-space: normal;
+      overflow-wrap: anywhere;
+      cursor: pointer;
+    }
+    select option:hover,
+    select option:focus {
+      background: var(--soft);
+      color: var(--ink);
+      outline: 0;
+    }
+    select option:checked {
+      background: transparent;
+      color: var(--accent);
+      font-weight: 500;
+    }
+    select option:checked:hover,
+    select option:checked:focus {
+      background: var(--soft);
+    }
+    select option:disabled {
+      color: var(--muted);
+      opacity: 0.55;
+      cursor: default;
+    }
+    select option::checkmark {
+      order: 2;
+      margin-inline-start: auto;
+      color: var(--accent);
+      font-size: var(--font-small);
+      flex-shrink: 0;
+    }
+    select optgroup {
+      padding: 6px 0;
+      font-size: var(--font-caption);
+      color: var(--muted);
+    }
+    :scope[data-theme="dark"] select::picker(select) {
+      box-shadow: 0 12px 32px #0005;
+    }
+  }
+  :scope :scope select:not([multiple]):not([size]) {
+    font-size: var(--font-small);
+    line-height: 1.5;
+    border: 1px solid var(--line);
+    border-radius: 7px;
+    background-color: var(--paper);
+    color: var(--ink);
+    box-shadow: none;
+    padding: 8px 11px;
+    outline: 0;
+    transition:
+      border-color 0.15s,
+      box-shadow 0.15s;
+    max-width: 100%;
+  }
+  :scope :scope select:not([multiple]):not([size]):hover {
+    border-color: color-mix(in srgb, var(--accent) 30%, var(--line));
+  }
+  :scope :scope select:not([multiple]):not([size]):focus-visible,
+  :scope :scope select:not([multiple]):not([size]):open {
+    border-color: color-mix(in srgb, var(--accent) 55%, var(--line));
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 8%, transparent);
+    outline: 0;
+  }
+  :scope
+    :scope
+    :is(.home-test-model, .cost-model-select, .demo-model > div)
+    select:not([multiple]):not([size]) {
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    height: 100%;
+    padding: 0 3px;
+    box-shadow: none;
+    font-size: var(--font-small);
+  }
+  :scope :scope .field select:not([multiple]):not([size]) {
+    padding: 11px 13px;
+  }
+  :scope :scope .plan-filter-row select:not([multiple]):not([size]),
+  :scope :scope .atlas-selects select:not([multiple]):not([size]) {
+    height: 35px;
+    padding: 6px 10px;
+  }
+  :scope :scope .demo-baseline select:not([multiple]):not([size]) {
+    width: 100%;
+    padding: 9px 10px;
+  }
+  :scope :scope .perk-filter-tools select:not([multiple]):not([size]) {
+    padding: 9px 10px;
+  }
+  :scope :scope .wk-filter-tools select:not([multiple]):not([size]) {
+    padding: 8px 10px;
+  }
+
+  .ui-suggest-field {
+    position: relative;
+    width: 100%;
+    min-width: 0;
+  }
+  :scope .ui-suggest-field > input {
+    padding-right: 42px;
+  }
+  .ui-suggest-trigger {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 28px;
+    width: 28px;
+    display: grid;
+    place-items: center;
+    color: var(--muted);
+    padding: 0;
+  }
+  .ui-suggest-trigger svg {
+    width: 15px;
+    height: 15px;
+    transition: transform 0.15s;
+  }
+  .ui-suggest-field:has(input[aria-expanded="true"]) .ui-suggest-trigger svg {
+    transform: rotate(180deg);
+    color: var(--accent);
+  }
+  .ui-suggest-menu {
+    position: fixed;
+    inset: auto;
+    margin: 0;
+    padding: 5px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: var(--paper);
+    color: var(--ink);
+    box-shadow: 0 10px 32px #172b4d16;
+    overflow: auto;
+    overscroll-behavior: contain;
+    scrollbar-width: thin;
+    scrollbar-color: var(--line) transparent;
+    max-width: calc(100vw - 24px);
+  }
+  .ui-suggest-option {
+    width: 100%;
+    min-height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 8px 10px;
+    background: transparent;
+    border: 0;
+    border-radius: 5px;
+    text-align: left;
+    font-size: var(--font-small);
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--ink);
+    overflow-wrap: anywhere;
+  }
+  .ui-suggest-option svg {
+    width: 14px;
+    height: 14px;
+    color: var(--accent);
+    flex-shrink: 0;
+    visibility: hidden;
+  }
+  .ui-suggest-option[aria-selected="true"] {
+    color: var(--accent);
+    font-weight: 500;
+  }
+  .ui-suggest-option[aria-selected="true"] svg {
+    visibility: visible;
+  }
+  .ui-suggest-option:hover,
+  .ui-suggest-option.is-active {
+    background: var(--soft);
+  }
+  .ui-suggest-empty {
+    padding: 12px 10px;
+    color: var(--muted);
+    font-size: var(--font-caption);
+    line-height: 1.8;
+  }
+  :scope[data-theme="dark"] .ui-suggest-menu {
+    box-shadow: 0 12px 32px #0005;
+  }
+  @media (max-width: 760px) {
+    select::picker(select) {
+      max-height: min(280px, calc(100dvh - 28px));
+    }
+    select option,
+    .ui-suggest-option {
+      min-height: 38px;
+    }
+    .ui-suggest-menu {
+      border-radius: 9px;
+    }
+    :scope :scope .perk-filter-tools select:not([multiple]):not([size]) {
+      min-width: 0;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    select::picker-icon,
+    .ui-suggest-trigger svg,
+    :scope :scope select:not([multiple]):not([size]) {
+      transition: none;
+    }
+  }
+}

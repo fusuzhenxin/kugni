@@ -1,0 +1,4854 @@
+{
+  "modules": [
+    {
+      "key": "overview",
+      "title": "工作台",
+      "group": "总览",
+      "icon": "home",
+      "path": "/admin/dashboard/",
+      "description": "从全站流量到运营待办，把今天的重要变化看清楚。",
+      "kind": "dashboard",
+      "fields": [],
+      "columns": [],
+      "actions": [],
+      "surface": "platform",
+      "store": "overview",
+      "permission": "platform.overview",
+      "bulkActions": [],
+      "bulkFields": []
+    },
+    {
+      "key": "traffic",
+      "title": "流量总览",
+      "group": "数据分析",
+      "icon": "chart",
+      "path": "/admin/analytics/overview/",
+      "description": "了解访客从哪里来，以及他们如何使用 KUGNI。",
+      "kind": "analytics",
+      "fields": [],
+      "columns": [],
+      "actions": [
+        "export"
+      ],
+      "surface": "platform",
+      "store": "traffic",
+      "permission": "platform.traffic",
+      "bulkActions": [],
+      "bulkFields": []
+    },
+    {
+      "key": "sources",
+      "title": "来源分析",
+      "group": "数据分析",
+      "icon": "compass",
+      "path": "/admin/analytics/sources/",
+      "description": "搜索、直达与外部引荐，找到持续带来访问的渠道。",
+      "kind": "analytics",
+      "fields": [],
+      "columns": [],
+      "actions": [
+        "export"
+      ],
+      "surface": "platform",
+      "store": "sources",
+      "permission": "platform.sources",
+      "bulkActions": [],
+      "bulkFields": []
+    },
+    {
+      "key": "pages",
+      "title": "页面分析",
+      "group": "数据分析",
+      "icon": "layers",
+      "path": "/admin/analytics/pages/",
+      "description": "看清页面浏览、停留时间和官网跳转表现。",
+      "kind": "analytics",
+      "fields": [],
+      "columns": [],
+      "actions": [
+        "export"
+      ],
+      "surface": "platform",
+      "store": "pages",
+      "permission": "platform.pages",
+      "bulkActions": [],
+      "bulkFields": []
+    },
+    {
+      "key": "visitors",
+      "title": "访客分析",
+      "group": "数据分析",
+      "icon": "users",
+      "path": "/admin/analytics/visitors/",
+      "description": "按设备、地区与新老访客了解访问构成。",
+      "kind": "analytics",
+      "fields": [],
+      "columns": [],
+      "actions": [
+        "export"
+      ],
+      "surface": "platform",
+      "store": "visitors",
+      "permission": "platform.visitors",
+      "bulkActions": [],
+      "bulkFields": []
+    },
+    {
+      "key": "stations",
+      "title": "中转站管理",
+      "group": "站点与模型",
+      "icon": "globe",
+      "path": "/admin/stations/",
+      "description": "维护站点资料、服务状态、支付政策、接口能力与公开展示。",
+      "kind": "collection",
+      "fields": [
+        {
+          "key": "name",
+          "label": "站点名称",
+          "type": "text",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "slug",
+          "label": "公开页面标识",
+          "type": "text",
+          "options": [],
+          "required": true,
+          "help": "用于 /stations/{slug}/，使用小写英文、数字和连字符。"
+        },
+        {
+          "key": "domain",
+          "label": "官网地址",
+          "type": "url",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "registerUrl",
+          "label": "注册 / 推广地址",
+          "type": "url",
+          "options": []
+        },
+        {
+          "key": "category",
+          "label": "目录分类",
+          "type": "select",
+          "options": [
+            "公益站",
+            "企业稳定站",
+            "新站上榜",
+            "新用户赠额"
+          ]
+        },
+        {
+          "key": "kind",
+          "label": "站点性质",
+          "type": "select",
+          "options": [
+            "商业站",
+            "公益站"
+          ]
+        },
+        {
+          "key": "owner",
+          "label": "所属站长",
+          "type": "select",
+          "options": [
+            "林予安",
+            "陈以宁",
+            "未认领"
+          ]
+        },
+        {
+          "key": "logo",
+          "label": "站点图标",
+          "type": "upload",
+          "options": []
+        },
+        {
+          "key": "summary",
+          "label": "站点简介",
+          "type": "textarea",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "serviceStatus",
+          "label": "服务状态",
+          "type": "select",
+          "options": [
+            "正常运营",
+            "维护中",
+            "部分异常",
+            "暂停服务",
+            "已停止运营",
+            "待核验"
+          ]
+        },
+        {
+          "key": "status",
+          "label": "状态",
+          "type": "select",
+          "options": [
+            "已收录",
+            "待审核",
+            "已隐藏"
+          ]
+        },
+        {
+          "key": "founded",
+          "label": "成立日期",
+          "type": "date",
+          "options": []
+        },
+        {
+          "key": "listedAt",
+          "label": "收录日期",
+          "type": "date",
+          "options": []
+        },
+        {
+          "key": "verifiedAt",
+          "label": "资料核验日期",
+          "type": "date",
+          "options": []
+        },
+        {
+          "key": "region",
+          "label": "服务地区",
+          "type": "text",
+          "options": []
+        },
+        {
+          "key": "serviceNote",
+          "label": "服务状态说明",
+          "type": "textarea",
+          "options": []
+        },
+        {
+          "key": "models",
+          "label": "支持模型生态",
+          "type": "multiselect",
+          "options": [
+            "OpenAI / GPT",
+            "Anthropic / Claude",
+            "Google / Gemini",
+            "DeepSeek",
+            "Qwen",
+            "xAI / Grok"
+          ]
+        },
+        {
+          "key": "protocols",
+          "label": "接口协议",
+          "type": "multiselect",
+          "options": [
+            "OpenAI Chat Completions",
+            "OpenAI Responses",
+            "Anthropic Messages",
+            "Google Gemini"
+          ]
+        },
+        {
+          "key": "apiBase",
+          "label": "API 基础地址",
+          "type": "url",
+          "options": []
+        },
+        {
+          "key": "docsUrl",
+          "label": "接入文档",
+          "type": "url",
+          "options": []
+        },
+        {
+          "key": "pricingUrl",
+          "label": "公开价格页",
+          "type": "url",
+          "options": []
+        },
+        {
+          "key": "statusUrl",
+          "label": "状态监测页",
+          "type": "url",
+          "options": []
+        },
+        {
+          "key": "capabilities",
+          "label": "支持能力",
+          "type": "multiselect",
+          "options": [
+            "流式响应",
+            "工具调用",
+            "视觉识别",
+            "推理",
+            "图像生成",
+            "语音"
+          ]
+        },
+        {
+          "key": "payments",
+          "label": "支付方式",
+          "type": "multiselect",
+          "options": [
+            "支付宝",
+            "微信支付",
+            "USDT",
+            "银行卡",
+            "对公转账",
+            "PayPal"
+          ]
+        },
+        {
+          "key": "currencies",
+          "label": "结算币种",
+          "type": "multiselect",
+          "options": [
+            "CNY",
+            "USD",
+            "USDT"
+          ]
+        },
+        {
+          "key": "minRecharge",
+          "label": "最低充值金额",
+          "type": "number",
+          "options": []
+        },
+        {
+          "key": "signupBonus",
+          "label": "新用户赠额",
+          "type": "text",
+          "options": []
+        },
+        {
+          "key": "promo",
+          "label": "优惠码",
+          "type": "text",
+          "options": []
+        },
+        {
+          "key": "promoExpires",
+          "label": "优惠有效期",
+          "type": "date",
+          "options": []
+        },
+        {
+          "key": "invoice",
+          "label": "支持开票",
+          "type": "select",
+          "options": [
+            "支持",
+            "不支持",
+            "未确认"
+          ]
+        },
+        {
+          "key": "invoiceTypes",
+          "label": "支持票种",
+          "type": "multiselect",
+          "options": [
+            "增值税普通发票",
+            "增值税专用发票"
+          ]
+        },
+        {
+          "key": "invoiceNote",
+          "label": "开票条件说明",
+          "type": "textarea",
+          "options": []
+        },
+        {
+          "key": "refund",
+          "label": "退款政策",
+          "type": "select",
+          "options": [
+            "支持",
+            "不支持",
+            "按条件支持",
+            "未确认"
+          ]
+        },
+        {
+          "key": "policyNotes",
+          "label": "退款与计费说明",
+          "type": "textarea",
+          "options": []
+        },
+        {
+          "key": "noticeDisplay",
+          "label": "公告展示",
+          "type": "select",
+          "options": [
+            "开启",
+            "关闭"
+          ]
+        },
+        {
+          "key": "noticeStyle",
+          "label": "公告展示方式",
+          "type": "select",
+          "options": [
+            "最新公告",
+            "置顶优先"
+          ]
+        },
+        {
+          "key": "contact",
+          "label": "客服 / 联系方式",
+          "type": "text",
+          "options": []
+        },
+        {
+          "key": "email",
+          "label": "联系邮箱",
+          "type": "email",
+          "options": []
+        },
+        {
+          "key": "telegram",
+          "label": "Telegram",
+          "type": "url",
+          "options": []
+        },
+        {
+          "key": "discord",
+          "label": "Discord",
+          "type": "url",
+          "options": []
+        },
+        {
+          "key": "github",
+          "label": "GitHub",
+          "type": "url",
+          "options": []
+        },
+        {
+          "key": "socialLinks",
+          "label": "其他社交链接",
+          "type": "textarea",
+          "options": []
+        },
+        {
+          "key": "seoTitle",
+          "label": "SEO 标题",
+          "type": "text",
+          "options": []
+        },
+        {
+          "key": "seoDescription",
+          "label": "SEO 描述",
+          "type": "textarea",
+          "options": []
+        },
+        {
+          "key": "note",
+          "label": "内部备注",
+          "type": "textarea",
+          "options": []
+        }
+      ],
+      "columns": [
+        {
+          "key": "name",
+          "label": "站点 / 域名",
+          "width": 24
+        },
+        {
+          "key": "category",
+          "label": "分类"
+        },
+        {
+          "key": "serviceStatus",
+          "label": "服务状态"
+        },
+        {
+          "key": "payments",
+          "label": "支付方式",
+          "width": 19
+        },
+        {
+          "key": "invoice",
+          "label": "开票"
+        },
+        {
+          "key": "status",
+          "label": "收录状态"
+        }
+      ],
+      "actions": [
+        "create",
+        "view",
+        "edit",
+        "delete",
+        "bulkEdit",
+        "bulkDelete"
+      ],
+      "surface": "platform",
+      "store": "stations",
+      "permission": "platform.stations",
+      "bulkActions": [
+        "edit",
+        "delete"
+      ],
+      "bulkFields": [
+        "category",
+        "serviceStatus",
+        "status",
+        "payments",
+        "invoice",
+        "invoiceTypes",
+        "refund",
+        "noticeDisplay"
+      ]
+    },
+    {
+      "key": "station-notices",
+      "title": "站点公告",
+      "group": "站点与模型",
+      "icon": "bell",
+      "path": "/admin/stations/announcements/",
+      "description": "按站点维护公告内容、置顶、有效期与发布状态。",
+      "kind": "collection",
+      "fields": [
+        {
+          "key": "name",
+          "label": "公告标题",
+          "type": "text",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "stationId",
+          "label": "所属中转站",
+          "type": "select",
+          "options": [],
+          "source": "stations",
+          "required": true
+        },
+        {
+          "key": "type",
+          "label": "公告类型",
+          "type": "select",
+          "options": [
+            "服务通知",
+            "维护通知",
+            "优惠活动",
+            "风险提示"
+          ]
+        },
+        {
+          "key": "body",
+          "label": "公告正文",
+          "type": "editor",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "pinned",
+          "label": "是否置顶",
+          "type": "select",
+          "options": [
+            "否",
+            "是"
+          ]
+        },
+        {
+          "key": "start",
+          "label": "展示开始日期",
+          "type": "date",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "end",
+          "label": "展示结束日期",
+          "type": "date",
+          "options": []
+        },
+        {
+          "key": "status",
+          "label": "状态",
+          "type": "select",
+          "options": [
+            "草稿",
+            "已发布",
+            "已下线"
+          ]
+        },
+        {
+          "key": "sourceUrl",
+          "label": "原文链接",
+          "type": "url",
+          "options": []
+        }
+      ],
+      "columns": [
+        {
+          "key": "name",
+          "label": "公告",
+          "width": 31
+        },
+        {
+          "key": "stationId",
+          "label": "所属站点"
+        },
+        {
+          "key": "type",
+          "label": "类型"
+        },
+        {
+          "key": "pinned",
+          "label": "置顶"
+        },
+        {
+          "key": "status",
+          "label": "发布状态"
+        },
+        {
+          "key": "end",
+          "label": "有效期"
+        }
+      ],
+      "actions": [
+        "create",
+        "view",
+        "edit",
+        "delete",
+        "bulkEdit",
+        "bulkDelete"
+      ],
+      "surface": "platform",
+      "store": "station-notices",
+      "permission": "platform.station-notices",
+      "bulkActions": [
+        "edit",
+        "delete"
+      ],
+      "bulkFields": [
+        "status",
+        "pinned",
+        "type",
+        "start",
+        "end"
+      ]
+    },
+    {
+      "key": "categories",
+      "title": "分类管理",
+      "group": "站点与模型",
+      "icon": "grid",
+      "path": "/admin/stations/categories/",
+      "description": "维护现有四个分类的名称、图标与页面介绍。",
+      "kind": "collection",
+      "fields": [
+        {
+          "key": "name",
+          "label": "分类名称",
+          "type": "text",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "slug",
+          "label": "分类标识",
+          "type": "text",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "icon",
+          "label": "展示图标",
+          "type": "select",
+          "options": [
+            "爱心",
+            "建筑",
+            "火箭",
+            "礼物"
+          ]
+        },
+        {
+          "key": "sort",
+          "label": "排序",
+          "type": "number",
+          "options": []
+        },
+        {
+          "key": "description",
+          "label": "分类介绍",
+          "type": "textarea",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "status",
+          "label": "状态",
+          "type": "select",
+          "options": [
+            "启用",
+            "停用"
+          ]
+        }
+      ],
+      "columns": [
+        {
+          "key": "name",
+          "label": "分类",
+          "width": 25
+        },
+        {
+          "key": "slug",
+          "label": "路径标识",
+          "width": 25
+        },
+        {
+          "key": "count",
+          "label": "站点数"
+        },
+        {
+          "key": "sort",
+          "label": "排序"
+        },
+        {
+          "key": "status",
+          "label": "状态"
+        }
+      ],
+      "actions": [
+        "view",
+        "edit"
+      ],
+      "surface": "platform",
+      "store": "categories",
+      "permission": "platform.categories",
+      "bulkActions": [],
+      "bulkFields": []
+    },
+    {
+      "key": "submissions",
+      "title": "收录审核",
+      "group": "站点与模型",
+      "icon": "check",
+      "path": "/admin/stations/submissions/",
+      "description": "逐项核对申请资料，让收录审核有迹可循。",
+      "kind": "collection",
+      "fields": [
+        {
+          "key": "name",
+          "label": "申请站点",
+          "type": "text",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "domain",
+          "label": "官网地址",
+          "type": "url",
+          "options": []
+        },
+        {
+          "key": "category",
+          "label": "申请分类",
+          "type": "select",
+          "options": [
+            "公益站",
+            "企业稳定站",
+            "新站上榜",
+            "新用户赠额"
+          ]
+        },
+        {
+          "key": "contact",
+          "label": "联系邮箱",
+          "type": "email",
+          "options": []
+        },
+        {
+          "key": "summary",
+          "label": "申请说明",
+          "type": "textarea",
+          "options": []
+        },
+        {
+          "key": "status",
+          "label": "状态",
+          "type": "select",
+          "options": [
+            "待审核",
+            "已通过",
+            "已驳回"
+          ]
+        },
+        {
+          "key": "reviewNote",
+          "label": "审核意见",
+          "type": "textarea",
+          "options": []
+        }
+      ],
+      "columns": [
+        {
+          "key": "name",
+          "label": "申请站点",
+          "width": 27
+        },
+        {
+          "key": "category",
+          "label": "申请分类"
+        },
+        {
+          "key": "contact",
+          "label": "联系人",
+          "width": 24
+        },
+        {
+          "key": "status",
+          "label": "状态"
+        },
+        {
+          "key": "updated",
+          "label": "提交时间"
+        }
+      ],
+      "actions": [
+        "view",
+        "approve",
+        "reject",
+        "delete",
+        "bulkApprove",
+        "bulkReject",
+        "bulkDelete"
+      ],
+      "surface": "platform",
+      "store": "submissions",
+      "permission": "platform.submissions",
+      "bulkActions": [
+        "approve",
+        "reject",
+        "delete"
+      ],
+      "bulkFields": []
+    },
+    {
+      "key": "models",
+      "title": "模型资料库",
+      "group": "站点与模型",
+      "icon": "layers",
+      "path": "/admin/models/",
+      "description": "维护模型的官方名称、能力标签与公开资料。",
+      "kind": "collection",
+      "fields": [
+        {
+          "key": "name",
+          "label": "模型名称",
+          "type": "text",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "modelId",
+          "label": "模型 ID",
+          "type": "text",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "vendor",
+          "label": "模型厂商",
+          "type": "select",
+          "options": [
+            "OpenAI",
+            "Anthropic",
+            "Google",
+            "DeepSeek"
+          ]
+        },
+        {
+          "key": "context",
+          "label": "上下文长度",
+          "type": "text",
+          "options": []
+        },
+        {
+          "key": "capabilities",
+          "label": "模型能力",
+          "type": "multiselect",
+          "options": [
+            "文本",
+            "视觉",
+            "工具调用",
+            "推理"
+          ]
+        },
+        {
+          "key": "released",
+          "label": "发布日期",
+          "type": "date",
+          "options": []
+        },
+        {
+          "key": "summary",
+          "label": "模型介绍",
+          "type": "textarea",
+          "options": []
+        },
+        {
+          "key": "status",
+          "label": "状态",
+          "type": "select",
+          "options": [
+            "启用",
+            "停用"
+          ]
+        }
+      ],
+      "columns": [
+        {
+          "key": "name",
+          "label": "模型",
+          "width": 29
+        },
+        {
+          "key": "vendor",
+          "label": "厂商"
+        },
+        {
+          "key": "context",
+          "label": "上下文"
+        },
+        {
+          "key": "status",
+          "label": "状态"
+        },
+        {
+          "key": "updated",
+          "label": "更新时间"
+        }
+      ],
+      "actions": [
+        "create",
+        "view",
+        "edit",
+        "delete",
+        "bulkEdit",
+        "bulkDelete"
+      ],
+      "surface": "platform",
+      "store": "models",
+      "permission": "platform.models",
+      "bulkActions": [
+        "edit",
+        "delete"
+      ],
+      "bulkFields": [
+        "status",
+        "vendor",
+        "capabilities"
+      ]
+    },
+    {
+      "key": "pricing",
+      "title": "模型报价",
+      "group": "站点与模型",
+      "icon": "coins",
+      "path": "/admin/models/pricing/",
+      "description": "输入、输出、缓存与计费单位使用一致的价格口径。",
+      "kind": "collection",
+      "fields": [
+        {
+          "key": "name",
+          "label": "报价名称",
+          "type": "text",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "station",
+          "label": "所属站点",
+          "type": "select",
+          "options": [
+            "AruHub",
+            "云帆 API",
+            "拾光 API"
+          ]
+        },
+        {
+          "key": "modelId",
+          "label": "模型 ID",
+          "type": "text",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "input",
+          "label": "输入价格",
+          "type": "number",
+          "options": [],
+          "suffix": "元 / 百万 Token"
+        },
+        {
+          "key": "output",
+          "label": "输出价格",
+          "type": "number",
+          "options": [],
+          "suffix": "元 / 百万 Token"
+        },
+        {
+          "key": "cache",
+          "label": "缓存命中价格",
+          "type": "number",
+          "options": []
+        },
+        {
+          "key": "multiplier",
+          "label": "分组倍率",
+          "type": "number",
+          "options": []
+        },
+        {
+          "key": "currency",
+          "label": "币种",
+          "type": "select",
+          "options": [
+            "CNY",
+            "USD"
+          ]
+        },
+        {
+          "key": "unit",
+          "label": "计费单位",
+          "type": "select",
+          "options": [
+            "百万 Token",
+            "千 Token",
+            "次"
+          ]
+        },
+        {
+          "key": "status",
+          "label": "状态",
+          "type": "select",
+          "options": [
+            "启用",
+            "停用"
+          ]
+        }
+      ],
+      "columns": [
+        {
+          "key": "name",
+          "label": "模型 / 站点",
+          "width": 29
+        },
+        {
+          "key": "input",
+          "label": "输入价"
+        },
+        {
+          "key": "output",
+          "label": "输出价"
+        },
+        {
+          "key": "cache",
+          "label": "缓存价"
+        },
+        {
+          "key": "currency",
+          "label": "币种"
+        },
+        {
+          "key": "status",
+          "label": "状态"
+        }
+      ],
+      "actions": [
+        "create",
+        "view",
+        "edit",
+        "delete",
+        "bulkEdit",
+        "bulkDelete"
+      ],
+      "surface": "platform",
+      "store": "pricing",
+      "permission": "platform.pricing",
+      "bulkActions": [
+        "edit",
+        "delete"
+      ],
+      "bulkFields": [
+        "status",
+        "multiplier",
+        "currency",
+        "unit"
+      ]
+    },
+    {
+      "key": "plans",
+      "title": "测试计划",
+      "group": "中转站测试",
+      "icon": "calendar",
+      "path": "/admin/tests/plans/",
+      "description": "统一安排站点、模型与测试项目，管理自动巡检和手动测试。",
+      "kind": "collection",
+      "fields": [
+        {
+          "key": "name",
+          "label": "名称",
+          "type": "text",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "station",
+          "label": "检测站点",
+          "type": "select",
+          "options": [
+            "AruHub",
+            "云帆 API",
+            "拾光 API"
+          ]
+        },
+        {
+          "key": "bindings",
+          "label": "Key 与模型分组",
+          "type": "bindings",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "items",
+          "label": "测试项目",
+          "type": "multiselect",
+          "options": [
+            "基础可用性",
+            "延迟与成功率",
+            "糖果测试",
+            "模型指纹"
+          ],
+          "required": true
+        },
+        {
+          "key": "schedule",
+          "label": "调度方式",
+          "type": "select",
+          "options": [
+            "每日定时",
+            "间隔执行",
+            "Cron 表达式",
+            "仅手动"
+          ]
+        },
+        {
+          "key": "dailyTime",
+          "label": "每日执行时间",
+          "type": "time",
+          "options": []
+        },
+        {
+          "key": "interval",
+          "label": "间隔分钟",
+          "type": "number",
+          "options": []
+        },
+        {
+          "key": "cron",
+          "label": "Cron 表达式",
+          "type": "text",
+          "options": [],
+          "help": "五段标准表达式：分 时 日 月 周，如 0 9 * * *。"
+        },
+        {
+          "key": "timezone",
+          "label": "时区",
+          "type": "select",
+          "options": [
+            "Asia/Shanghai",
+            "UTC"
+          ]
+        },
+        {
+          "key": "timeout",
+          "label": "超时秒数",
+          "type": "number",
+          "options": []
+        },
+        {
+          "key": "retries",
+          "label": "失败重试次数",
+          "type": "number",
+          "options": []
+        },
+        {
+          "key": "concurrency",
+          "label": "模型并发数",
+          "type": "number",
+          "options": []
+        },
+        {
+          "key": "publishPolicy",
+          "label": "报告发布策略",
+          "type": "select",
+          "options": [
+            "审核后公开",
+            "自动公开",
+            "仅内部"
+          ]
+        },
+        {
+          "key": "status",
+          "label": "状态",
+          "type": "select",
+          "options": [
+            "启用",
+            "已暂停"
+          ]
+        },
+        {
+          "key": "note",
+          "label": "备注说明",
+          "type": "textarea",
+          "options": []
+        }
+      ],
+      "columns": [
+        {
+          "key": "name",
+          "label": "测试计划"
+        },
+        {
+          "key": "schedule",
+          "label": "执行安排"
+        },
+        {
+          "key": "keyPolicy",
+          "label": "Key 与报告"
+        },
+        {
+          "key": "status",
+          "label": "状态"
+        }
+      ],
+      "actions": [
+        "create",
+        "view",
+        "edit",
+        "delete",
+        "run",
+        "pause",
+        "bulkEdit",
+        "bulkDelete",
+        "bulkRun",
+        "bulkPause"
+      ],
+      "surface": "platform",
+      "store": "plans",
+      "permission": "platform.plans",
+      "bulkActions": [
+        "edit",
+        "delete",
+        "run",
+        "pause"
+      ],
+      "bulkFields": [
+        "schedule",
+        "dailyTime",
+        "interval",
+        "cron",
+        "timezone",
+        "timeout",
+        "retries",
+        "concurrency",
+        "publishPolicy"
+      ]
+    },
+    {
+      "key": "executions",
+      "title": "执行中心",
+      "group": "中转站测试",
+      "icon": "layers",
+      "path": "/admin/tests/executions/",
+      "description": "跟进等待队列、运行进度与失败原因，按需取消或重试。",
+      "kind": "collection",
+      "fields": [],
+      "columns": [
+        {
+          "key": "name",
+          "label": "执行任务"
+        },
+        {
+          "key": "station",
+          "label": "站点"
+        },
+        {
+          "key": "progress",
+          "label": "进度"
+        },
+        {
+          "key": "status",
+          "label": "执行状态"
+        },
+        {
+          "key": "updated",
+          "label": "触发时间"
+        }
+      ],
+      "actions": [
+        "view",
+        "run",
+        "cancel",
+        "retry",
+        "export",
+        "bulkCancel",
+        "bulkRetry"
+      ],
+      "surface": "platform",
+      "store": "executions",
+      "permission": "platform.executions",
+      "bulkActions": [
+        "cancel",
+        "retry"
+      ],
+      "bulkFields": []
+    },
+    {
+      "key": "reports",
+      "title": "测试报告",
+      "group": "中转站测试",
+      "icon": "shield",
+      "path": "/admin/tests/reports/",
+      "description": "查看基础、糖果和指纹测试证据，审核公开报告并管理分享。",
+      "kind": "collection",
+      "fields": [],
+      "columns": [
+        {
+          "key": "name",
+          "label": "报告 / 模型"
+        },
+        {
+          "key": "type",
+          "label": "测试项目"
+        },
+        {
+          "key": "score",
+          "label": "得分"
+        },
+        {
+          "key": "visibility",
+          "label": "可见性"
+        },
+        {
+          "key": "status",
+          "label": "审核状态"
+        },
+        {
+          "key": "updated",
+          "label": "测试时间"
+        }
+      ],
+      "actions": [
+        "view",
+        "delete",
+        "export",
+        "approve",
+        "reject",
+        "share",
+        "bulkApprove",
+        "bulkReject",
+        "bulkDelete"
+      ],
+      "surface": "platform",
+      "store": "reports",
+      "permission": "platform.reports",
+      "bulkActions": [
+        "approve",
+        "reject",
+        "delete"
+      ],
+      "bulkFields": []
+    },
+    {
+      "key": "test-keys",
+      "title": "API Key",
+      "group": "中转站测试",
+      "icon": "lock",
+      "path": "/admin/tests/api-keys/",
+      "description": "按站点管理测试凭证引用、优先级、有效期与使用状态。",
+      "kind": "collection",
+      "fields": [
+        {
+          "key": "name",
+          "label": "名称",
+          "type": "text",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "station",
+          "label": "检测站点",
+          "type": "select",
+          "options": [
+            "AruHub",
+            "云帆 API",
+            "拾光 API"
+          ]
+        },
+        {
+          "key": "secret",
+          "label": "API Key（仅写入）",
+          "type": "password",
+          "help": "创建必填，编辑留空保留。保存后只显示脱敏标识，模型从服务商自动获取。"
+        },
+        {
+          "key": "protocols",
+          "label": "支持接口协议",
+          "type": "multiselect",
+          "options": [
+            "OpenAI Chat Completions",
+            "OpenAI Responses",
+            "Anthropic Messages",
+            "Google Gemini"
+          ],
+          "required": true
+        },
+        {
+          "key": "group",
+          "label": "额度 / 计费分组",
+          "type": "text",
+          "options": []
+        },
+        {
+          "key": "priority",
+          "label": "使用优先级",
+          "type": "number",
+          "options": []
+        },
+        {
+          "key": "expires",
+          "label": "有效期至",
+          "type": "date",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "status",
+          "label": "状态",
+          "type": "select",
+          "options": [
+            "启用",
+            "已停用"
+          ]
+        },
+        {
+          "key": "note",
+          "label": "备注说明",
+          "type": "textarea",
+          "options": []
+        },
+        {
+          "key": "baseUrl",
+          "label": "接口基础地址",
+          "type": "url",
+          "required": true
+        }
+      ],
+      "columns": [
+        {
+          "key": "name",
+          "label": "Key 名称 / 引用"
+        },
+        {
+          "key": "station",
+          "label": "所属站点"
+        },
+        {
+          "key": "priority",
+          "label": "优先级"
+        },
+        {
+          "key": "expires",
+          "label": "有效期"
+        },
+        {
+          "key": "usage",
+          "label": "调用次数"
+        },
+        {
+          "key": "status",
+          "label": "状态"
+        }
+      ],
+      "actions": [
+        "create",
+        "view",
+        "edit",
+        "delete",
+        "bulkEdit",
+        "bulkDelete",
+        "discover"
+      ],
+      "surface": "platform",
+      "store": "test-keys",
+      "permission": "platform.test-keys",
+      "bulkActions": [
+        "edit",
+        "delete"
+      ],
+      "bulkFields": [
+        "status",
+        "priority",
+        "expires",
+        "group"
+      ]
+    },
+    {
+      "key": "probe-accounts",
+      "title": "探测账号",
+      "group": "中转站测试",
+      "icon": "user",
+      "path": "/admin/tests/probe-accounts/",
+      "description": "管理探测账号的余额、健康状态与凭证引用，区分测试和业务账户。",
+      "kind": "collection",
+      "fields": [
+        {
+          "key": "name",
+          "label": "名称",
+          "type": "text",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "station",
+          "label": "检测站点",
+          "type": "select",
+          "options": [
+            "AruHub",
+            "云帆 API",
+            "拾光 API"
+          ]
+        },
+        {
+          "key": "account",
+          "label": "账号标识",
+          "type": "text",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "credentialRef",
+          "label": "凭证引用",
+          "type": "text",
+          "options": [],
+          "required": true,
+          "help": "仅使用 demo:// 示例引用，不填写真实密码或 Cookie。"
+        },
+        {
+          "key": "balance",
+          "label": "余额预警阈值",
+          "type": "number",
+          "options": []
+        },
+        {
+          "key": "checkin",
+          "label": "签到策略",
+          "type": "select",
+          "options": [
+            "不自动签到",
+            "每日签到"
+          ]
+        },
+        {
+          "key": "status",
+          "label": "状态",
+          "type": "select",
+          "options": [
+            "正常",
+            "已停用"
+          ]
+        },
+        {
+          "key": "note",
+          "label": "备注说明",
+          "type": "textarea",
+          "options": []
+        }
+      ],
+      "columns": [
+        {
+          "key": "name",
+          "label": "探测账号"
+        },
+        {
+          "key": "station",
+          "label": "站点"
+        },
+        {
+          "key": "balance",
+          "label": "余额预警"
+        },
+        {
+          "key": "health",
+          "label": "健康状态"
+        },
+        {
+          "key": "checked",
+          "label": "最近检查"
+        },
+        {
+          "key": "status",
+          "label": "状态"
+        }
+      ],
+      "actions": [
+        "create",
+        "view",
+        "edit",
+        "delete",
+        "bulkEdit",
+        "bulkDelete"
+      ],
+      "surface": "platform",
+      "store": "probe-accounts",
+      "permission": "platform.probe-accounts",
+      "bulkActions": [
+        "edit",
+        "delete"
+      ],
+      "bulkFields": [
+        "status",
+        "balance",
+        "checkin"
+      ]
+    },
+    {
+      "key": "test-trends",
+      "title": "历史趋势",
+      "group": "中转站测试",
+      "icon": "chart",
+      "path": "/admin/tests/trends/",
+      "description": "按站点、模型与计划追踪成功率、延迟和评分，识别长期变化。",
+      "kind": "analytics",
+      "fields": [],
+      "columns": [],
+      "actions": [
+        "export"
+      ],
+      "surface": "platform",
+      "store": "test-trends",
+      "permission": "platform.test-trends",
+      "bulkActions": [],
+      "bulkFields": []
+    },
+    {
+      "key": "test-alerts",
+      "title": "测试告警",
+      "group": "中转站测试",
+      "icon": "bell",
+      "path": "/admin/tests/alerts/",
+      "description": "为连续失败、评分下降和凭证过期设置规则，跟进异常处理。",
+      "kind": "collection",
+      "fields": [
+        {
+          "key": "name",
+          "label": "名称",
+          "type": "text",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "station",
+          "label": "检测站点",
+          "type": "select",
+          "options": [
+            "AruHub",
+            "云帆 API",
+            "拾光 API"
+          ]
+        },
+        {
+          "key": "metric",
+          "label": "触发指标",
+          "type": "select",
+          "options": [
+            "连续失败次数",
+            "成功率低于",
+            "评分低于",
+            "Key 即将过期天数",
+            "探测余额低于"
+          ]
+        },
+        {
+          "key": "threshold",
+          "label": "触发阈值",
+          "type": "number",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "window",
+          "label": "统计窗口分钟",
+          "type": "number",
+          "options": []
+        },
+        {
+          "key": "channel",
+          "label": "通知渠道",
+          "type": "select",
+          "options": [
+            "站内通知",
+            "邮件通知",
+            "Webhook"
+          ]
+        },
+        {
+          "key": "receiver",
+          "label": "通知目标",
+          "type": "text",
+          "options": [],
+          "help": "原型仅展示渠道配置，不发送消息。"
+        },
+        {
+          "key": "cooldown",
+          "label": "冷却分钟",
+          "type": "number",
+          "options": []
+        },
+        {
+          "key": "status",
+          "label": "状态",
+          "type": "select",
+          "options": [
+            "启用",
+            "已暂停"
+          ]
+        },
+        {
+          "key": "note",
+          "label": "备注说明",
+          "type": "textarea",
+          "options": []
+        }
+      ],
+      "columns": [
+        {
+          "key": "name",
+          "label": "告警规则"
+        },
+        {
+          "key": "metric",
+          "label": "触发条件"
+        },
+        {
+          "key": "lastEvent",
+          "label": "最近事件"
+        },
+        {
+          "key": "eventStatus",
+          "label": "处理状态"
+        },
+        {
+          "key": "status",
+          "label": "规则状态"
+        }
+      ],
+      "actions": [
+        "create",
+        "view",
+        "edit",
+        "delete",
+        "pause",
+        "acknowledge",
+        "resolve",
+        "bulkEdit",
+        "bulkDelete",
+        "bulkPause",
+        "bulkAcknowledge",
+        "bulkResolve"
+      ],
+      "surface": "platform",
+      "store": "test-alerts",
+      "permission": "platform.test-alerts",
+      "bulkActions": [
+        "edit",
+        "delete",
+        "pause",
+        "acknowledge",
+        "resolve"
+      ],
+      "bulkFields": [
+        "status",
+        "channel",
+        "receiver",
+        "cooldown"
+      ]
+    },
+    {
+      "key": "campaigns",
+      "title": "广告管理",
+      "group": "广告与财务",
+      "icon": "megaphone",
+      "path": "/admin/advertising/campaigns/",
+      "description": "管理投放素材、排期和状态，让每一个广告位都有序运转。",
+      "kind": "collection",
+      "fields": [
+        {
+          "key": "name",
+          "label": "广告名称",
+          "type": "text",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "ownerId",
+          "label": "投放账户",
+          "type": "select",
+          "options": [
+            "pub-a",
+            "pub-b"
+          ]
+        },
+        {
+          "key": "placement",
+          "label": "展示广告位",
+          "type": "select",
+          "options": [
+            "首页横幅",
+            "站点列表",
+            "站点详情页",
+            "模型资料页"
+          ]
+        },
+        {
+          "key": "headline",
+          "label": "广告标题",
+          "type": "text",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "description",
+          "label": "广告描述",
+          "type": "textarea",
+          "options": []
+        },
+        {
+          "key": "target",
+          "label": "落地页链接",
+          "type": "url",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "creative",
+          "label": "广告素材",
+          "type": "upload",
+          "options": []
+        },
+        {
+          "key": "start",
+          "label": "开始日期",
+          "type": "date",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "end",
+          "label": "结束日期",
+          "type": "date",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "budget",
+          "label": "投放预算",
+          "type": "number",
+          "options": [],
+          "required": true,
+          "suffix": "元"
+        },
+        {
+          "key": "status",
+          "label": "状态",
+          "type": "select",
+          "options": [
+            "草稿",
+            "待审核",
+            "投放中",
+            "已暂停",
+            "已结束"
+          ]
+        }
+      ],
+      "columns": [
+        {
+          "key": "name",
+          "label": "广告 / 投放账户",
+          "width": 30
+        },
+        {
+          "key": "placement",
+          "label": "广告位"
+        },
+        {
+          "key": "budget",
+          "label": "预算"
+        },
+        {
+          "key": "clicks",
+          "label": "点击"
+        },
+        {
+          "key": "status",
+          "label": "投放状态"
+        },
+        {
+          "key": "end",
+          "label": "结束时间"
+        }
+      ],
+      "actions": [
+        "create",
+        "view",
+        "edit",
+        "delete",
+        "bulkEdit",
+        "bulkDelete"
+      ],
+      "surface": "platform",
+      "store": "campaigns",
+      "permission": "platform.campaigns",
+      "bulkActions": [
+        "edit",
+        "delete"
+      ],
+      "bulkFields": [
+        "status",
+        "start",
+        "end"
+      ]
+    },
+    {
+      "key": "placements",
+      "title": "广告位管理",
+      "group": "广告与财务",
+      "icon": "layout",
+      "path": "/admin/advertising/placements/",
+      "description": "配置展示位置、素材规格、定价与可售状态。",
+      "kind": "collection",
+      "fields": [
+        {
+          "key": "name",
+          "label": "名称",
+          "type": "text",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "code",
+          "label": "广告位标识",
+          "type": "text",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "size",
+          "label": "素材尺寸",
+          "type": "text",
+          "options": []
+        },
+        {
+          "key": "pricingMode",
+          "label": "计价方式",
+          "type": "select",
+          "options": [
+            "按天",
+            "按周",
+            "按月"
+          ]
+        },
+        {
+          "key": "price",
+          "label": "刊例价",
+          "type": "number",
+          "options": [],
+          "suffix": "元"
+        },
+        {
+          "key": "capacity",
+          "label": "同时展示数",
+          "type": "number",
+          "options": []
+        },
+        {
+          "key": "description",
+          "label": "投放说明",
+          "type": "textarea",
+          "options": []
+        },
+        {
+          "key": "status",
+          "label": "状态",
+          "type": "select",
+          "options": [
+            "可投放",
+            "已售罄",
+            "已关闭"
+          ]
+        }
+      ],
+      "columns": [
+        {
+          "key": "name",
+          "label": "广告位",
+          "width": 27
+        },
+        {
+          "key": "size",
+          "label": "素材规格"
+        },
+        {
+          "key": "price",
+          "label": "刊例价"
+        },
+        {
+          "key": "capacity",
+          "label": "容量"
+        },
+        {
+          "key": "status",
+          "label": "状态"
+        }
+      ],
+      "actions": [
+        "create",
+        "view",
+        "edit",
+        "delete",
+        "bulkEdit",
+        "bulkDelete"
+      ],
+      "surface": "platform",
+      "store": "placements",
+      "permission": "platform.placements",
+      "bulkActions": [
+        "edit",
+        "delete"
+      ],
+      "bulkFields": [
+        "status",
+        "price",
+        "capacity"
+      ]
+    },
+    {
+      "key": "adreview",
+      "title": "广告审核",
+      "group": "广告与财务",
+      "icon": "check",
+      "path": "/admin/advertising/reviews/",
+      "description": "查看素材和落地页后，再决定是否允许投放。",
+      "kind": "collection",
+      "fields": [
+        {
+          "key": "name",
+          "label": "广告名称",
+          "type": "text",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "ownerId",
+          "label": "投放账户",
+          "type": "select",
+          "options": [
+            "pub-a",
+            "pub-b"
+          ]
+        },
+        {
+          "key": "placement",
+          "label": "展示广告位",
+          "type": "select",
+          "options": [
+            "首页横幅",
+            "站点列表",
+            "站点详情页",
+            "模型资料页"
+          ]
+        },
+        {
+          "key": "headline",
+          "label": "广告标题",
+          "type": "text",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "description",
+          "label": "广告描述",
+          "type": "textarea",
+          "options": []
+        },
+        {
+          "key": "target",
+          "label": "落地页链接",
+          "type": "url",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "creative",
+          "label": "广告素材",
+          "type": "upload",
+          "options": []
+        },
+        {
+          "key": "start",
+          "label": "开始日期",
+          "type": "date",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "end",
+          "label": "结束日期",
+          "type": "date",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "budget",
+          "label": "投放预算",
+          "type": "number",
+          "options": [],
+          "required": true,
+          "suffix": "元"
+        },
+        {
+          "key": "status",
+          "label": "状态",
+          "type": "select",
+          "options": [
+            "草稿",
+            "待审核",
+            "投放中",
+            "已暂停",
+            "已结束"
+          ]
+        }
+      ],
+      "columns": [
+        {
+          "key": "name",
+          "label": "广告 / 账户",
+          "width": 30
+        },
+        {
+          "key": "placement",
+          "label": "申请位置"
+        },
+        {
+          "key": "start",
+          "label": "开始时间"
+        },
+        {
+          "key": "end",
+          "label": "结束时间"
+        },
+        {
+          "key": "status",
+          "label": "审核状态"
+        }
+      ],
+      "actions": [
+        "view",
+        "approve",
+        "reject",
+        "bulkApprove",
+        "bulkReject"
+      ],
+      "surface": "platform",
+      "store": "adreview",
+      "permission": "platform.adreview",
+      "bulkActions": [
+        "approve",
+        "reject"
+      ],
+      "bulkFields": []
+    },
+    {
+      "key": "adstats",
+      "title": "广告效果",
+      "group": "广告与财务",
+      "icon": "chart",
+      "path": "/admin/advertising/analytics/",
+      "description": "统一查看曝光、点击、点击率与各广告位的贡献。",
+      "kind": "analytics",
+      "fields": [],
+      "columns": [],
+      "actions": [
+        "export"
+      ],
+      "surface": "platform",
+      "store": "adstats",
+      "permission": "platform.adstats",
+      "bulkActions": [],
+      "bulkFields": []
+    },
+    {
+      "key": "orders",
+      "title": "订单管理",
+      "group": "广告与财务",
+      "icon": "receipt",
+      "path": "/admin/finance/orders/",
+      "description": "查看推广订单、支付状态和排期明细。",
+      "kind": "collection",
+      "fields": [
+        {
+          "key": "name",
+          "label": "订单编号",
+          "type": "text",
+          "options": []
+        },
+        {
+          "key": "advertiser",
+          "label": "投放账户",
+          "type": "text",
+          "options": []
+        },
+        {
+          "key": "placement",
+          "label": "广告位",
+          "type": "text",
+          "options": []
+        },
+        {
+          "key": "amount",
+          "label": "订单金额",
+          "type": "number",
+          "options": []
+        },
+        {
+          "key": "payment",
+          "label": "支付方式",
+          "type": "select",
+          "options": [
+            "支付宝",
+            "微信支付",
+            "对公转账"
+          ]
+        },
+        {
+          "key": "status",
+          "label": "状态",
+          "type": "select",
+          "options": [
+            "已支付",
+            "待付款",
+            "已关闭",
+            "已退款"
+          ]
+        },
+        {
+          "key": "note",
+          "label": "备注说明",
+          "type": "textarea",
+          "options": []
+        }
+      ],
+      "columns": [
+        {
+          "key": "name",
+          "label": "订单 / 广告",
+          "width": 29
+        },
+        {
+          "key": "advertiser",
+          "label": "投放账户"
+        },
+        {
+          "key": "amount",
+          "label": "金额"
+        },
+        {
+          "key": "payment",
+          "label": "支付方式"
+        },
+        {
+          "key": "status",
+          "label": "状态"
+        },
+        {
+          "key": "updated",
+          "label": "创建时间"
+        }
+      ],
+      "actions": [
+        "view",
+        "export"
+      ],
+      "surface": "platform",
+      "store": "orders",
+      "permission": "platform.orders",
+      "bulkActions": [],
+      "bulkFields": []
+    },
+    {
+      "key": "users",
+      "title": "用户管理",
+      "group": "用户与权限",
+      "icon": "users",
+      "path": "/admin/accounts/users/",
+      "description": "管理账户状态、角色归属与访问权限。",
+      "kind": "collection",
+      "fields": [
+        {
+          "key": "name",
+          "label": "用户昵称",
+          "type": "text",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "email",
+          "label": "登录邮箱",
+          "type": "email",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "roleId",
+          "label": "所属角色",
+          "type": "role",
+          "options": []
+        },
+        {
+          "key": "department",
+          "label": "所属团队",
+          "type": "select",
+          "options": [
+            "平台运营",
+            "内容审核",
+            "财务结算",
+            "站长推广"
+          ]
+        },
+        {
+          "key": "status",
+          "label": "状态",
+          "type": "select",
+          "options": [
+            "正常",
+            "已停用"
+          ]
+        },
+        {
+          "key": "mfa",
+          "label": "二次验证",
+          "type": "select",
+          "options": [
+            "已开启",
+            "未开启"
+          ]
+        },
+        {
+          "key": "note",
+          "label": "备注说明",
+          "type": "textarea",
+          "options": []
+        },
+        {
+          "key": "password",
+          "label": "登录密码（仅写入）",
+          "type": "password"
+        }
+      ],
+      "columns": [
+        {
+          "key": "name",
+          "label": "用户",
+          "width": 25
+        },
+        {
+          "key": "email",
+          "label": "登录邮箱",
+          "width": 25
+        },
+        {
+          "key": "roleId",
+          "label": "角色"
+        },
+        {
+          "key": "status",
+          "label": "状态"
+        },
+        {
+          "key": "lastLogin",
+          "label": "最近登录"
+        }
+      ],
+      "actions": [
+        "create",
+        "view",
+        "edit",
+        "delete",
+        "bulkEdit",
+        "bulkDelete"
+      ],
+      "surface": "platform",
+      "store": "users",
+      "permission": "platform.users",
+      "bulkActions": [
+        "edit",
+        "delete"
+      ],
+      "bulkFields": [
+        "roleId",
+        "department",
+        "status"
+      ]
+    },
+    {
+      "key": "publishers",
+      "title": "站长账户",
+      "group": "用户与权限",
+      "icon": "building",
+      "path": "/admin/accounts/publishers/",
+      "description": "管理推广账户与联系人，核对认证和合作资料。",
+      "kind": "collection",
+      "fields": [
+        {
+          "key": "name",
+          "label": "账户名称",
+          "type": "text",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "contact",
+          "label": "联系人",
+          "type": "text",
+          "options": []
+        },
+        {
+          "key": "email",
+          "label": "联系邮箱",
+          "type": "email",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "domain",
+          "label": "推广官网",
+          "type": "url",
+          "options": []
+        },
+        {
+          "key": "verified",
+          "label": "认证状态",
+          "type": "select",
+          "options": [
+            "已认证",
+            "待认证"
+          ]
+        },
+        {
+          "key": "status",
+          "label": "状态",
+          "type": "select",
+          "options": [
+            "正常",
+            "已停用"
+          ]
+        },
+        {
+          "key": "note",
+          "label": "备注说明",
+          "type": "textarea",
+          "options": []
+        }
+      ],
+      "columns": [
+        {
+          "key": "name",
+          "label": "推广账户",
+          "width": 26
+        },
+        {
+          "key": "contact",
+          "label": "联系人"
+        },
+        {
+          "key": "email",
+          "label": "联系邮箱",
+          "width": 24
+        },
+        {
+          "key": "verified",
+          "label": "认证"
+        },
+        {
+          "key": "status",
+          "label": "状态"
+        }
+      ],
+      "actions": [
+        "create",
+        "view",
+        "edit",
+        "delete",
+        "bulkEdit",
+        "bulkDelete"
+      ],
+      "surface": "platform",
+      "store": "publishers",
+      "permission": "platform.publishers",
+      "bulkActions": [
+        "edit",
+        "delete"
+      ],
+      "bulkFields": [
+        "verified",
+        "status"
+      ]
+    },
+    {
+      "key": "roles",
+      "title": "角色管理",
+      "group": "用户与权限",
+      "icon": "shield",
+      "path": "/admin/access/roles/",
+      "description": "角色决定可用功能，数据范围决定能看到哪些记录。",
+      "kind": "roles",
+      "fields": [
+        {
+          "key": "name",
+          "label": "角色名称",
+          "type": "text",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "code",
+          "label": "角色标识",
+          "type": "text",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "surface",
+          "label": "适用后台",
+          "type": "select",
+          "options": [
+            "platform",
+            "publisher"
+          ]
+        },
+        {
+          "key": "scope",
+          "label": "数据范围",
+          "type": "select",
+          "options": [
+            "all",
+            "own"
+          ]
+        },
+        {
+          "key": "description",
+          "label": "角色说明",
+          "type": "textarea",
+          "options": []
+        },
+        {
+          "key": "status",
+          "label": "状态",
+          "type": "select",
+          "options": [
+            "启用",
+            "停用"
+          ]
+        },
+        {
+          "key": "permissions",
+          "label": "功能权限",
+          "type": "permissions"
+        }
+      ],
+      "columns": [
+        {
+          "key": "name",
+          "label": "角色名称",
+          "width": 24
+        },
+        {
+          "key": "code",
+          "label": "标识",
+          "width": 23
+        },
+        {
+          "key": "surface",
+          "label": "适用后台"
+        },
+        {
+          "key": "members",
+          "label": "成员"
+        },
+        {
+          "key": "scope",
+          "label": "数据范围"
+        },
+        {
+          "key": "status",
+          "label": "状态"
+        }
+      ],
+      "actions": [
+        "create",
+        "view",
+        "edit",
+        "delete"
+      ],
+      "surface": "platform",
+      "store": "roles",
+      "permission": "platform.roles",
+      "bulkActions": [],
+      "bulkFields": []
+    },
+    {
+      "key": "menus",
+      "title": "菜单管理",
+      "group": "用户与权限",
+      "icon": "tree",
+      "path": "/admin/access/menus/",
+      "description": "目录、页面与按钮各司其职，导航和权限保持一致。",
+      "kind": "menus",
+      "fields": [
+        {
+          "key": "name",
+          "label": "菜单名称",
+          "type": "text",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "type",
+          "label": "节点类型",
+          "type": "select",
+          "options": [
+            "目录",
+            "菜单",
+            "按钮"
+          ]
+        },
+        {
+          "key": "parent",
+          "label": "上级节点",
+          "type": "select",
+          "options": [
+            "根目录",
+            "数据分析",
+            "站点与模型",
+            "广告与财务",
+            "用户与权限",
+            "内容与系统"
+          ]
+        },
+        {
+          "key": "surface",
+          "label": "所属后台",
+          "type": "select",
+          "options": [
+            "platform",
+            "publisher"
+          ]
+        },
+        {
+          "key": "path",
+          "label": "页面路径",
+          "type": "text",
+          "options": []
+        },
+        {
+          "key": "permission",
+          "label": "权限标识",
+          "type": "text",
+          "options": []
+        },
+        {
+          "key": "icon",
+          "label": "导航图标",
+          "type": "select",
+          "options": [
+            "chart",
+            "users",
+            "globe",
+            "shield",
+            "megaphone",
+            "settings"
+          ]
+        },
+        {
+          "key": "sort",
+          "label": "排序",
+          "type": "number",
+          "options": []
+        },
+        {
+          "key": "status",
+          "label": "状态",
+          "type": "select",
+          "options": [
+            "显示",
+            "隐藏"
+          ]
+        }
+      ],
+      "columns": [
+        {
+          "key": "name",
+          "label": "菜单 / 按钮",
+          "width": 29
+        },
+        {
+          "key": "type",
+          "label": "类型"
+        },
+        {
+          "key": "path",
+          "label": "页面路径",
+          "width": 25
+        },
+        {
+          "key": "permission",
+          "label": "权限标识",
+          "width": 25
+        },
+        {
+          "key": "status",
+          "label": "状态"
+        }
+      ],
+      "actions": [
+        "create",
+        "view",
+        "edit",
+        "delete"
+      ],
+      "surface": "platform",
+      "store": "menus",
+      "permission": "platform.menus",
+      "bulkActions": [],
+      "bulkFields": []
+    },
+    {
+      "key": "audit",
+      "title": "操作日志",
+      "group": "用户与权限",
+      "icon": "history",
+      "path": "/admin/access/audit-logs/",
+      "description": "记录谁在何时对什么数据做了哪些操作。",
+      "kind": "collection",
+      "fields": [],
+      "columns": [
+        {
+          "key": "name",
+          "label": "操作事件",
+          "width": 28
+        },
+        {
+          "key": "operator",
+          "label": "操作人"
+        },
+        {
+          "key": "object",
+          "label": "操作对象",
+          "width": 23
+        },
+        {
+          "key": "status",
+          "label": "结果"
+        },
+        {
+          "key": "updated",
+          "label": "时间"
+        }
+      ],
+      "actions": [
+        "view",
+        "export"
+      ],
+      "surface": "platform",
+      "store": "audit",
+      "permission": "platform.audit",
+      "bulkActions": [],
+      "bulkFields": []
+    },
+    {
+      "key": "articles",
+      "title": "内容管理",
+      "group": "内容与系统",
+      "icon": "file",
+      "path": "/admin/content/articles/",
+      "description": "维护公告、指南与公开说明，让内容更新更有条理。",
+      "kind": "collection",
+      "fields": [
+        {
+          "key": "name",
+          "label": "文章标题",
+          "type": "text",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "type",
+          "label": "内容类型",
+          "type": "select",
+          "options": [
+            "站点公告",
+            "使用指南",
+            "评测方法",
+            "活动资讯"
+          ]
+        },
+        {
+          "key": "slug",
+          "label": "路径标识",
+          "type": "text",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "cover",
+          "label": "封面配图",
+          "type": "upload",
+          "options": []
+        },
+        {
+          "key": "summary",
+          "label": "内容摘要",
+          "type": "textarea",
+          "options": []
+        },
+        {
+          "key": "body",
+          "label": "正文内容",
+          "type": "editor",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "status",
+          "label": "状态",
+          "type": "select",
+          "options": [
+            "已发布",
+            "草稿",
+            "已下线"
+          ]
+        },
+        {
+          "key": "published",
+          "label": "发布时间",
+          "type": "date",
+          "options": []
+        }
+      ],
+      "columns": [
+        {
+          "key": "name",
+          "label": "标题",
+          "width": 38
+        },
+        {
+          "key": "type",
+          "label": "内容类型"
+        },
+        {
+          "key": "author",
+          "label": "作者"
+        },
+        {
+          "key": "status",
+          "label": "状态"
+        },
+        {
+          "key": "updated",
+          "label": "更新时间"
+        }
+      ],
+      "actions": [
+        "create",
+        "view",
+        "edit",
+        "delete",
+        "bulkEdit",
+        "bulkDelete"
+      ],
+      "surface": "platform",
+      "store": "articles",
+      "permission": "platform.articles",
+      "bulkActions": [
+        "edit",
+        "delete"
+      ],
+      "bulkFields": [
+        "type",
+        "status",
+        "published"
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO 设置",
+      "group": "内容与系统",
+      "icon": "compass",
+      "path": "/admin/content/seo/",
+      "description": "逐页管理标题、摘要、规范地址与分享信息。",
+      "kind": "settings",
+      "fields": [
+        {
+          "key": "name",
+          "label": "页面名称",
+          "required": true
+        },
+        {
+          "key": "path",
+          "label": "页面路径",
+          "required": true
+        },
+        {
+          "key": "title",
+          "label": "SEO 标题",
+          "required": true
+        },
+        {
+          "key": "description",
+          "label": "页面描述",
+          "type": "textarea",
+          "required": true
+        },
+        {
+          "key": "keywords",
+          "label": "关键词"
+        },
+        {
+          "key": "index",
+          "label": "允许收录",
+          "type": "select",
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "columns": [],
+      "actions": [
+        "edit"
+      ],
+      "surface": "platform",
+      "store": "seo",
+      "permission": "platform.seo",
+      "bulkActions": [],
+      "bulkFields": []
+    },
+    {
+      "key": "resources",
+      "title": "开发者资源",
+      "group": "内容与系统",
+      "icon": "code",
+      "path": "/admin/developers/resources/",
+      "description": "维护公开查询数据、文档和 Skills 的版本与发布状态。",
+      "kind": "collection",
+      "fields": [
+        {
+          "key": "name",
+          "label": "资源名称",
+          "type": "text",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "type",
+          "label": "资源类型",
+          "type": "select",
+          "options": [
+            "JSON 数据",
+            "查询 Skill",
+            "接入文档"
+          ]
+        },
+        {
+          "key": "version",
+          "label": "版本号",
+          "type": "text",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "path",
+          "label": "公开路径",
+          "type": "text",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "description",
+          "label": "资源说明",
+          "type": "textarea",
+          "options": []
+        },
+        {
+          "key": "status",
+          "label": "状态",
+          "type": "select",
+          "options": [
+            "已发布",
+            "草稿",
+            "已归档"
+          ]
+        }
+      ],
+      "columns": [
+        {
+          "key": "name",
+          "label": "资源名称",
+          "width": 32
+        },
+        {
+          "key": "type",
+          "label": "类型"
+        },
+        {
+          "key": "version",
+          "label": "版本"
+        },
+        {
+          "key": "path",
+          "label": "公开路径",
+          "width": 25
+        },
+        {
+          "key": "status",
+          "label": "状态"
+        }
+      ],
+      "actions": [
+        "create",
+        "view",
+        "edit",
+        "delete",
+        "bulkEdit",
+        "bulkDelete"
+      ],
+      "surface": "platform",
+      "store": "resources",
+      "permission": "platform.resources",
+      "bulkActions": [
+        "edit",
+        "delete"
+      ],
+      "bulkFields": [
+        "status"
+      ]
+    },
+    {
+      "key": "settings",
+      "title": "系统设置",
+      "group": "内容与系统",
+      "icon": "settings",
+      "path": "/admin/settings/general/",
+      "description": "统一维护站点身份、联系方式与基础运营选项。",
+      "kind": "settings",
+      "fields": [
+        {
+          "key": "name",
+          "label": "网站名称",
+          "required": true
+        },
+        {
+          "key": "description",
+          "label": "网站介绍",
+          "type": "textarea"
+        },
+        {
+          "key": "email",
+          "label": "联系邮箱",
+          "type": "email"
+        },
+        {
+          "key": "qq",
+          "label": "QQ"
+        },
+        {
+          "key": "telegram",
+          "label": "Telegram",
+          "type": "url"
+        }
+      ],
+      "columns": [],
+      "actions": [
+        "edit"
+      ],
+      "surface": "platform",
+      "store": "settings",
+      "permission": "platform.settings",
+      "bulkActions": [],
+      "bulkFields": []
+    },
+    {
+      "key": "p-overview",
+      "title": "工作台",
+      "group": "推广工作区",
+      "icon": "home",
+      "path": "/publisher/dashboard/",
+      "description": "查看推广进展，把预算花在值得关注的位置。",
+      "kind": "dashboard",
+      "fields": [],
+      "columns": [],
+      "actions": [],
+      "surface": "publisher",
+      "store": "p-overview",
+      "permission": "publisher.overview",
+      "bulkActions": [],
+      "bulkFields": []
+    },
+    {
+      "key": "p-traffic",
+      "title": "流量总览",
+      "group": "推广数据",
+      "icon": "chart",
+      "path": "/publisher/analytics/overview/",
+      "description": "每一次曝光与点击，都有清晰的来处。",
+      "kind": "analytics",
+      "fields": [],
+      "columns": [],
+      "actions": [
+        "export"
+      ],
+      "surface": "publisher",
+      "store": "p-traffic",
+      "permission": "publisher.traffic",
+      "bulkActions": [],
+      "bulkFields": []
+    },
+    {
+      "key": "p-placements",
+      "title": "广告位分析",
+      "group": "推广数据",
+      "icon": "layout",
+      "path": "/publisher/analytics/placements/",
+      "description": "比较不同展示位置的曝光和点击效率。",
+      "kind": "analytics",
+      "fields": [],
+      "columns": [],
+      "actions": [
+        "export"
+      ],
+      "surface": "publisher",
+      "store": "p-placements",
+      "permission": "publisher.placements",
+      "bulkActions": [],
+      "bulkFields": []
+    },
+    {
+      "key": "p-clicks",
+      "title": "点击明细",
+      "group": "推广数据",
+      "icon": "compass",
+      "path": "/publisher/analytics/clicks/",
+      "description": "按日期和广告回看访问贡献，不展示访客个人信息。",
+      "kind": "analytics",
+      "fields": [],
+      "columns": [],
+      "actions": [
+        "export"
+      ],
+      "surface": "publisher",
+      "store": "p-clicks",
+      "permission": "publisher.clicks",
+      "bulkActions": [],
+      "bulkFields": []
+    },
+    {
+      "key": "p-store",
+      "title": "广告位与投放",
+      "group": "推广管理",
+      "icon": "grid",
+      "path": "/publisher/advertising/placements/",
+      "description": "选择适合你的展示位置，查看规格和可选档期。",
+      "kind": "store",
+      "fields": [],
+      "columns": [],
+      "actions": [
+        "create"
+      ],
+      "surface": "publisher",
+      "store": "p-store",
+      "permission": "publisher.store",
+      "bulkActions": [],
+      "bulkFields": []
+    },
+    {
+      "key": "p-campaigns",
+      "title": "我的广告",
+      "group": "推广管理",
+      "icon": "megaphone",
+      "path": "/publisher/advertising/campaigns/",
+      "description": "素材、排期和投放状态，都在这里持续跟进。",
+      "kind": "collection",
+      "fields": [
+        {
+          "key": "name",
+          "label": "广告名称",
+          "type": "text",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "placement",
+          "label": "展示广告位",
+          "type": "select",
+          "options": [
+            "首页横幅",
+            "站点列表",
+            "站点详情页",
+            "模型资料页"
+          ]
+        },
+        {
+          "key": "headline",
+          "label": "广告标题",
+          "type": "text",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "description",
+          "label": "广告描述",
+          "type": "textarea",
+          "options": []
+        },
+        {
+          "key": "target",
+          "label": "落地页链接",
+          "type": "url",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "creative",
+          "label": "广告素材",
+          "type": "upload",
+          "options": []
+        },
+        {
+          "key": "start",
+          "label": "开始日期",
+          "type": "date",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "end",
+          "label": "结束日期",
+          "type": "date",
+          "options": [],
+          "required": true
+        },
+        {
+          "key": "budget",
+          "label": "投放预算",
+          "type": "number",
+          "options": [],
+          "required": true,
+          "suffix": "元"
+        },
+        {
+          "key": "status",
+          "label": "状态",
+          "type": "select",
+          "options": [
+            "草稿",
+            "待审核",
+            "投放中",
+            "已暂停",
+            "已结束"
+          ]
+        }
+      ],
+      "columns": [
+        {
+          "key": "name",
+          "label": "广告",
+          "width": 30
+        },
+        {
+          "key": "placement",
+          "label": "展示位置"
+        },
+        {
+          "key": "clicks",
+          "label": "点击量"
+        },
+        {
+          "key": "ctr",
+          "label": "点击率"
+        },
+        {
+          "key": "status",
+          "label": "状态"
+        },
+        {
+          "key": "end",
+          "label": "结束日期"
+        }
+      ],
+      "actions": [
+        "create",
+        "view",
+        "edit",
+        "delete",
+        "bulkDelete"
+      ],
+      "surface": "publisher",
+      "store": "campaigns",
+      "permission": "publisher.campaigns",
+      "bulkActions": [
+        "delete"
+      ],
+      "bulkFields": []
+    },
+    {
+      "key": "p-orders",
+      "title": "订单与账单",
+      "group": "订单与账户",
+      "icon": "receipt",
+      "path": "/publisher/finance/orders/",
+      "description": "回看每笔推广费用、订单状态和对应广告。",
+      "kind": "collection",
+      "fields": [],
+      "columns": [
+        {
+          "key": "name",
+          "label": "订单 / 广告",
+          "width": 31
+        },
+        {
+          "key": "placement",
+          "label": "展示位置"
+        },
+        {
+          "key": "amount",
+          "label": "订单金额"
+        },
+        {
+          "key": "status",
+          "label": "订单状态"
+        },
+        {
+          "key": "updated",
+          "label": "创建时间"
+        }
+      ],
+      "actions": [
+        "view",
+        "export",
+        "pay"
+      ],
+      "surface": "publisher",
+      "store": "orders",
+      "permission": "publisher.orders",
+      "bulkActions": [],
+      "bulkFields": []
+    },
+    {
+      "key": "p-messages",
+      "title": "消息中心",
+      "group": "订单与账户",
+      "icon": "bell",
+      "path": "/publisher/messages/",
+      "description": "审核通知、排期提醒和账单消息，及时送达。",
+      "kind": "messages",
+      "fields": [],
+      "columns": [],
+      "actions": [
+        "edit"
+      ],
+      "surface": "publisher",
+      "store": "p-messages",
+      "permission": "publisher.messages",
+      "bulkActions": [],
+      "bulkFields": []
+    },
+    {
+      "key": "p-account",
+      "title": "账户资料",
+      "group": "订单与账户",
+      "icon": "user",
+      "path": "/publisher/account/profile/",
+      "description": "管理推广联系人、公司资料与账户安全。",
+      "kind": "settings",
+      "fields": [
+        {
+          "key": "name",
+          "label": "联系人",
+          "required": true
+        },
+        {
+          "key": "email",
+          "label": "联系邮箱",
+          "type": "email"
+        },
+        {
+          "key": "company",
+          "label": "公司名称"
+        },
+        {
+          "key": "domain",
+          "label": "推广网站",
+          "type": "url"
+        }
+      ],
+      "columns": [],
+      "actions": [
+        "edit"
+      ],
+      "surface": "publisher",
+      "store": "p-account",
+      "permission": "publisher.account",
+      "bulkActions": [],
+      "bulkFields": []
+    }
+  ],
+  "permissions": [
+    {
+      "code": "platform.overview.read",
+      "module": "overview",
+      "action": "read",
+      "group": "总览",
+      "title": "工作台"
+    },
+    {
+      "code": "platform.traffic.read",
+      "module": "traffic",
+      "action": "read",
+      "group": "数据分析",
+      "title": "流量总览"
+    },
+    {
+      "code": "platform.traffic.export",
+      "module": "traffic",
+      "action": "export",
+      "group": "数据分析",
+      "title": "流量总览"
+    },
+    {
+      "code": "platform.sources.read",
+      "module": "sources",
+      "action": "read",
+      "group": "数据分析",
+      "title": "来源分析"
+    },
+    {
+      "code": "platform.sources.export",
+      "module": "sources",
+      "action": "export",
+      "group": "数据分析",
+      "title": "来源分析"
+    },
+    {
+      "code": "platform.pages.read",
+      "module": "pages",
+      "action": "read",
+      "group": "数据分析",
+      "title": "页面分析"
+    },
+    {
+      "code": "platform.pages.export",
+      "module": "pages",
+      "action": "export",
+      "group": "数据分析",
+      "title": "页面分析"
+    },
+    {
+      "code": "platform.visitors.read",
+      "module": "visitors",
+      "action": "read",
+      "group": "数据分析",
+      "title": "访客分析"
+    },
+    {
+      "code": "platform.visitors.export",
+      "module": "visitors",
+      "action": "export",
+      "group": "数据分析",
+      "title": "访客分析"
+    },
+    {
+      "code": "platform.stations.read",
+      "module": "stations",
+      "action": "read",
+      "group": "站点与模型",
+      "title": "中转站管理"
+    },
+    {
+      "code": "platform.stations.create",
+      "module": "stations",
+      "action": "create",
+      "group": "站点与模型",
+      "title": "中转站管理"
+    },
+    {
+      "code": "platform.stations.view",
+      "module": "stations",
+      "action": "view",
+      "group": "站点与模型",
+      "title": "中转站管理"
+    },
+    {
+      "code": "platform.stations.edit",
+      "module": "stations",
+      "action": "edit",
+      "group": "站点与模型",
+      "title": "中转站管理"
+    },
+    {
+      "code": "platform.stations.delete",
+      "module": "stations",
+      "action": "delete",
+      "group": "站点与模型",
+      "title": "中转站管理"
+    },
+    {
+      "code": "platform.stations.bulkEdit",
+      "module": "stations",
+      "action": "bulkEdit",
+      "group": "站点与模型",
+      "title": "中转站管理"
+    },
+    {
+      "code": "platform.stations.bulkDelete",
+      "module": "stations",
+      "action": "bulkDelete",
+      "group": "站点与模型",
+      "title": "中转站管理"
+    },
+    {
+      "code": "platform.station-notices.read",
+      "module": "station-notices",
+      "action": "read",
+      "group": "站点与模型",
+      "title": "站点公告"
+    },
+    {
+      "code": "platform.station-notices.create",
+      "module": "station-notices",
+      "action": "create",
+      "group": "站点与模型",
+      "title": "站点公告"
+    },
+    {
+      "code": "platform.station-notices.view",
+      "module": "station-notices",
+      "action": "view",
+      "group": "站点与模型",
+      "title": "站点公告"
+    },
+    {
+      "code": "platform.station-notices.edit",
+      "module": "station-notices",
+      "action": "edit",
+      "group": "站点与模型",
+      "title": "站点公告"
+    },
+    {
+      "code": "platform.station-notices.delete",
+      "module": "station-notices",
+      "action": "delete",
+      "group": "站点与模型",
+      "title": "站点公告"
+    },
+    {
+      "code": "platform.station-notices.bulkEdit",
+      "module": "station-notices",
+      "action": "bulkEdit",
+      "group": "站点与模型",
+      "title": "站点公告"
+    },
+    {
+      "code": "platform.station-notices.bulkDelete",
+      "module": "station-notices",
+      "action": "bulkDelete",
+      "group": "站点与模型",
+      "title": "站点公告"
+    },
+    {
+      "code": "platform.categories.read",
+      "module": "categories",
+      "action": "read",
+      "group": "站点与模型",
+      "title": "分类管理"
+    },
+    {
+      "code": "platform.categories.view",
+      "module": "categories",
+      "action": "view",
+      "group": "站点与模型",
+      "title": "分类管理"
+    },
+    {
+      "code": "platform.categories.edit",
+      "module": "categories",
+      "action": "edit",
+      "group": "站点与模型",
+      "title": "分类管理"
+    },
+    {
+      "code": "platform.submissions.read",
+      "module": "submissions",
+      "action": "read",
+      "group": "站点与模型",
+      "title": "收录审核"
+    },
+    {
+      "code": "platform.submissions.view",
+      "module": "submissions",
+      "action": "view",
+      "group": "站点与模型",
+      "title": "收录审核"
+    },
+    {
+      "code": "platform.submissions.approve",
+      "module": "submissions",
+      "action": "approve",
+      "group": "站点与模型",
+      "title": "收录审核"
+    },
+    {
+      "code": "platform.submissions.reject",
+      "module": "submissions",
+      "action": "reject",
+      "group": "站点与模型",
+      "title": "收录审核"
+    },
+    {
+      "code": "platform.submissions.delete",
+      "module": "submissions",
+      "action": "delete",
+      "group": "站点与模型",
+      "title": "收录审核"
+    },
+    {
+      "code": "platform.submissions.bulkApprove",
+      "module": "submissions",
+      "action": "bulkApprove",
+      "group": "站点与模型",
+      "title": "收录审核"
+    },
+    {
+      "code": "platform.submissions.bulkReject",
+      "module": "submissions",
+      "action": "bulkReject",
+      "group": "站点与模型",
+      "title": "收录审核"
+    },
+    {
+      "code": "platform.submissions.bulkDelete",
+      "module": "submissions",
+      "action": "bulkDelete",
+      "group": "站点与模型",
+      "title": "收录审核"
+    },
+    {
+      "code": "platform.models.read",
+      "module": "models",
+      "action": "read",
+      "group": "站点与模型",
+      "title": "模型资料库"
+    },
+    {
+      "code": "platform.models.create",
+      "module": "models",
+      "action": "create",
+      "group": "站点与模型",
+      "title": "模型资料库"
+    },
+    {
+      "code": "platform.models.view",
+      "module": "models",
+      "action": "view",
+      "group": "站点与模型",
+      "title": "模型资料库"
+    },
+    {
+      "code": "platform.models.edit",
+      "module": "models",
+      "action": "edit",
+      "group": "站点与模型",
+      "title": "模型资料库"
+    },
+    {
+      "code": "platform.models.delete",
+      "module": "models",
+      "action": "delete",
+      "group": "站点与模型",
+      "title": "模型资料库"
+    },
+    {
+      "code": "platform.models.bulkEdit",
+      "module": "models",
+      "action": "bulkEdit",
+      "group": "站点与模型",
+      "title": "模型资料库"
+    },
+    {
+      "code": "platform.models.bulkDelete",
+      "module": "models",
+      "action": "bulkDelete",
+      "group": "站点与模型",
+      "title": "模型资料库"
+    },
+    {
+      "code": "platform.pricing.read",
+      "module": "pricing",
+      "action": "read",
+      "group": "站点与模型",
+      "title": "模型报价"
+    },
+    {
+      "code": "platform.pricing.create",
+      "module": "pricing",
+      "action": "create",
+      "group": "站点与模型",
+      "title": "模型报价"
+    },
+    {
+      "code": "platform.pricing.view",
+      "module": "pricing",
+      "action": "view",
+      "group": "站点与模型",
+      "title": "模型报价"
+    },
+    {
+      "code": "platform.pricing.edit",
+      "module": "pricing",
+      "action": "edit",
+      "group": "站点与模型",
+      "title": "模型报价"
+    },
+    {
+      "code": "platform.pricing.delete",
+      "module": "pricing",
+      "action": "delete",
+      "group": "站点与模型",
+      "title": "模型报价"
+    },
+    {
+      "code": "platform.pricing.bulkEdit",
+      "module": "pricing",
+      "action": "bulkEdit",
+      "group": "站点与模型",
+      "title": "模型报价"
+    },
+    {
+      "code": "platform.pricing.bulkDelete",
+      "module": "pricing",
+      "action": "bulkDelete",
+      "group": "站点与模型",
+      "title": "模型报价"
+    },
+    {
+      "code": "platform.plans.read",
+      "module": "plans",
+      "action": "read",
+      "group": "中转站测试",
+      "title": "测试计划"
+    },
+    {
+      "code": "platform.plans.create",
+      "module": "plans",
+      "action": "create",
+      "group": "中转站测试",
+      "title": "测试计划"
+    },
+    {
+      "code": "platform.plans.view",
+      "module": "plans",
+      "action": "view",
+      "group": "中转站测试",
+      "title": "测试计划"
+    },
+    {
+      "code": "platform.plans.edit",
+      "module": "plans",
+      "action": "edit",
+      "group": "中转站测试",
+      "title": "测试计划"
+    },
+    {
+      "code": "platform.plans.delete",
+      "module": "plans",
+      "action": "delete",
+      "group": "中转站测试",
+      "title": "测试计划"
+    },
+    {
+      "code": "platform.plans.run",
+      "module": "plans",
+      "action": "run",
+      "group": "中转站测试",
+      "title": "测试计划"
+    },
+    {
+      "code": "platform.plans.pause",
+      "module": "plans",
+      "action": "pause",
+      "group": "中转站测试",
+      "title": "测试计划"
+    },
+    {
+      "code": "platform.plans.bulkEdit",
+      "module": "plans",
+      "action": "bulkEdit",
+      "group": "中转站测试",
+      "title": "测试计划"
+    },
+    {
+      "code": "platform.plans.bulkDelete",
+      "module": "plans",
+      "action": "bulkDelete",
+      "group": "中转站测试",
+      "title": "测试计划"
+    },
+    {
+      "code": "platform.plans.bulkRun",
+      "module": "plans",
+      "action": "bulkRun",
+      "group": "中转站测试",
+      "title": "测试计划"
+    },
+    {
+      "code": "platform.plans.bulkPause",
+      "module": "plans",
+      "action": "bulkPause",
+      "group": "中转站测试",
+      "title": "测试计划"
+    },
+    {
+      "code": "platform.executions.read",
+      "module": "executions",
+      "action": "read",
+      "group": "中转站测试",
+      "title": "执行中心"
+    },
+    {
+      "code": "platform.executions.view",
+      "module": "executions",
+      "action": "view",
+      "group": "中转站测试",
+      "title": "执行中心"
+    },
+    {
+      "code": "platform.executions.run",
+      "module": "executions",
+      "action": "run",
+      "group": "中转站测试",
+      "title": "执行中心"
+    },
+    {
+      "code": "platform.executions.cancel",
+      "module": "executions",
+      "action": "cancel",
+      "group": "中转站测试",
+      "title": "执行中心"
+    },
+    {
+      "code": "platform.executions.retry",
+      "module": "executions",
+      "action": "retry",
+      "group": "中转站测试",
+      "title": "执行中心"
+    },
+    {
+      "code": "platform.executions.export",
+      "module": "executions",
+      "action": "export",
+      "group": "中转站测试",
+      "title": "执行中心"
+    },
+    {
+      "code": "platform.executions.bulkCancel",
+      "module": "executions",
+      "action": "bulkCancel",
+      "group": "中转站测试",
+      "title": "执行中心"
+    },
+    {
+      "code": "platform.executions.bulkRetry",
+      "module": "executions",
+      "action": "bulkRetry",
+      "group": "中转站测试",
+      "title": "执行中心"
+    },
+    {
+      "code": "platform.reports.read",
+      "module": "reports",
+      "action": "read",
+      "group": "中转站测试",
+      "title": "测试报告"
+    },
+    {
+      "code": "platform.reports.view",
+      "module": "reports",
+      "action": "view",
+      "group": "中转站测试",
+      "title": "测试报告"
+    },
+    {
+      "code": "platform.reports.delete",
+      "module": "reports",
+      "action": "delete",
+      "group": "中转站测试",
+      "title": "测试报告"
+    },
+    {
+      "code": "platform.reports.export",
+      "module": "reports",
+      "action": "export",
+      "group": "中转站测试",
+      "title": "测试报告"
+    },
+    {
+      "code": "platform.reports.approve",
+      "module": "reports",
+      "action": "approve",
+      "group": "中转站测试",
+      "title": "测试报告"
+    },
+    {
+      "code": "platform.reports.reject",
+      "module": "reports",
+      "action": "reject",
+      "group": "中转站测试",
+      "title": "测试报告"
+    },
+    {
+      "code": "platform.reports.share",
+      "module": "reports",
+      "action": "share",
+      "group": "中转站测试",
+      "title": "测试报告"
+    },
+    {
+      "code": "platform.reports.bulkApprove",
+      "module": "reports",
+      "action": "bulkApprove",
+      "group": "中转站测试",
+      "title": "测试报告"
+    },
+    {
+      "code": "platform.reports.bulkReject",
+      "module": "reports",
+      "action": "bulkReject",
+      "group": "中转站测试",
+      "title": "测试报告"
+    },
+    {
+      "code": "platform.reports.bulkDelete",
+      "module": "reports",
+      "action": "bulkDelete",
+      "group": "中转站测试",
+      "title": "测试报告"
+    },
+    {
+      "code": "platform.test-keys.read",
+      "module": "test-keys",
+      "action": "read",
+      "group": "中转站测试",
+      "title": "API Key"
+    },
+    {
+      "code": "platform.test-keys.create",
+      "module": "test-keys",
+      "action": "create",
+      "group": "中转站测试",
+      "title": "API Key"
+    },
+    {
+      "code": "platform.test-keys.view",
+      "module": "test-keys",
+      "action": "view",
+      "group": "中转站测试",
+      "title": "API Key"
+    },
+    {
+      "code": "platform.test-keys.edit",
+      "module": "test-keys",
+      "action": "edit",
+      "group": "中转站测试",
+      "title": "API Key"
+    },
+    {
+      "code": "platform.test-keys.delete",
+      "module": "test-keys",
+      "action": "delete",
+      "group": "中转站测试",
+      "title": "API Key"
+    },
+    {
+      "code": "platform.test-keys.bulkEdit",
+      "module": "test-keys",
+      "action": "bulkEdit",
+      "group": "中转站测试",
+      "title": "API Key"
+    },
+    {
+      "code": "platform.test-keys.bulkDelete",
+      "module": "test-keys",
+      "action": "bulkDelete",
+      "group": "中转站测试",
+      "title": "API Key"
+    },
+    {
+      "code": "platform.test-keys.discover",
+      "module": "test-keys",
+      "action": "discover",
+      "group": "中转站测试",
+      "title": "API Key"
+    },
+    {
+      "code": "platform.probe-accounts.read",
+      "module": "probe-accounts",
+      "action": "read",
+      "group": "中转站测试",
+      "title": "探测账号"
+    },
+    {
+      "code": "platform.probe-accounts.create",
+      "module": "probe-accounts",
+      "action": "create",
+      "group": "中转站测试",
+      "title": "探测账号"
+    },
+    {
+      "code": "platform.probe-accounts.view",
+      "module": "probe-accounts",
+      "action": "view",
+      "group": "中转站测试",
+      "title": "探测账号"
+    },
+    {
+      "code": "platform.probe-accounts.edit",
+      "module": "probe-accounts",
+      "action": "edit",
+      "group": "中转站测试",
+      "title": "探测账号"
+    },
+    {
+      "code": "platform.probe-accounts.delete",
+      "module": "probe-accounts",
+      "action": "delete",
+      "group": "中转站测试",
+      "title": "探测账号"
+    },
+    {
+      "code": "platform.probe-accounts.bulkEdit",
+      "module": "probe-accounts",
+      "action": "bulkEdit",
+      "group": "中转站测试",
+      "title": "探测账号"
+    },
+    {
+      "code": "platform.probe-accounts.bulkDelete",
+      "module": "probe-accounts",
+      "action": "bulkDelete",
+      "group": "中转站测试",
+      "title": "探测账号"
+    },
+    {
+      "code": "platform.test-trends.read",
+      "module": "test-trends",
+      "action": "read",
+      "group": "中转站测试",
+      "title": "历史趋势"
+    },
+    {
+      "code": "platform.test-trends.export",
+      "module": "test-trends",
+      "action": "export",
+      "group": "中转站测试",
+      "title": "历史趋势"
+    },
+    {
+      "code": "platform.test-alerts.read",
+      "module": "test-alerts",
+      "action": "read",
+      "group": "中转站测试",
+      "title": "测试告警"
+    },
+    {
+      "code": "platform.test-alerts.create",
+      "module": "test-alerts",
+      "action": "create",
+      "group": "中转站测试",
+      "title": "测试告警"
+    },
+    {
+      "code": "platform.test-alerts.view",
+      "module": "test-alerts",
+      "action": "view",
+      "group": "中转站测试",
+      "title": "测试告警"
+    },
+    {
+      "code": "platform.test-alerts.edit",
+      "module": "test-alerts",
+      "action": "edit",
+      "group": "中转站测试",
+      "title": "测试告警"
+    },
+    {
+      "code": "platform.test-alerts.delete",
+      "module": "test-alerts",
+      "action": "delete",
+      "group": "中转站测试",
+      "title": "测试告警"
+    },
+    {
+      "code": "platform.test-alerts.pause",
+      "module": "test-alerts",
+      "action": "pause",
+      "group": "中转站测试",
+      "title": "测试告警"
+    },
+    {
+      "code": "platform.test-alerts.acknowledge",
+      "module": "test-alerts",
+      "action": "acknowledge",
+      "group": "中转站测试",
+      "title": "测试告警"
+    },
+    {
+      "code": "platform.test-alerts.resolve",
+      "module": "test-alerts",
+      "action": "resolve",
+      "group": "中转站测试",
+      "title": "测试告警"
+    },
+    {
+      "code": "platform.test-alerts.bulkEdit",
+      "module": "test-alerts",
+      "action": "bulkEdit",
+      "group": "中转站测试",
+      "title": "测试告警"
+    },
+    {
+      "code": "platform.test-alerts.bulkDelete",
+      "module": "test-alerts",
+      "action": "bulkDelete",
+      "group": "中转站测试",
+      "title": "测试告警"
+    },
+    {
+      "code": "platform.test-alerts.bulkPause",
+      "module": "test-alerts",
+      "action": "bulkPause",
+      "group": "中转站测试",
+      "title": "测试告警"
+    },
+    {
+      "code": "platform.test-alerts.bulkAcknowledge",
+      "module": "test-alerts",
+      "action": "bulkAcknowledge",
+      "group": "中转站测试",
+      "title": "测试告警"
+    },
+    {
+      "code": "platform.test-alerts.bulkResolve",
+      "module": "test-alerts",
+      "action": "bulkResolve",
+      "group": "中转站测试",
+      "title": "测试告警"
+    },
+    {
+      "code": "platform.campaigns.read",
+      "module": "campaigns",
+      "action": "read",
+      "group": "广告与财务",
+      "title": "广告管理"
+    },
+    {
+      "code": "platform.campaigns.create",
+      "module": "campaigns",
+      "action": "create",
+      "group": "广告与财务",
+      "title": "广告管理"
+    },
+    {
+      "code": "platform.campaigns.view",
+      "module": "campaigns",
+      "action": "view",
+      "group": "广告与财务",
+      "title": "广告管理"
+    },
+    {
+      "code": "platform.campaigns.edit",
+      "module": "campaigns",
+      "action": "edit",
+      "group": "广告与财务",
+      "title": "广告管理"
+    },
+    {
+      "code": "platform.campaigns.delete",
+      "module": "campaigns",
+      "action": "delete",
+      "group": "广告与财务",
+      "title": "广告管理"
+    },
+    {
+      "code": "platform.campaigns.bulkEdit",
+      "module": "campaigns",
+      "action": "bulkEdit",
+      "group": "广告与财务",
+      "title": "广告管理"
+    },
+    {
+      "code": "platform.campaigns.bulkDelete",
+      "module": "campaigns",
+      "action": "bulkDelete",
+      "group": "广告与财务",
+      "title": "广告管理"
+    },
+    {
+      "code": "platform.placements.read",
+      "module": "placements",
+      "action": "read",
+      "group": "广告与财务",
+      "title": "广告位管理"
+    },
+    {
+      "code": "platform.placements.create",
+      "module": "placements",
+      "action": "create",
+      "group": "广告与财务",
+      "title": "广告位管理"
+    },
+    {
+      "code": "platform.placements.view",
+      "module": "placements",
+      "action": "view",
+      "group": "广告与财务",
+      "title": "广告位管理"
+    },
+    {
+      "code": "platform.placements.edit",
+      "module": "placements",
+      "action": "edit",
+      "group": "广告与财务",
+      "title": "广告位管理"
+    },
+    {
+      "code": "platform.placements.delete",
+      "module": "placements",
+      "action": "delete",
+      "group": "广告与财务",
+      "title": "广告位管理"
+    },
+    {
+      "code": "platform.placements.bulkEdit",
+      "module": "placements",
+      "action": "bulkEdit",
+      "group": "广告与财务",
+      "title": "广告位管理"
+    },
+    {
+      "code": "platform.placements.bulkDelete",
+      "module": "placements",
+      "action": "bulkDelete",
+      "group": "广告与财务",
+      "title": "广告位管理"
+    },
+    {
+      "code": "platform.adreview.read",
+      "module": "adreview",
+      "action": "read",
+      "group": "广告与财务",
+      "title": "广告审核"
+    },
+    {
+      "code": "platform.adreview.view",
+      "module": "adreview",
+      "action": "view",
+      "group": "广告与财务",
+      "title": "广告审核"
+    },
+    {
+      "code": "platform.adreview.approve",
+      "module": "adreview",
+      "action": "approve",
+      "group": "广告与财务",
+      "title": "广告审核"
+    },
+    {
+      "code": "platform.adreview.reject",
+      "module": "adreview",
+      "action": "reject",
+      "group": "广告与财务",
+      "title": "广告审核"
+    },
+    {
+      "code": "platform.adreview.bulkApprove",
+      "module": "adreview",
+      "action": "bulkApprove",
+      "group": "广告与财务",
+      "title": "广告审核"
+    },
+    {
+      "code": "platform.adreview.bulkReject",
+      "module": "adreview",
+      "action": "bulkReject",
+      "group": "广告与财务",
+      "title": "广告审核"
+    },
+    {
+      "code": "platform.adstats.read",
+      "module": "adstats",
+      "action": "read",
+      "group": "广告与财务",
+      "title": "广告效果"
+    },
+    {
+      "code": "platform.adstats.export",
+      "module": "adstats",
+      "action": "export",
+      "group": "广告与财务",
+      "title": "广告效果"
+    },
+    {
+      "code": "platform.orders.read",
+      "module": "orders",
+      "action": "read",
+      "group": "广告与财务",
+      "title": "订单管理"
+    },
+    {
+      "code": "platform.orders.view",
+      "module": "orders",
+      "action": "view",
+      "group": "广告与财务",
+      "title": "订单管理"
+    },
+    {
+      "code": "platform.orders.export",
+      "module": "orders",
+      "action": "export",
+      "group": "广告与财务",
+      "title": "订单管理"
+    },
+    {
+      "code": "platform.users.read",
+      "module": "users",
+      "action": "read",
+      "group": "用户与权限",
+      "title": "用户管理"
+    },
+    {
+      "code": "platform.users.create",
+      "module": "users",
+      "action": "create",
+      "group": "用户与权限",
+      "title": "用户管理"
+    },
+    {
+      "code": "platform.users.view",
+      "module": "users",
+      "action": "view",
+      "group": "用户与权限",
+      "title": "用户管理"
+    },
+    {
+      "code": "platform.users.edit",
+      "module": "users",
+      "action": "edit",
+      "group": "用户与权限",
+      "title": "用户管理"
+    },
+    {
+      "code": "platform.users.delete",
+      "module": "users",
+      "action": "delete",
+      "group": "用户与权限",
+      "title": "用户管理"
+    },
+    {
+      "code": "platform.users.bulkEdit",
+      "module": "users",
+      "action": "bulkEdit",
+      "group": "用户与权限",
+      "title": "用户管理"
+    },
+    {
+      "code": "platform.users.bulkDelete",
+      "module": "users",
+      "action": "bulkDelete",
+      "group": "用户与权限",
+      "title": "用户管理"
+    },
+    {
+      "code": "platform.publishers.read",
+      "module": "publishers",
+      "action": "read",
+      "group": "用户与权限",
+      "title": "站长账户"
+    },
+    {
+      "code": "platform.publishers.create",
+      "module": "publishers",
+      "action": "create",
+      "group": "用户与权限",
+      "title": "站长账户"
+    },
+    {
+      "code": "platform.publishers.view",
+      "module": "publishers",
+      "action": "view",
+      "group": "用户与权限",
+      "title": "站长账户"
+    },
+    {
+      "code": "platform.publishers.edit",
+      "module": "publishers",
+      "action": "edit",
+      "group": "用户与权限",
+      "title": "站长账户"
+    },
+    {
+      "code": "platform.publishers.delete",
+      "module": "publishers",
+      "action": "delete",
+      "group": "用户与权限",
+      "title": "站长账户"
+    },
+    {
+      "code": "platform.publishers.bulkEdit",
+      "module": "publishers",
+      "action": "bulkEdit",
+      "group": "用户与权限",
+      "title": "站长账户"
+    },
+    {
+      "code": "platform.publishers.bulkDelete",
+      "module": "publishers",
+      "action": "bulkDelete",
+      "group": "用户与权限",
+      "title": "站长账户"
+    },
+    {
+      "code": "platform.roles.read",
+      "module": "roles",
+      "action": "read",
+      "group": "用户与权限",
+      "title": "角色管理"
+    },
+    {
+      "code": "platform.roles.create",
+      "module": "roles",
+      "action": "create",
+      "group": "用户与权限",
+      "title": "角色管理"
+    },
+    {
+      "code": "platform.roles.view",
+      "module": "roles",
+      "action": "view",
+      "group": "用户与权限",
+      "title": "角色管理"
+    },
+    {
+      "code": "platform.roles.edit",
+      "module": "roles",
+      "action": "edit",
+      "group": "用户与权限",
+      "title": "角色管理"
+    },
+    {
+      "code": "platform.roles.delete",
+      "module": "roles",
+      "action": "delete",
+      "group": "用户与权限",
+      "title": "角色管理"
+    },
+    {
+      "code": "platform.menus.read",
+      "module": "menus",
+      "action": "read",
+      "group": "用户与权限",
+      "title": "菜单管理"
+    },
+    {
+      "code": "platform.menus.create",
+      "module": "menus",
+      "action": "create",
+      "group": "用户与权限",
+      "title": "菜单管理"
+    },
+    {
+      "code": "platform.menus.view",
+      "module": "menus",
+      "action": "view",
+      "group": "用户与权限",
+      "title": "菜单管理"
+    },
+    {
+      "code": "platform.menus.edit",
+      "module": "menus",
+      "action": "edit",
+      "group": "用户与权限",
+      "title": "菜单管理"
+    },
+    {
+      "code": "platform.menus.delete",
+      "module": "menus",
+      "action": "delete",
+      "group": "用户与权限",
+      "title": "菜单管理"
+    },
+    {
+      "code": "platform.audit.read",
+      "module": "audit",
+      "action": "read",
+      "group": "用户与权限",
+      "title": "操作日志"
+    },
+    {
+      "code": "platform.audit.view",
+      "module": "audit",
+      "action": "view",
+      "group": "用户与权限",
+      "title": "操作日志"
+    },
+    {
+      "code": "platform.audit.export",
+      "module": "audit",
+      "action": "export",
+      "group": "用户与权限",
+      "title": "操作日志"
+    },
+    {
+      "code": "platform.articles.read",
+      "module": "articles",
+      "action": "read",
+      "group": "内容与系统",
+      "title": "内容管理"
+    },
+    {
+      "code": "platform.articles.create",
+      "module": "articles",
+      "action": "create",
+      "group": "内容与系统",
+      "title": "内容管理"
+    },
+    {
+      "code": "platform.articles.view",
+      "module": "articles",
+      "action": "view",
+      "group": "内容与系统",
+      "title": "内容管理"
+    },
+    {
+      "code": "platform.articles.edit",
+      "module": "articles",
+      "action": "edit",
+      "group": "内容与系统",
+      "title": "内容管理"
+    },
+    {
+      "code": "platform.articles.delete",
+      "module": "articles",
+      "action": "delete",
+      "group": "内容与系统",
+      "title": "内容管理"
+    },
+    {
+      "code": "platform.articles.bulkEdit",
+      "module": "articles",
+      "action": "bulkEdit",
+      "group": "内容与系统",
+      "title": "内容管理"
+    },
+    {
+      "code": "platform.articles.bulkDelete",
+      "module": "articles",
+      "action": "bulkDelete",
+      "group": "内容与系统",
+      "title": "内容管理"
+    },
+    {
+      "code": "platform.seo.read",
+      "module": "seo",
+      "action": "read",
+      "group": "内容与系统",
+      "title": "SEO 设置"
+    },
+    {
+      "code": "platform.seo.edit",
+      "module": "seo",
+      "action": "edit",
+      "group": "内容与系统",
+      "title": "SEO 设置"
+    },
+    {
+      "code": "platform.resources.read",
+      "module": "resources",
+      "action": "read",
+      "group": "内容与系统",
+      "title": "开发者资源"
+    },
+    {
+      "code": "platform.resources.create",
+      "module": "resources",
+      "action": "create",
+      "group": "内容与系统",
+      "title": "开发者资源"
+    },
+    {
+      "code": "platform.resources.view",
+      "module": "resources",
+      "action": "view",
+      "group": "内容与系统",
+      "title": "开发者资源"
+    },
+    {
+      "code": "platform.resources.edit",
+      "module": "resources",
+      "action": "edit",
+      "group": "内容与系统",
+      "title": "开发者资源"
+    },
+    {
+      "code": "platform.resources.delete",
+      "module": "resources",
+      "action": "delete",
+      "group": "内容与系统",
+      "title": "开发者资源"
+    },
+    {
+      "code": "platform.resources.bulkEdit",
+      "module": "resources",
+      "action": "bulkEdit",
+      "group": "内容与系统",
+      "title": "开发者资源"
+    },
+    {
+      "code": "platform.resources.bulkDelete",
+      "module": "resources",
+      "action": "bulkDelete",
+      "group": "内容与系统",
+      "title": "开发者资源"
+    },
+    {
+      "code": "platform.settings.read",
+      "module": "settings",
+      "action": "read",
+      "group": "内容与系统",
+      "title": "系统设置"
+    },
+    {
+      "code": "platform.settings.edit",
+      "module": "settings",
+      "action": "edit",
+      "group": "内容与系统",
+      "title": "系统设置"
+    },
+    {
+      "code": "publisher.overview.read",
+      "module": "p-overview",
+      "action": "read",
+      "group": "推广工作区",
+      "title": "工作台"
+    },
+    {
+      "code": "publisher.traffic.read",
+      "module": "p-traffic",
+      "action": "read",
+      "group": "推广数据",
+      "title": "流量总览"
+    },
+    {
+      "code": "publisher.traffic.export",
+      "module": "p-traffic",
+      "action": "export",
+      "group": "推广数据",
+      "title": "流量总览"
+    },
+    {
+      "code": "publisher.placements.read",
+      "module": "p-placements",
+      "action": "read",
+      "group": "推广数据",
+      "title": "广告位分析"
+    },
+    {
+      "code": "publisher.placements.export",
+      "module": "p-placements",
+      "action": "export",
+      "group": "推广数据",
+      "title": "广告位分析"
+    },
+    {
+      "code": "publisher.clicks.read",
+      "module": "p-clicks",
+      "action": "read",
+      "group": "推广数据",
+      "title": "点击明细"
+    },
+    {
+      "code": "publisher.clicks.export",
+      "module": "p-clicks",
+      "action": "export",
+      "group": "推广数据",
+      "title": "点击明细"
+    },
+    {
+      "code": "publisher.store.read",
+      "module": "p-store",
+      "action": "read",
+      "group": "推广管理",
+      "title": "广告位与投放"
+    },
+    {
+      "code": "publisher.store.create",
+      "module": "p-store",
+      "action": "create",
+      "group": "推广管理",
+      "title": "广告位与投放"
+    },
+    {
+      "code": "publisher.campaigns.read",
+      "module": "p-campaigns",
+      "action": "read",
+      "group": "推广管理",
+      "title": "我的广告"
+    },
+    {
+      "code": "publisher.campaigns.create",
+      "module": "p-campaigns",
+      "action": "create",
+      "group": "推广管理",
+      "title": "我的广告"
+    },
+    {
+      "code": "publisher.campaigns.view",
+      "module": "p-campaigns",
+      "action": "view",
+      "group": "推广管理",
+      "title": "我的广告"
+    },
+    {
+      "code": "publisher.campaigns.edit",
+      "module": "p-campaigns",
+      "action": "edit",
+      "group": "推广管理",
+      "title": "我的广告"
+    },
+    {
+      "code": "publisher.campaigns.delete",
+      "module": "p-campaigns",
+      "action": "delete",
+      "group": "推广管理",
+      "title": "我的广告"
+    },
+    {
+      "code": "publisher.campaigns.bulkDelete",
+      "module": "p-campaigns",
+      "action": "bulkDelete",
+      "group": "推广管理",
+      "title": "我的广告"
+    },
+    {
+      "code": "publisher.orders.read",
+      "module": "p-orders",
+      "action": "read",
+      "group": "订单与账户",
+      "title": "订单与账单"
+    },
+    {
+      "code": "publisher.orders.view",
+      "module": "p-orders",
+      "action": "view",
+      "group": "订单与账户",
+      "title": "订单与账单"
+    },
+    {
+      "code": "publisher.orders.export",
+      "module": "p-orders",
+      "action": "export",
+      "group": "订单与账户",
+      "title": "订单与账单"
+    },
+    {
+      "code": "publisher.orders.pay",
+      "module": "p-orders",
+      "action": "pay",
+      "group": "订单与账户",
+      "title": "订单与账单"
+    },
+    {
+      "code": "publisher.messages.read",
+      "module": "p-messages",
+      "action": "read",
+      "group": "订单与账户",
+      "title": "消息中心"
+    },
+    {
+      "code": "publisher.messages.edit",
+      "module": "p-messages",
+      "action": "edit",
+      "group": "订单与账户",
+      "title": "消息中心"
+    },
+    {
+      "code": "publisher.account.read",
+      "module": "p-account",
+      "action": "read",
+      "group": "订单与账户",
+      "title": "账户资料"
+    },
+    {
+      "code": "publisher.account.edit",
+      "module": "p-account",
+      "action": "edit",
+      "group": "订单与账户",
+      "title": "账户资料"
+    }
+  ],
+  "actions": {
+    "bulkEdit": "批量修改",
+    "bulkDelete": "批量删除",
+    "bulkApprove": "批量通过",
+    "bulkReject": "批量驳回",
+    "bulkRun": "批量运行",
+    "bulkPause": "批量启停",
+    "bulkCancel": "批量取消",
+    "bulkRetry": "批量重试",
+    "bulkAcknowledge": "批量确认",
+    "bulkResolve": "批量解决",
+    "read": "查看",
+    "view": "详情",
+    "create": "新增",
+    "edit": "编辑",
+    "delete": "删除",
+    "export": "导出",
+    "approve": "通过",
+    "reject": "驳回",
+    "pay": "付款",
+    "run": "运行",
+    "pause": "启停",
+    "cancel": "取消执行",
+    "retry": "重试",
+    "acknowledge": "确认告警",
+    "resolve": "解决",
+    "share": "分享"
+  }
+}

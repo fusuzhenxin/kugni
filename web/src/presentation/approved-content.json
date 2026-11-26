@@ -1,0 +1,1097 @@
+{
+  "config": {
+    "name": "KUGNI",
+    "url": "https://www.kugni.com",
+    "language": "zh-CN",
+    "contact": {
+      "email": "liyifeng900@gmail.com",
+      "qq": "2201219073",
+      "telegram": "https://t.me/asAnnie1",
+      "telegramName": "@asAnnie1",
+      "github": "https://github.com/fusuzhenxin",
+      "rss": "/feed.xml"
+    },
+    "categories": [
+      {
+        "name": "公益站",
+        "slug": "public",
+        "icon": "categoryCare",
+        "tone": "green",
+        "title": "公益 API 中转站",
+        "description": "查找公开标注为公益服务的 API 中转站，了解支持模型、免费额度与接入方式。使用前请核对站点的配额、限流及服务期限；公益服务不等于无限或长期免费。"
+      },
+      {
+        "name": "企业稳定站",
+        "slug": "enterprise",
+        "icon": "categoryEnterprise",
+        "tone": "blue",
+        "title": "企业 API 中转站",
+        "description": "查看公开资料中面向企业使用的 API 中转站，比较模型覆盖、支付方式、开票与服务政策。分类沿用来源标签，不代表本站对稳定性或服务质量的认证。"
+      },
+      {
+        "name": "新站上榜",
+        "slug": "new",
+        "icon": "categoryRocket",
+        "tone": "amber",
+        "title": "新上榜 API 中转站",
+        "description": "浏览公开来源标注为新站上榜的 API 服务商，了解模型支持、公开报价与接入信息。标签来自资料快照，不代表今日新增；新站的服务与政策仍需进一步核实。"
+      },
+      {
+        "name": "新用户赠额",
+        "slug": "bonus",
+        "icon": "categoryBonus",
+        "tone": "purple",
+        "title": "新用户赠额 API 中转站",
+        "description": "寻找公开资料中提供新用户赠额的 API 中转站，对照领取条件、适用模型和充值政策。赠额与活动可能调整，请以前往站点时的最新说明为准。"
+      }
+    ],
+    "assistants": [
+      ["ChatGPT", "GPT", "https://chatgpt.com/?q="],
+      ["Claude", "Claude", "https://claude.ai/new?q="],
+      ["Gemini", "Gemini", "https://www.google.com/search?udm=50&q="],
+      ["Perplexity", "Perplexity", "https://www.perplexity.ai/search?q="],
+      ["Grok", "Grok", "https://grok.com/?q="]
+    ],
+    "sourceDate": "2026-11-12",
+    "contentDate": "2026-11-24"
+  },
+  "pages": {
+    "/": {
+      "title": "API 中转站导航与排行：模型覆盖、价格和检测",
+      "description": "KUGNI 汇总 AI API 中转站公开资料，按模型生态、支付方式与服务类型筛选，对照来源可用率、延迟和公开报价，了解检测方法与接入流程。",
+      "keywords": ["API中转站", "AI API导航", "中转站排行", "模型价格对比"],
+      "faq": []
+    },
+    "/sites": {
+      "title": "API 中转站列表：模型、支付与公开服务信息",
+      "description": "汇总 AI API 中转站的公开服务资料，按服务类型、模型生态与支付方式查找站点，比较模型覆盖、公开报价和来源监测指标。资料为有日期的来源快照，接入或充值前请核对站点最新说明。",
+      "keywords": ["API服务商", "中转站列表", "公益API", "国内支付"],
+      "faq": [
+        [
+          "列表按什么顺序展示？",
+          "默认顺序沿用公开来源快照中的收录顺序，可以切换延迟、可用率或模型数量排序。没有足够的独立测试数据时，不将来源顺序解释为本站质量评分。"
+        ],
+        [
+          "最低倍率就是最终调用价格吗？",
+          "最低倍率是公开模型分组里可识别倍率的最小值，只适用于对应模型与分组。实际账单还受到输入、输出、缓存、计费单位与渠道加价影响。"
+        ]
+      ]
+    },
+    "/models": {
+      "title": "大模型资料库：能力、上下文与 API 服务发现",
+      "description": "浏览 OpenAI、Claude、Gemini、DeepSeek 等模型生态，按输入类型和能力筛选模型资料，并查看收录服务商与公开报价入口。",
+      "keywords": [
+        "大模型资料库",
+        "OpenAI模型",
+        "Claude模型",
+        "Gemini模型",
+        "DeepSeek模型"
+      ],
+      "faq": [
+        [
+          "模型资料和服务商支持有什么区别？",
+          "模型资料描述模型本身的能力；服务商覆盖表示其公开资料中列出了相关生态或型号。覆盖记录不保证接口当前可用，具体型号和权限仍需向服务商确认。"
+        ],
+        [
+          "如何比较同一个模型的报价？",
+          "到价格对比页选择完全相同的模型 ID，并核对计费单位和输入、输出等字段。名称相近的型号、不同缓存规则和不同分组不应直接当作同一报价。"
+        ]
+      ]
+    },
+    "/prices": {
+      "title": "模型 API 价格对比：预算购买力与自定义用量",
+      "description": "对照同型号模型的服务商公开报价；按预算和使用场景比较参考 Token 用量，或自定义输入、输出、每月调用及缓存命中率估算费用。计算演示使用明确标注的虚构报价。",
+      "keywords": [
+        "API价格对比",
+        "模型报价",
+        "预算购买力",
+        "Token成本",
+        "自定义用量",
+        "缓存计费"
+      ],
+      "faq": [
+        [
+          "按预算比较和自定义用量有什么区别？",
+          "按预算比较使用相同金额与相同场景输入输出比例，展示各渠道可购的参考 Token 用量；自定义用量按用户填写的每次输入、输出、每月调用次数和缓存命中率估算月费。两种方式可以切换，已填写的数值会在本次浏览中保留。"
+        ],
+        [
+          "预算结果能表示实际可对话多少次吗？",
+          "不能。实际对话受上下文长度、模型输出和计费规则影响。预算结果仅表示固定场景比例下的参考购买力，缓存是输入用量的一部分，不重复计入总 Token 数。"
+        ],
+        [
+          "效果演示中的价格可以直接购买吗？",
+          "不可以。效果演示里的服务商、渠道和价格均为虚构，用于说明成本计算和比较方式；公开快照模式才展示来源记录，且仍需要核对计费单位和最新公示。"
+        ],
+        [
+          "报价缺失或单位不明确怎么办？",
+          "缺失字段以未公开或单位待核对显示，不按零价格计算。请查看站点详情或服务商原始价格页，确认同型号、同单位后再比较。"
+        ]
+      ]
+    },
+    "/coding-plans": {
+      "title": "编程套餐对比：额度、工具与订阅方式",
+      "description": "比较编程套餐的额度类型、可用工具、重置规则与示例月价，了解订阅方案和按量 API 的区别，避免将不同计费方式直接混算。",
+      "keywords": ["编程套餐", "Coding Plan", "AI编程订阅", "额度对比"],
+      "faq": [
+        [
+          "订阅套餐和 API 按量计费可以直接比较吗？",
+          "应先确认套餐允许的工具、时间窗口、调用限制和额度重置方式，再结合自己的使用频率估算。按月费用不代表不限量，套餐额度也不等于可自由调用的 API 余额。"
+        ],
+        [
+          "页面上的套餐数据是正式报价吗？",
+          "当前套餐页面用于展示筛选和比较流程，示例月价不构成购买建议。购买前请核对服务商当前公开的套餐说明、适用模型和退款规则。"
+        ]
+      ]
+    },
+    "/check": {
+      "title": "中转站检测：接口连接与兼容性检查",
+      "description": "了解 OpenAI 兼容接口的基础检测项目，配置接口地址、示例密钥和模型，体验连接、流式输出、格式与错误处理的本地模拟报告。",
+      "keywords": ["中转站检测", "API连通性测试", "OpenAI兼容接口", "模型检测"],
+      "faq": [
+        [
+          "基础检测会检查哪些项目？",
+          "页面将连接与协议、响应一致性、上下文与指令、格式和错误处理分组展示。当前运行的是本地模拟，用来检查配置与报告流程，不会向填写的地址发送请求。"
+        ],
+        [
+          "填写的 API Key 会被保存吗？",
+          "不会。现有演示只在提交时读取示例密钥，随后清空输入，不写入本地存储、地址栏、导出文件或报告。请使用示例密钥，不要提交生产密钥。"
+        ],
+        [
+          "基础测试通过就能证明模型真实吗？",
+          "不能。接口连通和格式兼容只说明特定请求的表现；模型身份需要可信上游记录及更多独立证据，单次回答或模型自报名称都不足以证明。"
+        ]
+      ]
+    },
+    "/check/candy": {
+      "title": "糖果测试：逻辑题、正确率与分项结果",
+      "description": "使用 20 道原创选择题了解模型在迷惑辨析、数量关系、约束求解和演绎推理中的表现，选择题量并查看逐题答案与解释的本地演示。",
+      "keywords": ["糖果测试", "模型逻辑测试", "推理能力测试", "降智检测"],
+      "faq": [
+        [
+          "糖果测试测什么？",
+          "题库由 20 道原创选择题组成，分为迷惑辨析、数量关系、约束求解、演绎推理四类。可以选 5、10、15 或 20 道，查看总分、正确率、分项得分与逐题解释。"
+        ],
+        [
+          "这能证明中转站降智吗？",
+          "不能。即便接入真实调用，单次固定题库结果也只反映当前模型、参数与题目条件下的表现，不能证明整个服务商的上游身份或长期质量。当前结果为本地演示。"
+        ],
+        [
+          "可以选择题量和复核答案吗？",
+          "可以选择 5、10、15 或 20 道题。报告逐题列出选项、示例答案、参考答案和解释，方便复核；各类别按照本次实际抽取题数计算正确率。"
+        ],
+        [
+          "如何分享或再次查看报告？",
+          "报告支持错题筛选、答题导航、下载 JSON、生成海报、复制图片和结果链接。链接与海报二维码携带精简结果，可在能访问该网址的浏览器中打开；本机最近 20 份专项记录也可在检测记录中回看。分享不包含接口地址、API Key 或原始回答。"
+        ]
+      ]
+    },
+    "/check/fingerprint": {
+      "title": "模型指纹测试：数字样本与独立模型对照",
+      "description": "通过三道数字题采样，对照经过独立校准的可信模型基线，展示数字统计、候选相似度和距离；结果不构成官方身份认证。",
+      "keywords": [
+        "模型指纹测试",
+        "数字指纹",
+        "模型身份检测",
+        "GPT指纹",
+        "Claude指纹"
+      ],
+      "faq": [
+        [
+          "模型指纹测试如何工作？",
+          "每道题独立采样，比较数字分布和顺序特征。API 模式对照同协议的可信模型基线；手动模式可统计数字并对照基线，但采样参数差异可能影响结果。三题样本完整且至少两种可信模型通过独立校准后才尝试匹配。"
+        ],
+        [
+          "手动模式需要什么？",
+          "复制题目，在同一模型中分别新开对话并关闭联网、工具和代码执行，再将数字回答粘贴到对应位置。至少一题符合数量与格式要求即可做本地统计，建议完成三题。"
+        ],
+        [
+          "结果能证明官方模型身份吗？",
+          "不能。数字特征匹配只是统计线索，相似度不是身份概率。库外模型也可能产生相似特征；样本不足、基线未校准、距离过大或候选过近时不判断型号。"
+        ],
+        [
+          "指纹报告可以分享吗？",
+          "可复制报告链接、导出 JSON 或生成分享海报。报告包含数字频数与基线匹配结论，不展示 API Key；只有公开可见的报告允许匿名访问，私有报告仍需账户权限。"
+        ]
+      ]
+    },
+    "/submit": {
+      "title": "申请收录 API 中转站：公开资料与服务政策",
+      "description": "提交站点名称、网址、模型生态、支付方式、发票与退款政策等公开信息，了解资料要求、处理流程及我的提交记录。",
+      "keywords": ["申请收录", "中转站收录", "API站点提交", "服务商资料"],
+      "faq": [
+        [
+          "申请收录需要准备什么？",
+          "准备站点名称、有效网址、站点分类、支持模型、支付方式、发票与退款政策，以及可核对的联系方式。介绍、社交链接与优惠信息可选填，请优先提供公开资料。"
+        ],
+        [
+          "提交后会立即公开展示吗？",
+          "不会。收录需要核对网址和资料。当前版本的申请仅保存在本浏览器，可以在“我的提交”查看，并在演示管理台体验状态变化，不会自动发布到公共目录。"
+        ],
+        [
+          "收录需要提供生产 API Key 吗？",
+          "不需要。请勿在任何公开字段填写 API Key、账户密码或其他敏感信息。可选的探测账户字段只供界面体验，内容不会随申请保存。"
+        ],
+        [
+          "收录或商务合作会影响排名吗？",
+          "公开资料的核对与商业展示应分开处理。合作内容需要标注，不应将赞助关系包装成独立评测结论或真实使用评分。"
+        ]
+      ]
+    },
+    "/sponsor": {
+      "title": "商务合作：广告投放、站点收录与内容合作",
+      "description": "通过邮箱、QQ 或 Telegram 联系 KUGNI，沟通广告投放、中转站收录与数据内容合作，附上品牌或站点名称、合作方向和相关链接。",
+      "keywords": ["商务合作", "API品牌推广", "广告合作", "内容合作"],
+      "faq": [
+        [
+          "可以开展哪些合作？",
+          "可以沟通广告投放、中转站收录、数据引用与技术内容合作。商业展示会标注赞助，具体位置、周期和素材要求通过公开联系方式确认。"
+        ],
+        [
+          "如何联系？",
+          "可以发送邮件至 liyifeng900@gmail.com，或通过 QQ 2201219073、Telegram @asAnnie1 联系。任选一种，并附上品牌或站点名称、合作方向及相关链接。"
+        ],
+        [
+          "合作是否影响排名或评分？",
+          "收录不收取影响排名的费用。商业展示与资料核对分开，不购买虚构评价或检测分数；赞助关系也不能替代真实服务质量证据。"
+        ]
+      ]
+    },
+    "/benefits": {
+      "title": "AI API 福利：新用户额度与活动信息",
+      "description": "浏览收录服务商公开的新用户赠额、签到与优惠信息，核对适用条件、活动说明和原始页面，按自己的模型需求筛选福利。",
+      "keywords": ["API福利", "新用户赠额", "AI免费额度", "API优惠"],
+      "faq": [
+        [
+          "优惠额度可以在 KUGNI 领取吗？",
+          "当前页面提供来源信息与服务商入口，不代发额度、不代收充值。活动资格、有效期和具体使用规则以服务商最新公开说明为准。"
+        ],
+        [
+          "为什么有些福利没有金额？",
+          "来源未公开明确金额或适用条件时，不编造额度数值。请到服务商原始页面核对，不将“有优惠”理解为无条件免费。"
+        ]
+      ]
+    },
+    "/developers": {
+      "title": "开发者与 AI Agent 接入：公开数据、文档与 Skills",
+      "description": "通过只读 JSON 快照、机器可读说明和可下载 Skills，让 AI 客户端查询 KUGNI 收录站点、模型生态和公开分组报价，并保留来源与采集日期。",
+      "keywords": [
+        "KUGNI开发者",
+        "AI Agent接入",
+        "Agent Skills",
+        "API中转站数据",
+        "机器可读资料"
+      ],
+      "faq": [
+        [
+          "现在可以接入什么？",
+          "支持读取公开站点快照、四类模型生态索引、原始分组报价与评测方法 JSON，也提供两份可下载的查询 Skills。所有入口只读，无需登录或 API Key。"
+        ],
+        [
+          "支持 MCP 远程连接吗？",
+          "远程 MCP 服务尚未接入。当前接入方式为读取静态文档、JSON 与 Skills，不能把 JSON 地址填成 MCP 服务地址。"
+        ],
+        [
+          "数据是实时的吗？",
+          "不是。当前公开数据使用 2026-11-12 的来源快照，每份 JSON 包含 dataAsOf、source 与 isLiveMonitoring。引用时保留日期、来源与对应站点页面链接。"
+        ],
+        [
+          "能直接找到最便宜或最可靠的服务商吗？",
+          "资料可以帮助筛选候选；缺少具体型号、同一币种或计费单位时不能得出最低价结论。未检测、空值或模型生态覆盖也不代表质量保证或官方身份认证。"
+        ]
+      ]
+    },
+    "/about": {
+      "title": "关于 KUGNI：AI API 服务发现与资料边界",
+      "description": "了解 KUGNI 的服务商目录、模型资料、价格对照与工具演示，查看资料来源、时间边界及网站正在完善的功能。",
+      "keywords": ["关于KUGNI", "AI API导航站", "数据来源"],
+      "faq": [
+        [
+          "KUGNI 是模型服务商吗？",
+          "不是。KUGNI 提供服务发现、公开资料对照与工具界面，不代理服务商收款，不承诺第三方接口质量，也不为目录中的服务提供统一售后。"
+        ],
+        [
+          "怎样反馈资料问题？",
+          "请记录问题页面、字段、原始资料链接和核对时间，通过联系页面准备反馈内容。没有证据的字段应标为未公开，不用猜测替代。"
+        ]
+      ]
+    },
+    "/contact": {
+      "title": "联系我们：资料反馈与合作联系方式",
+      "description": "通过邮箱、QQ、Telegram 联系 KUGNI，反馈站点资料纠错、功能问题与合作需求，并附上问题页面、核对证据和操作步骤。",
+      "keywords": ["联系KUGNI", "资料纠错", "问题反馈"],
+      "faq": [
+        [
+          "反馈资料问题需要提供什么？",
+          "请附上页面地址、需要修改的字段、原始公开说明链接以及核对时间。请勿包含密钥、登录密码或其他用户的个人信息。"
+        ],
+        [
+          "联系方式有哪些？",
+          "邮箱 liyifeng900@gmail.com，QQ 2201219073，Telegram @asAnnie1。GitHub 和 RSS 订阅入口位于页脚，资料反馈和商务合作任选一个联系渠道即可。"
+        ]
+      ]
+    },
+    "/guide": {
+      "title": "API 接入指南：接口地址、模型与计费核对",
+      "description": "从查找服务商、核对模型和价格，到配置 Base URL 与模型 ID，了解 OpenAI 兼容 API 的接入步骤、常见错误和测试顺序。",
+      "keywords": ["API接入指南", "Base URL", "模型ID", "OpenAI兼容调用"],
+      "faq": [
+        [
+          "Base URL 和完整接口路径有什么区别？",
+          "Base URL 是客户端配置的基础地址，常以 /v1 结尾；具体 SDK 可能自动追加 /chat/completions 等路径。请按客户端与服务商文档填写，避免重复追加。"
+        ],
+        [
+          "出现 401、404 或 429 应如何排查？",
+          "401 通常需要核对密钥和权限，404 需要核对路径与模型名称，429 需要核对额度和限速。实际含义以服务商响应和文档为准，不要在公共反馈中粘贴密钥。"
+        ]
+      ]
+    },
+    "/methodology": {
+      "title": "评测方法与资料来源：记录、证据和复核",
+      "description": "说明 KUGNI 来源快照、可用率、延迟、报价字段与本地演示的边界，区分事实记录、模拟数据和待验证的检测结论。",
+      "keywords": ["评测方法", "API监测指标", "数据来源", "模型测试方法"],
+      "faq": [
+        [
+          "如何记录一次可复核的测试？",
+          "需要保留测试时间、接口与模型、测试项目、参数、样本量、失败处理和脱敏后的响应证据。没有执行或缺少证据的项目应标为未检测。"
+        ],
+        [
+          "站点快照和单模型测试能混用吗？",
+          "不能。来源站点可用率、某次单模型调用结果和长期监测分别属于不同粒度。页面应清楚标注对象、时间和样本量，不能相互替代。"
+        ]
+      ]
+    },
+    "/scoring": {
+      "title": "评分说明：示例分数、正确率与证据边界",
+      "description": "了解基础检测示例分数、糖果测试正确率和模型指纹线索的区别，避免将不同评分口径混算或把演示结果当成真实测量。",
+      "keywords": ["评分说明", "模型测试得分", "正确率", "检测报告"],
+      "faq": [
+        [
+          "为什么基础检测分数不等于通过项目占比？",
+          "基础报告的现有 89 分为加权示意，并非 11/12 的百分比。当前属于本地演示，尚未发布真实权重和任务执行服务，不能据此比较服务商。"
+        ],
+        [
+          "糖果测试如何计算分数？",
+          "每道题等权，总分为答对题数除以已完成题数再乘 100；分项同样按各类别答对比例计算。未抽到的类别不显示为零分，标为未覆盖。"
+        ]
+      ]
+    },
+    "/privacy": {
+      "title": "隐私说明：本地数据、密钥与清除方式",
+      "description": "说明 KUGNI 当前界面使用的本地存储、账户预览、申请资料与检测数据，解释 API Key 的处理方式、数据清除与版本变化。",
+      "keywords": ["隐私说明", "API Key保护", "本地数据", "浏览器存储"],
+      "faq": [
+        [
+          "如何删除当前浏览器的数据？",
+          "在浏览器的站点设置中清除 www.kugni.com 的存储数据，即可删除收藏、资料与本地申请。清除后无法从本站恢复，请先保留需要的公开资料。"
+        ],
+        [
+          "本地资料会同步到其他设备吗？",
+          "不会。当前没有账户服务器与跨设备同步，登录仅建立本地体验身份；主动复制的专项报告链接可在其他设备还原链接中携带的精简结果。"
+        ],
+        [
+          "专项报告链接包含什么？",
+          "链接的 #report 片段携带模型名称、时间与精简答题或频数统计，不携带接口地址、API Key 或原始回答，也不发布到分享服务器。获得完整链接的人可以查看结果；清空本机记录不会使已发出的链接失效。请按需分享。"
+        ]
+      ]
+    },
+    "/terms": {
+      "title": "服务条款：目录使用、工具演示与第三方服务",
+      "description": "说明 KUGNI 目录和工具的使用范围、用户提交资料、第三方服务关系、商业内容标记及当前本地演示功能的限制。",
+      "keywords": ["服务条款", "导航站使用规则", "第三方服务"],
+      "faq": [
+        [
+          "提交资料后是否自动取得展示资格？",
+          "不会。当前申请仅存于本浏览器；未来公开收录仍需要资料核对，不能通过提交或商业合作自动获得质量保证。"
+        ],
+        [
+          "第三方服务的交易问题由谁处理？",
+          "请直接联系交易对应的服务商，核对其退款及售后条款。KUGNI 不代收充值，也不代替第三方履行交易或服务承诺。"
+        ]
+      ]
+    },
+    "/disclaimer": {
+      "title": "免责声明：公开快照、第三方信息与检测限制",
+      "description": "说明公开资料可能变化，目录收录不构成推荐保证，演示结果不代表真实检测，模型身份判断需要独立证据。",
+      "keywords": ["免责声明", "数据时效", "模型检测边界"],
+      "faq": [
+        [
+          "目录资料是否保证当前有效？",
+          "不保证。资料带有来源快照时间，价格、模型与政策可能更新，请在使用前向服务商核对最新公示。"
+        ],
+        [
+          "示例高分能否证明服务商可靠？",
+          "不能。示例分数没有执行真实调用，不对应填写地址的实际性能。真实评测也需结合样本、参数、时间和证据理解。"
+        ]
+      ]
+    },
+    "/sites/public": {
+      "title": "公益 API 中转站：模型覆盖与公开服务资料",
+      "description": "查找公开标注为公益服务的 API 中转站，了解支持模型、免费额度与接入方式。使用前请核对站点的配额、限流及服务期限；公益服务不等于无限或长期免费。",
+      "keywords": ["公益站", "API中转站", "API服务商", "公益 API 中转站"],
+      "faq": [
+        [
+          "这个分类如何划分？",
+          "查找公开标注为公益服务的 API 中转站，了解支持模型、免费额度与接入方式。使用前请核对站点的配额、限流及服务期限；公益服务不等于无限或长期免费。"
+        ],
+        [
+          "列表按什么顺序展示？",
+          "默认顺序沿用公开来源快照中的收录顺序，可以切换延迟、可用率或模型数量排序。没有足够的独立测试数据时，不将来源顺序解释为本站质量评分。"
+        ],
+        [
+          "最低倍率就是最终调用价格吗？",
+          "最低倍率是公开模型分组里可识别倍率的最小值，只适用于对应模型与分组。实际账单还受到输入、输出、缓存、计费单位与渠道加价影响。"
+        ]
+      ]
+    },
+    "/sites/enterprise": {
+      "title": "企业 API 中转站：模型覆盖与公开服务资料",
+      "description": "查看公开资料中面向企业使用的 API 中转站，比较模型覆盖、支付方式、开票与服务政策。分类沿用来源标签，不代表本站对稳定性或服务质量的认证。",
+      "keywords": ["企业稳定站", "API中转站", "API服务商", "企业 API 中转站"],
+      "faq": [
+        [
+          "这个分类如何划分？",
+          "查看公开资料中面向企业使用的 API 中转站，比较模型覆盖、支付方式、开票与服务政策。分类沿用来源标签，不代表本站对稳定性或服务质量的认证。"
+        ],
+        [
+          "列表按什么顺序展示？",
+          "默认顺序沿用公开来源快照中的收录顺序，可以切换延迟、可用率或模型数量排序。没有足够的独立测试数据时，不将来源顺序解释为本站质量评分。"
+        ],
+        [
+          "最低倍率就是最终调用价格吗？",
+          "最低倍率是公开模型分组里可识别倍率的最小值，只适用于对应模型与分组。实际账单还受到输入、输出、缓存、计费单位与渠道加价影响。"
+        ]
+      ]
+    },
+    "/sites/new": {
+      "title": "新上榜 API 中转站：模型覆盖与公开服务资料",
+      "description": "浏览公开来源标注为新站上榜的 API 服务商，了解模型支持、公开报价与接入信息。标签来自资料快照，不代表今日新增；新站的服务与政策仍需进一步核实。",
+      "keywords": ["新站上榜", "API中转站", "API服务商", "新上榜 API 中转站"],
+      "faq": [
+        [
+          "这个分类如何划分？",
+          "浏览公开来源标注为新站上榜的 API 服务商，了解模型支持、公开报价与接入信息。标签来自资料快照，不代表今日新增；新站的服务与政策仍需进一步核实。"
+        ],
+        [
+          "列表按什么顺序展示？",
+          "默认顺序沿用公开来源快照中的收录顺序，可以切换延迟、可用率或模型数量排序。没有足够的独立测试数据时，不将来源顺序解释为本站质量评分。"
+        ],
+        [
+          "最低倍率就是最终调用价格吗？",
+          "最低倍率是公开模型分组里可识别倍率的最小值，只适用于对应模型与分组。实际账单还受到输入、输出、缓存、计费单位与渠道加价影响。"
+        ]
+      ]
+    },
+    "/sites/bonus": {
+      "title": "新用户赠额 API 中转站：模型覆盖与公开服务资料",
+      "description": "寻找公开资料中提供新用户赠额的 API 中转站，对照领取条件、适用模型和充值政策。赠额与活动可能调整，请以前往站点时的最新说明为准。",
+      "keywords": [
+        "新用户赠额",
+        "API中转站",
+        "API服务商",
+        "新用户赠额 API 中转站"
+      ],
+      "faq": [
+        [
+          "这个分类如何划分？",
+          "寻找公开资料中提供新用户赠额的 API 中转站，对照领取条件、适用模型和充值政策。赠额与活动可能调整，请以前往站点时的最新说明为准。"
+        ],
+        [
+          "列表按什么顺序展示？",
+          "默认顺序沿用公开来源快照中的收录顺序，可以切换延迟、可用率或模型数量排序。没有足够的独立测试数据时，不将来源顺序解释为本站质量评分。"
+        ],
+        [
+          "最低倍率就是最终调用价格吗？",
+          "最低倍率是公开模型分组里可识别倍率的最小值，只适用于对应模型与分组。实际账单还受到输入、输出、缓存、计费单位与渠道加价影响。"
+        ]
+      ]
+    }
+  },
+  "documents": {
+    "about": [
+      [
+        "发现服务，也看清资料",
+        "KUGNI 以服务商目录为起点，整理模型覆盖、公开报价、支付方式与服务政策，让不同来源的信息更容易比较。"
+      ],
+      [
+        "当前版本能做什么",
+        "可以搜索、筛选、收藏和对比服务商，查看来源资料，填写收录申请，体验账户和检测报告。账户验证、公共审核、真实检测和跨设备同步尚未接入。"
+      ],
+      [
+        "来源与维护",
+        "目录整理服务商公开资料，并标注资料日期。请以服务商当前公示为准；公开信息快照不代表本站独立评测。"
+      ]
+    ],
+    "contact": [
+      [
+        "资料纠错",
+        "请提供页面地址、字段名称、期望修正内容、公开证据链接和核对日期。价格、退款与服务承诺请引用服务商原始公示。"
+      ],
+      [
+        "功能问题",
+        "请描述操作步骤、浏览器、屏幕大小和预期结果，截图请遮盖密钥及其他个人信息。"
+      ],
+      [
+        "商务与内容",
+        "广告投放、站点收录、数据引用与内容合作请通过邮箱、QQ 或 Telegram 联系，并提供品牌或站点名称、合作方向和相关链接。"
+      ]
+    ],
+    "guide": [
+      [
+        "01 · 确认需求",
+        "先确定具体模型 ID、输入类型、上下文需求、工具调用和预算，再浏览支持该模型的站点。服务商覆盖生态不代表每个型号都可用。"
+      ],
+      [
+        "02 · 核对计费与政策",
+        "分别核对输入、输出、缓存及单位；留意最低充值、发票、退款、限速和分组规则。不要用最低分组倍率推算所有模型的总价。"
+      ],
+      [
+        "03 · 配置客户端",
+        "按服务商与 SDK 文档填写 Base URL、专用测试密钥和模型 ID。先少量调用，核对状态码、响应内容与账单，再用于实际应用。"
+      ],
+      [
+        "04 · 记录与排查",
+        "记录时间、请求参数和脱敏响应。401 查密钥权限，404 查路径与模型，429 查额度和速率；当前本站工具展示本地模拟，可用于熟悉报告结构。"
+      ]
+    ],
+    "methodology": [
+      [
+        "来源快照",
+        "目录的可用率、平均延迟、模型覆盖与政策字段来自公开快照，页面保留来源与时间，不将这些字段描述为实时监测。"
+      ],
+      [
+        "测试对象与样本",
+        "站点级来源指标、特定模型调用、逻辑题得分和模型身份线索分开记录。真实评测应记录时间、模型版本、参数、题库版本和样本量。"
+      ],
+      [
+        "缺失与失败",
+        "缺失字段标为未公开，未执行项目标为未检测。连接失败后不生成能力评分；重试次数和失败处理需要随报告说明。"
+      ],
+      [
+        "复核与商业关系",
+        "结论应能回溯到脱敏证据。广告需要标记，赞助不替代测试证据，也不购买虚构排名或评价。"
+      ]
+    ],
+    "scoring": [
+      [
+        "基础报告",
+        "当前基础报告是本地模拟，89 分是加权示意，不是通过项目数量的直接占比；连接失败时显示未评分。"
+      ],
+      [
+        "糖果测试",
+        "题目等权，正确率与总分按已完成题目计算，四类分项独立显示；未覆盖类别显示未覆盖。所有当前演示答案均在页面标明。"
+      ],
+      [
+        "模型指纹",
+        "数字分布与顺序特征只提供统计线索，不等于官方认证。基线须通过独立样本校准；报告展示候选距离与相似度，无法区分时显示未知，不提供身份概率。"
+      ]
+    ],
+    "privacy": [
+      [
+        "本地保存的数据",
+        "收藏、站点对比、昵称资料、头像、评论和申请记录保存在当前浏览器；糖果与指纹测试额外保留最近 20 份精简报告，不含接口地址、Key 或原始回答。旧版本的合作草稿如存在，也仅保留在本地。当前没有账户服务器，不支持自动跨设备同步，也未配置第三方统计或广告追踪。"
+      ],
+      [
+        "密钥与密码",
+        "检测与账户表单仅供界面体验；API Key、登录密码和可选探测密码不写入本地记录、地址栏或导出文件。请不要填写生产密钥或真实密码。"
+      ],
+      [
+        "报告分享",
+        "分享链接在 #report 片段中携带模型名称、时间和答题选项或数字频数，可在其他浏览器还原同一报告，不上传到分享服务器。海报由本地生成，二维码包含完整结果链接。链接持有者可查看结果；清空本机历史不会撤销已分享链接。"
+      ],
+      [
+        "第三方链接",
+        "打开服务商或其他外部页面后，相关站点的条款和数据政策适用。KUGNI 不代收充值，不读取第三方账户。"
+      ],
+      [
+        "清除与版本变化",
+        "专项报告可在检测记录中清空；也可以清除站点的浏览器数据移除全部本地记录。基础检测示例仍只在本次打开期间保留。正式接入服务前，需要根据实际数据处理行为更新政策。"
+      ]
+    ],
+    "terms": [
+      [
+        "服务范围",
+        "KUGNI 提供公开资料导航和工具界面。当前账户、申请审核和接口检测为本地体验，不应视为生产认证、真实审核或真实测试服务。"
+      ],
+      [
+        "提交资料",
+        "提交者应确认有权提供相关公开资料，避免侵权、虚假承诺和敏感凭据。资料是否收录需单独核对，不以填写表单自动公开发布。"
+      ],
+      [
+        "第三方与商业内容",
+        "第三方服务的价格、交易和售后由相应服务商负责。广告和赞助应明示，不等于本站为服务质量或收益作出保证。"
+      ],
+      [
+        "合理使用",
+        "请勿利用本网站提交违法内容、冒充他人或干扰服务。功能上线范围与政策以公开页面及后续更新为准。"
+      ]
+    ],
+    "disclaimer": [
+      [
+        "公开资料可能变化",
+        "目录记录有明确采集时间。服务商的价格、模型、额度、可用率及政策可能发生变化，实际使用前请核对最新公示。"
+      ],
+      [
+        "收录不等于保证",
+        "目录排序、展示或链接不构成投资、收益或第三方质量担保。站点交易与售后应直接向服务商核实。"
+      ],
+      [
+        "演示与测量不同",
+        "当前卡片评分、连接报告与糖果题答案为本地示例；指纹页仅统计数字频数，尚未匹配指纹库。这些结果不代表对填写地址执行了真实请求。"
+      ],
+      [
+        "身份结论需要证据",
+        "模型自述、响应字段和固定题库表现无法单独证明原厂身份、长期能力或整个中转站是否降智。没有足够证据时应保留未知结论。"
+      ]
+    ]
+  },
+  "routes": [
+    {
+      "id": "home",
+      "label": "首页",
+      "internal": "/",
+      "path": "/",
+      "index": true
+    },
+    {
+      "id": "stations",
+      "label": "站点目录",
+      "internal": "/sites",
+      "path": "/stations",
+      "index": true
+    },
+    {
+      "id": "models",
+      "label": "模型资料库",
+      "internal": "/models",
+      "path": "/models",
+      "index": true
+    },
+    {
+      "id": "pricing",
+      "label": "API 价格对比",
+      "internal": "/prices",
+      "path": "/pricing",
+      "index": true
+    },
+    {
+      "id": "coding-plans",
+      "label": "编程套餐对比",
+      "internal": "/coding-plans",
+      "path": "/coding-plans",
+      "index": true
+    },
+    {
+      "id": "api-check",
+      "label": "中转站检测",
+      "internal": "/check",
+      "path": "/tools/api-check",
+      "index": true
+    },
+    {
+      "id": "candy-test",
+      "label": "糖果测试",
+      "internal": "/check/candy",
+      "path": "/tools/candy-test",
+      "index": true
+    },
+    {
+      "id": "model-fingerprint",
+      "label": "模型指纹测试",
+      "internal": "/check/fingerprint",
+      "path": "/tools/model-fingerprint",
+      "index": true
+    },
+    {
+      "id": "test-history",
+      "label": "检测记录",
+      "internal": "/check/history",
+      "path": "/tools/history",
+      "index": false
+    },
+    {
+      "id": "candy-report",
+      "label": "糖果报告",
+      "internal": "/check/candy/result",
+      "path": "/tools/candy-test/report",
+      "index": false
+    },
+    {
+      "id": "fingerprint-report",
+      "label": "指纹报告",
+      "internal": "/check/fingerprint/result",
+      "path": "/tools/model-fingerprint/report",
+      "index": false
+    },
+    {
+      "id": "submit-station",
+      "label": "申请收录",
+      "internal": "/submit",
+      "path": "/submit-station",
+      "index": true
+    },
+    {
+      "id": "business",
+      "label": "商务合作",
+      "internal": "/sponsor",
+      "path": "/business",
+      "index": true
+    },
+    {
+      "id": "benefits",
+      "label": "福利广场",
+      "internal": "/benefits",
+      "path": "/benefits",
+      "index": true
+    },
+    {
+      "id": "about",
+      "label": "关于本站",
+      "internal": "/about",
+      "path": "/about",
+      "index": true
+    },
+    {
+      "id": "contact",
+      "label": "联系与反馈",
+      "internal": "/contact",
+      "path": "/contact",
+      "index": true
+    },
+    {
+      "id": "api-guide",
+      "label": "API 接入指南",
+      "internal": "/guide",
+      "path": "/guides/api-access",
+      "index": true
+    },
+    {
+      "id": "methodology",
+      "label": "评测方法",
+      "internal": "/methodology",
+      "path": "/methodology",
+      "index": true
+    },
+    {
+      "id": "scoring",
+      "label": "评分说明",
+      "internal": "/scoring",
+      "path": "/scoring",
+      "index": true
+    },
+    {
+      "id": "developers",
+      "label": "开发者与 AI 接入",
+      "internal": "/developers",
+      "path": "/developers",
+      "index": true
+    },
+    {
+      "id": "privacy",
+      "label": "隐私说明",
+      "internal": "/privacy",
+      "path": "/legal/privacy",
+      "index": true
+    },
+    {
+      "id": "terms",
+      "label": "服务条款",
+      "internal": "/terms",
+      "path": "/legal/terms",
+      "index": true
+    },
+    {
+      "id": "disclaimer",
+      "label": "免责声明",
+      "internal": "/disclaimer",
+      "path": "/legal/disclaimer",
+      "index": true
+    },
+    {
+      "id": "login",
+      "label": "登录",
+      "internal": "/login",
+      "path": "/auth/login",
+      "index": false
+    },
+    {
+      "id": "register",
+      "label": "注册",
+      "internal": "/register",
+      "path": "/auth/register",
+      "index": false
+    },
+    {
+      "id": "password-reset",
+      "label": "找回密码",
+      "internal": "/forgot-password",
+      "path": "/auth/password-reset",
+      "index": false
+    },
+    {
+      "id": "favorites",
+      "label": "我的收藏",
+      "internal": "/saved",
+      "path": "/account/favorites",
+      "index": false
+    },
+    {
+      "id": "comparison",
+      "label": "站点对比",
+      "internal": "/compare",
+      "path": "/compare/stations",
+      "index": false
+    },
+    {
+      "id": "account",
+      "label": "个人中心",
+      "internal": "/account",
+      "path": "/account",
+      "index": false
+    },
+    {
+      "id": "settings",
+      "label": "账户设置",
+      "internal": "/account/settings",
+      "path": "/account/settings",
+      "index": false
+    },
+    {
+      "id": "points",
+      "label": "我的积分",
+      "internal": "/account/points",
+      "path": "/account/points",
+      "index": false
+    },
+    {
+      "id": "invitations",
+      "label": "邀请记录",
+      "internal": "/account/invite",
+      "path": "/account/invitations",
+      "index": false
+    },
+    {
+      "id": "submissions",
+      "label": "我的收录申请",
+      "internal": "/account/submissions",
+      "path": "/account/submissions",
+      "index": false
+    },
+    {
+      "id": "admin-submissions",
+      "label": "演示审核台",
+      "internal": "/admin",
+      "path": "/admin/submissions",
+      "index": false
+    },
+    {
+      "id": "category-public",
+      "label": "公益站",
+      "internal": "/sites/public",
+      "path": "/stations/categories/public-service",
+      "index": true
+    },
+    {
+      "id": "category-enterprise",
+      "label": "企业稳定站",
+      "internal": "/sites/enterprise",
+      "path": "/stations/categories/enterprise",
+      "index": true
+    },
+    {
+      "id": "category-new",
+      "label": "新站上榜",
+      "internal": "/sites/new",
+      "path": "/stations/categories/newly-listed",
+      "index": true
+    },
+    {
+      "id": "category-bonus",
+      "label": "新用户赠额",
+      "internal": "/sites/bonus",
+      "path": "/stations/categories/signup-bonus",
+      "index": true
+    },
+    {
+      "id": "station-aicodemirror",
+      "label": "aicodemirror",
+      "internal": "/site/3-aicodemirror-ai",
+      "path": "/stations/aicodemirror",
+      "index": true
+    },
+    {
+      "id": "station-packycode",
+      "label": "packycode",
+      "internal": "/site/25-packyapi-com",
+      "path": "/stations/packycode",
+      "index": true
+    },
+    {
+      "id": "station-aruhub",
+      "label": "aruhub",
+      "internal": "/site/1852-aruhub-com",
+      "path": "/stations/aruhub",
+      "index": true
+    },
+    {
+      "id": "station-qiuqiutoken",
+      "label": "qiuqiutoken",
+      "internal": "/site/1354-qiuqiutoken-net",
+      "path": "/stations/qiuqiutoken",
+      "index": true
+    },
+    {
+      "id": "station-suannai-ai",
+      "label": "suannai-ai",
+      "internal": "/site/1383-closedai-kylenqaq-com",
+      "path": "/stations/suannai-ai",
+      "index": true
+    },
+    {
+      "id": "station-tuzi-api",
+      "label": "tuzi-api",
+      "internal": "/site/24-api-tu-zi-com",
+      "path": "/stations/tuzi-api",
+      "index": true
+    },
+    {
+      "id": "station-wawa-ai",
+      "label": "wawa-ai",
+      "internal": "/site/1356-wawapii-com",
+      "path": "/stations/wawa-ai",
+      "index": true
+    },
+    {
+      "id": "station-fluxlane",
+      "label": "fluxlane",
+      "internal": "/site/4659-fluxlane-cn",
+      "path": "/stations/fluxlane",
+      "index": true
+    },
+    {
+      "id": "station-aigocode",
+      "label": "aigocode",
+      "internal": "/site/4-aigocode-com",
+      "path": "/stations/aigocode",
+      "index": true
+    },
+    {
+      "id": "station-aihubmix",
+      "label": "aihubmix",
+      "internal": "/site/21-aihubmix-com",
+      "path": "/stations/aihubmix",
+      "index": true
+    },
+    {
+      "id": "station-foxcode",
+      "label": "foxcode",
+      "internal": "/site/5-foxcode-rjj-cc",
+      "path": "/stations/foxcode",
+      "index": true
+    },
+    {
+      "id": "station-mnapi",
+      "label": "mnapi",
+      "internal": "/site/20-mnapi-com",
+      "path": "/stations/mnapi",
+      "index": true
+    },
+    {
+      "id": "station-rightcode",
+      "label": "rightcode",
+      "internal": "/site/6-right-codes",
+      "path": "/stations/rightcode",
+      "index": true
+    },
+    {
+      "id": "station-wawa-zz",
+      "label": "wawa-zz",
+      "internal": "/site/1367-wawazz-xyz",
+      "path": "/stations/wawa-zz",
+      "index": true
+    },
+    {
+      "id": "station-zetatechs-api",
+      "label": "zetatechs-api",
+      "internal": "/site/13-api-zetatechs-com",
+      "path": "/stations/zetatechs-api",
+      "index": true
+    },
+    {
+      "id": "station-0elog",
+      "label": "0elog",
+      "internal": "/site/1455-api-0elog-com",
+      "path": "/stations/0elog",
+      "index": true
+    },
+    {
+      "id": "station-8stoken",
+      "label": "8stoken",
+      "internal": "/site/1831-8stoken-com",
+      "path": "/stations/8stoken",
+      "index": true
+    },
+    {
+      "id": "station-302-ai",
+      "label": "302-ai",
+      "internal": "/site/197-302-ai",
+      "path": "/stations/302-ai",
+      "index": true
+    },
+    {
+      "id": "station-7code",
+      "label": "7code",
+      "internal": "/site/1464-ai-7code-cc",
+      "path": "/stations/7code",
+      "index": true
+    },
+    {
+      "id": "station-xisu-ai",
+      "label": "xisu-ai",
+      "internal": "/site/900039-xisu-ai",
+      "path": "/stations/xisu-ai",
+      "index": true
+    },
+    {
+      "id": "model-gpt",
+      "label": "openai",
+      "internal": "/model/gpt",
+      "path": "/models/openai",
+      "index": true
+    },
+    {
+      "id": "model-claude",
+      "label": "claude",
+      "internal": "/model/claude",
+      "path": "/models/claude",
+      "index": true
+    },
+    {
+      "id": "model-gemini",
+      "label": "gemini",
+      "internal": "/model/gemini",
+      "path": "/models/gemini",
+      "index": true
+    },
+    {
+      "id": "model-deepseek",
+      "label": "deepseek",
+      "internal": "/model/deepseek",
+      "path": "/models/deepseek",
+      "index": true
+    },
+    {
+      "id": "api-report-demo",
+      "label": "基础检测报告",
+      "internal": "/check/result/demo",
+      "path": "/tools/api-check/reports/demo",
+      "index": false
+    },
+    {
+      "id": "api-report-expired",
+      "label": "基础检测报告",
+      "internal": "/check/result/expired",
+      "path": "/tools/api-check/reports/expired",
+      "index": false
+    }
+  ]
+}

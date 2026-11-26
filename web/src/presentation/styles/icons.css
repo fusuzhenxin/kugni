@@ -1,0 +1,83 @@
+/* Migrated from icons.css; public site only. */
+@scope (.public-site) {
+  /* Shared icon treatment: colored glyphs without decorative tiles. */
+  :scope:scope
+    :is(
+      .fact-symbol,
+      .stat-symbol,
+      .detail-title-icon,
+      .monitor-symbol,
+      .cost-symbol,
+      .cost-heading-art > span,
+      .connect-icon,
+      .catalog-next > div > span,
+      .map-hub-symbol,
+      .plan-seller-mark,
+      .demo-mark,
+      .art-model
+    ),
+  :scope:scope[data-theme]
+    :is(
+      .fact-symbol,
+      .stat-symbol,
+      .detail-title-icon,
+      .monitor-symbol,
+      .cost-symbol,
+      .cost-heading-art > span,
+      .connect-icon,
+      .catalog-next > div > span,
+      .map-hub-symbol,
+      .plan-seller-mark,
+      .demo-mark,
+      .art-model
+    ) {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  :scope:scope .icon-btn {
+    background: transparent;
+    border-color: transparent;
+    box-shadow: none;
+  }
+  :scope:scope .icon-btn:hover {
+    background: transparent;
+    color: var(--accent);
+  }
+  :scope:scope
+    :is(
+      .update-open,
+      .ledger-open,
+      .site-logo,
+      .brand-icon,
+      .model-dot,
+      .model-detail-icon
+    ),
+  :scope:scope[data-theme]
+    :is(
+      .update-open,
+      .ledger-open,
+      .site-logo,
+      .brand-icon,
+      .model-dot,
+      .model-detail-icon
+    ) {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  :scope:scope :is(.brand-icon, .model-dot, .model-detail-icon) {
+    padding: 0;
+  }
+  /* Monochrome brand artwork stays readable on the dark surface without a tile. */
+  :scope:scope[data-theme="dark"]
+    :is(.brand-icon, .model-dot, .model-detail-icon):is(
+      [src$="/openai.svg"],
+      [src$="/grok.svg"],
+      [src$="/moonshot.svg"]
+    ) {
+    filter: brightness(0) invert(1);
+  }
+}

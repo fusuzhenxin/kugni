@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 32 32" fill="none">
+  <title>KUGNI</title>
+  <defs>
+    <linearGradient id="stem" x1="6.5" y1="3" x2="6.5" y2="29" gradientUnits="userSpaceOnUse">
+      <stop offset="0.3" stop-color="#447BFF"/>
+      <stop offset="1" stop-color="#25B4CE"/>
+    </linearGradient>
+  </defs>
+  <rect x="3" y="3" width="7" height="26" rx="3.5" fill="url(#stem)"/>
+  <path d="M6.5 24.5 24 7" stroke="#2864F6" stroke-width="8" stroke-linecap="round"/>
+  <path d="m20 22.5 4.5 4.5" stroke="#25B4CE" stroke-width="7" stroke-linecap="round"/>
+  <path d="M6.5 23v2.5" stroke="#25B4CE" stroke-width="7" stroke-linecap="round"/>
+</svg>

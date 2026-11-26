@@ -1,0 +1,20 @@
+html {
+  --ui-scale: 0.9;
+  zoom: var(--ui-scale);
+}
+
+body {
+  margin: 0;
+}
+.skip-link {
+  position: fixed;
+  left: 12px;
+  top: -60px;
+  z-index: 1000;
+  padding: 8px 14px;
+  background: white;
+  color: #234ea5;
+}
+.skip-link:focus {
+  top: 8px;
+}

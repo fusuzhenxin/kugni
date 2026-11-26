@@ -1,0 +1,20 @@
+{
+  "name": "KUGNI public snapshots",
+  "version": "1.0",
+  "url": "https://www.kugni.com/developers/",
+  "dataAsOf": "2026-11-12",
+  "transport": "static-http",
+  "mcp": {
+    "status": "not-available"
+  },
+  "skills": [
+    {
+      "name": "kugni-find-relay",
+      "url": "https://www.kugni.com/agent-kit/skills/kugni-find-relay/SKILL.md"
+    },
+    {
+      "name": "kugni-check-relay",
+      "url": "https://www.kugni.com/agent-kit/skills/kugni-check-relay/SKILL.md"
+    }
+  ]
+}

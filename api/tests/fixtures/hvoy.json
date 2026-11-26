@@ -1,0 +1,927 @@
+{
+  "models": [
+    {
+      "key": "glm-5.4",
+      "modelId": "glm-5.4",
+      "slug": "glm-5-4",
+      "displayName": "GLM-5.4",
+      "family": {
+        "zh": "glm",
+        "en": "glm"
+      },
+      "subtitle": {
+        "zh": "面向编程、智能体与复杂项目交付的GLM多模态旗舰模型。",
+        "en": "A multimodal GLM flagship for coding, agents, and complex project delivery."
+      },
+      "description": {
+        "zh": "GLM-5.4是GLM系列的多模态旗舰模型。它面向编程、智能体与复杂项目交付。",
+        "en": "Multimodal GLM flagship model for coding, agents, and complex project delivery"
+      },
+      "contextWindow": {
+        "zh": "1M context",
+        "en": "1M context"
+      },
+      "releaseDate": "2026-11-23",
+      "modelType": "text",
+      "logoUrl": "",
+      "organization": {
+        "organizationId": "zhipu",
+        "nameZh": "智谱",
+        "nameEn": "Zhipu AI",
+        "nameRu": "Zhipu AI",
+        "nameEs": "Zhipu AI",
+        "logoUrl": "/logos/orgs/zhipu.svg",
+        "country": "CN",
+        "websiteUrl": "https://www.bigmodel.cn/"
+      },
+      "href": "/models/glm-5-4",
+      "maxInputTokens": null,
+      "maxOutputTokens": 131072,
+      "contextTokens": 1000000,
+      "knowledgeCutoff": "",
+      "openWeights": false,
+      "license": "",
+      "supportsReasoning": true,
+      "supportsToolCall": true,
+      "supportsStructuredOutput": null,
+      "supportsAttachment": true,
+      "supportsTemperature": true,
+      "inputText": true,
+      "inputImage": true,
+      "inputAudio": false,
+      "inputVideo": true,
+      "inputPdf": true,
+      "outputText": true,
+      "outputImage": false,
+      "outputAudio": false,
+      "outputVideo": false,
+      "sourceLastUpdated": "2026-11-23",
+      "intelligenceScore": null,
+      "leaderboardTab": null,
+      "officialPricing": null,
+      "bestRelay": {
+        "relaySiteId": 40467,
+        "siteName": "relaycore",
+        "relayCount": 6,
+        "primaryBilling": "token",
+        "inputPriceCny": 0.2,
+        "outputPriceCny": 0.64,
+        "unitPriceCny": null,
+        "unitLabel": null,
+        "unitCount": null,
+        "minPriceCny": 0.2,
+        "priceStatus": "available",
+        "priceLastSeenAt": "2026-11-25T17:00:56.710+08:00"
+      }
+    },
+    {
+      "key": "inkling-2-mini",
+      "modelId": "inkling-2-mini",
+      "slug": "inkling-2-mini",
+      "displayName": "Inkling 2 Mini",
+      "family": {
+        "zh": "inkling-mini",
+        "en": "inkling-mini"
+      },
+      "subtitle": {
+        "zh": "面向代理式编程、视觉理解与知识工作的循环式MoE推理模型。",
+        "en": "A looped MoE reasoning model for agentic coding, vision, and knowledge work."
+      },
+      "description": {
+        "zh": "Inkling 2 Mini 是一款循环式 MoE 推理模型，总规模为264亿参数，激活参数为34亿。它面向代理式编程、视觉理解和知识工作。",
+        "en": "Looped MoE reasoning model (26.4B total, 3.4B active) for agentic coding, vision, and knowledge work"
+      },
+      "contextWindow": {
+        "zh": "1M context",
+        "en": "1M context"
+      },
+      "releaseDate": "2026-11-20",
+      "modelType": "text",
+      "logoUrl": "",
+      "organization": {
+        "organizationId": "thinkingmachines",
+        "nameZh": "思考机器",
+        "nameEn": "Thinking Machines",
+        "nameRu": "Тинкинг Машинс",
+        "nameEs": "Thinking Machines",
+        "logoUrl": "/logos/orgs/thinkingmachines.svg",
+        "country": "",
+        "websiteUrl": "https://tinker-docs.thinkingmachines.ai/tinker/compatible-apis/anthropic/"
+      },
+      "href": "/models/inkling-2-mini",
+      "maxInputTokens": null,
+      "maxOutputTokens": 65536,
+      "contextTokens": 1048576,
+      "knowledgeCutoff": "",
+      "openWeights": true,
+      "license": "Apache-2.0",
+      "supportsReasoning": true,
+      "supportsToolCall": true,
+      "supportsStructuredOutput": null,
+      "supportsAttachment": true,
+      "supportsTemperature": true,
+      "inputText": true,
+      "inputImage": true,
+      "inputAudio": false,
+      "inputVideo": false,
+      "inputPdf": false,
+      "outputText": true,
+      "outputImage": false,
+      "outputAudio": false,
+      "outputVideo": false,
+      "sourceLastUpdated": "2026-11-20",
+      "intelligenceScore": null,
+      "leaderboardTab": null,
+      "officialPricing": {
+        "primaryBilling": "token",
+        "inputCny": 1.003797,
+        "outputCny": 3.34599,
+        "cacheInputCny": 0.10038,
+        "cacheCreateCny": null,
+        "cacheCreate1hCny": null,
+        "unitPriceCny": null,
+        "unitLabel": null,
+        "unitCount": null,
+        "minPriceCny": 1.003797,
+        "unit": {
+          "zh": "/ 1M tokens",
+          "en": "/ 1M tokens",
+          "ru": "/ 1M tokens",
+          "es": "/ 1M tokens"
+        },
+        "approximate": true,
+        "sourceCurrency": "USD",
+        "pricingUrl": ""
+      },
+      "bestRelay": null
+    }
+  ],
+  "package": {
+    "ok": true,
+    "product": {
+      "sellerKey": "anthropic_claude",
+      "sellerName": "Claude",
+      "sellerLogoUrl": "/logos/orgs/anthropic.svg",
+      "sellerUrl": "https://claude.com/",
+      "productKey": "product_subscription",
+      "productName": "Claude 官方订阅",
+      "productType": "product_subscription",
+      "detailSlug": "",
+      "officialUrl": "https://claude.com/pricing",
+      "documentationUrl": "https://claude.com/pricing",
+      "summary": "Claude 官方订阅，包括个人 Pro / Max 5x / Max 20x，以及团队 Team Standard / Team Premium。"
+    },
+    "updatedAt": "2026-10-09T00:00:00.000+08:00",
+    "plans": [
+      {
+        "sellerKey": "anthropic_claude",
+        "sellerName": "Claude",
+        "sellerLogoUrl": "/logos/orgs/anthropic.svg",
+        "productKey": "product_subscription",
+        "productName": "Claude 官方订阅",
+        "productType": "product_subscription",
+        "detailSlug": "",
+        "planKey": "pro",
+        "planName": "Pro",
+        "audienceType": "both",
+        "tierFamily": "pro",
+        "status": "on_sale",
+        "statusNote": "正常销售。年付为预付全年费用。",
+        "restockAt": null,
+        "lastVerifiedAt": "2026-10-09T00:00:00.000+08:00",
+        "agentConcurrencyMin": null,
+        "agentConcurrencyMax": null,
+        "promptToRequestRatio": null,
+        "tags": [
+          "现货可买",
+          "模型强"
+        ],
+        "recommended": false,
+        "quotaUnitHint": "request",
+        "officialUrl": "https://claude.com/pricing",
+        "summary": "Claude Pro，支持 20 美元月付或 200 美元预付年付。",
+        "prices": [
+          {
+            "period": "month",
+            "currency": "USD",
+            "kind": "exact",
+            "amountCents": 2000,
+            "listAmountCents": null,
+            "filterAmountCnyCents": 14400,
+            "displayText": "",
+            "note": ""
+          },
+          {
+            "period": "year",
+            "currency": "USD",
+            "kind": "exact",
+            "amountCents": 20000,
+            "listAmountCents": 24000,
+            "filterAmountCnyCents": 144000,
+            "displayText": "",
+            "note": ""
+          }
+        ],
+        "quotas": [],
+        "models": [
+          {
+            "key": "claude-fable-5",
+            "name": "Claude Fable 5",
+            "vendorKey": "anthropic",
+            "vendorName": "Anthropic",
+            "catalogSlug": "claudefable5",
+            "logoUrl": "/logos/orgs/anthropic.svg"
+          },
+          {
+            "key": "claude-opus-4.8",
+            "name": "Claude Opus 4.8",
+            "vendorKey": "anthropic",
+            "vendorName": "Anthropic",
+            "catalogSlug": "claude-opus-4-8",
+            "logoUrl": "/logos/orgs/anthropic.svg"
+          },
+          {
+            "key": "claude-opus-4.7",
+            "name": "Claude Opus 4.7",
+            "vendorKey": "anthropic",
+            "vendorName": "Anthropic",
+            "catalogSlug": "claude-opus-4-7",
+            "logoUrl": "/logos/orgs/anthropic.svg"
+          },
+          {
+            "key": "claude-opus-4.6",
+            "name": "Claude Opus 4.6",
+            "vendorKey": "anthropic",
+            "vendorName": "Anthropic",
+            "catalogSlug": "claude-opus-4-6",
+            "logoUrl": "/logos/orgs/anthropic.svg"
+          },
+          {
+            "key": "claude-sonnet-5",
+            "name": "Claude Sonnet 5",
+            "vendorKey": "anthropic",
+            "vendorName": "Anthropic",
+            "catalogSlug": "claude-sonnet-5",
+            "logoUrl": "/logos/orgs/anthropic.svg"
+          },
+          {
+            "key": "claude-sonnet-4.6",
+            "name": "Claude Sonnet 4.6",
+            "vendorKey": "anthropic",
+            "vendorName": "Anthropic",
+            "catalogSlug": "claude-sonnet-4-6",
+            "logoUrl": "/logos/orgs/anthropic.svg"
+          },
+          {
+            "key": "claude-opus-5",
+            "name": "Claude Opus 5",
+            "vendorKey": "anthropic",
+            "vendorName": "Anthropic",
+            "catalogSlug": "claude-opus-5",
+            "logoUrl": "/logos/orgs/anthropic.svg"
+          },
+          {
+            "key": "claude-opus-5-5",
+            "name": "Claude Opus 5.5",
+            "vendorKey": "anthropic",
+            "vendorName": "Anthropic",
+            "catalogSlug": "claude-opus-5-5",
+            "logoUrl": "/logos/orgs/anthropic.svg"
+          },
+          {
+            "key": "claude-sonnet-5-5",
+            "name": "Claude Sonnet 5.5",
+            "vendorKey": "anthropic",
+            "vendorName": "Anthropic",
+            "catalogSlug": "claude-sonnet-5-5",
+            "logoUrl": "/logos/orgs/anthropic.svg"
+          },
+          {
+            "key": "claude-haiku-5-5",
+            "name": "Claude Haiku 5.5",
+            "vendorKey": "anthropic",
+            "vendorName": "Anthropic",
+            "catalogSlug": "claude-haiku-5-5",
+            "logoUrl": "/logos/orgs/anthropic.svg"
+          }
+        ],
+        "tools": [],
+        "notes": [
+          {
+            "type": "remark",
+            "title": "",
+            "body": "部分用户订阅时可能被要求实名认证"
+          },
+          {
+            "type": "remark",
+            "title": "",
+            "body": "套餐额度不可用于 OpenClaw、Hermes 等第三方编程 Agent"
+          },
+          {
+            "type": "benefit",
+            "title": "",
+            "body": "原生 Claude 体验"
+          },
+          {
+            "type": "remark",
+            "title": "",
+            "body": "5h限额 5$、周限额 30$、月限额 130$。基本只适合轻量使用，尽量不使用 Opus。"
+          },
+          {
+            "type": "remark",
+            "title": "",
+            "body": "7 个覆盖模型：Claude Opus 5、Claude Fable 5、Claude Opus 4.8、Claude Opus 4.7、Claude Opus 4.6、Claude Sonnet 5、Claude Sonnet 4.6。适合轻中度 Claude 网页/App 使用；Claude Code 或 Console API 需要单独看限制和计费。"
+          }
+        ]
+      },
+      {
+        "sellerKey": "anthropic_claude",
+        "sellerName": "Claude",
+        "sellerLogoUrl": "/logos/orgs/anthropic.svg",
+        "productKey": "product_subscription",
+        "productName": "Claude 官方订阅",
+        "productType": "product_subscription",
+        "detailSlug": "",
+        "planKey": "max_5x",
+        "planName": "Max 5x",
+        "audienceType": "both",
+        "tierFamily": "max",
+        "status": "on_sale",
+        "statusNote": "按月销售。",
+        "restockAt": null,
+        "lastVerifiedAt": "2026-10-09T00:00:00.000+08:00",
+        "agentConcurrencyMin": null,
+        "agentConcurrencyMax": null,
+        "promptToRequestRatio": null,
+        "tags": [
+          "现货可买",
+          "模型强"
+        ],
+        "recommended": false,
+        "quotaUnitHint": "request",
+        "officialUrl": "https://claude.com/pricing",
+        "summary": "Claude Max 5x，官方月价 100 美元。",
+        "prices": [
+          {
+            "period": "month",
+            "currency": "USD",
+            "kind": "exact",
+            "amountCents": 10000,
+            "listAmountCents": null,
+            "filterAmountCnyCents": 72000,
+            "displayText": "",
+            "note": ""
+          }
+        ],
+        "quotas": [],
+        "models": [
+          {
+            "key": "claude-fable-5",
+            "name": "Claude Fable 5",
+            "vendorKey": "anthropic",
+            "vendorName": "Anthropic",
+            "catalogSlug": "claudefable5",
+            "logoUrl": "/logos/orgs/anthropic.svg"
+          },
+          {
+            "key": "claude-opus-4.8",
+            "name": "Claude Opus 4.8",
+            "vendorKey": "anthropic",
+            "vendorName": "Anthropic",
+            "catalogSlug": "claude-opus-4-8",
+            "logoUrl": "/logos/orgs/anthropic.svg"
+          },
+          {
+            "key": "claude-opus-4.7",
+            "name": "Claude Opus 4.7",
+            "vendorKey": "anthropic",
+            "vendorName": "Anthropic",
+            "catalogSlug": "claude-opus-4-7",
+            "logoUrl": "/logos/orgs/anthropic.svg"
+          },
+          {
+            "key": "claude-opus-4.6",
+            "name": "Claude Opus 4.6",
+            "vendorKey": "anthropic",
+            "vendorName": "Anthropic",
+            "catalogSlug": "claude-opus-4-6",
+            "logoUrl": "/logos/orgs/anthropic.svg"
+          },
+          {
+            "key": "claude-sonnet-5",
+            "name": "Claude Sonnet 5",
+            "vendorKey": "anthropic",
+            "vendorName": "Anthropic",
+            "catalogSlug": "claude-sonnet-5",
+            "logoUrl": "/logos/orgs/anthropic.svg"
+          },
+          {
+            "key": "claude-sonnet-4.6",
+            "name": "Claude Sonnet 4.6",
+            "vendorKey": "anthropic",
+            "vendorName": "Anthropic",
+            "catalogSlug": "claude-sonnet-4-6",
+            "logoUrl": "/logos/orgs/anthropic.svg"
+          },
+          {
+            "key": "claude-opus-5",
+            "name": "Claude Opus 5",
+            "vendorKey": "anthropic",
+            "vendorName": "Anthropic",
+            "catalogSlug": "claude-opus-5",
+            "logoUrl": "/logos/orgs/anthropic.svg"
+          },
+          {
+            "key": "claude-opus-5-5",
+            "name": "Claude Opus 5.5",
+            "vendorKey": "anthropic",
+            "vendorName": "Anthropic",
+            "catalogSlug": "claude-opus-5-5",
+            "logoUrl": "/logos/orgs/anthropic.svg"
+          },
+          {
+            "key": "claude-sonnet-5-5",
+            "name": "Claude Sonnet 5.5",
+            "vendorKey": "anthropic",
+            "vendorName": "Anthropic",
+            "catalogSlug": "claude-sonnet-5-5",
+            "logoUrl": "/logos/orgs/anthropic.svg"
+          },
+          {
+            "key": "claude-haiku-5-5",
+            "name": "Claude Haiku 5.5",
+            "vendorKey": "anthropic",
+            "vendorName": "Anthropic",
+            "catalogSlug": "claude-haiku-5-5",
+            "logoUrl": "/logos/orgs/anthropic.svg"
+          }
+        ],
+        "tools": [],
+        "notes": [
+          {
+            "type": "remark",
+            "title": "",
+            "body": "部分用户订阅时可能被要求实名认证"
+          },
+          {
+            "type": "remark",
+            "title": "",
+            "body": "套餐额度不可用于 OpenClaw、Hermes 等第三方编程 Agent"
+          },
+          {
+            "type": "benefit",
+            "title": "",
+            "body": "原生 Claude 体验"
+          },
+          {
+            "type": "remark",
+            "title": "",
+            "body": "5h限额 60$、周限额 400$、月限额 1300$。适合普通编程需求，每天约 1-2 小时左右。"
+          },
+          {
+            "type": "remark",
+            "title": "",
+            "body": "7 个覆盖模型：Claude Opus 5、Claude Fable 5、Claude Opus 4.8、Claude Opus 4.7、Claude Opus 4.6、Claude Sonnet 5、Claude Sonnet 4.6。适合轻中度 Claude 网页/App 使用；Claude Code 或 Console API 需要单独看限制和计费。"
+          }
+        ]
+      },
+      {
+        "sellerKey": "anthropic_claude",
+        "sellerName": "Claude",
+        "sellerLogoUrl": "/logos/orgs/anthropic.svg",
+        "productKey": "product_subscription",
+        "productName": "Claude 官方订阅",
+        "productType": "product_subscription",
+        "detailSlug": "",
+        "planKey": "max_20x",
+        "planName": "Max 20x",
+        "audienceType": "both",
+        "tierFamily": "max",
+        "status": "on_sale",
+        "statusNote": "按月销售。",
+        "restockAt": null,
+        "lastVerifiedAt": "2026-10-09T00:00:00.000+08:00",
+        "agentConcurrencyMin": null,
+        "agentConcurrencyMax": null,
+        "promptToRequestRatio": null,
+        "tags": [
+          "现货可买",
+          "模型强"
+        ],
+        "recommended": false,
+        "quotaUnitHint": "request",
+        "officialUrl": "https://claude.com/pricing",
+        "summary": "Claude Max 20x，官方月价 200 美元。",
+        "prices": [
+          {
+            "period": "month",
+            "currency": "USD",
+            "kind": "exact",
+            "amountCents": 20000,
+            "listAmountCents": null,
+            "filterAmountCnyCents": 144000,
+            "displayText": "",
+            "note": ""
+          }
+        ],
+        "quotas": [],
+        "models": [
+          {
+            "key": "claude-fable-5",
+            "name": "Claude Fable 5",
+            "vendorKey": "anthropic",
+            "vendorName": "Anthropic",
+            "catalogSlug": "claudefable5",
+            "logoUrl": "/logos/orgs/anthropic.svg"
+          },
+          {
+            "key": "claude-opus-4.8",
+            "name": "Claude Opus 4.8",
+            "vendorKey": "anthropic",
+            "vendorName": "Anthropic",
+            "catalogSlug": "claude-opus-4-8",
+            "logoUrl": "/logos/orgs/anthropic.svg"
+          },
+          {
+            "key": "claude-opus-4.7",
+            "name": "Claude Opus 4.7",
+            "vendorKey": "anthropic",
+            "vendorName": "Anthropic",
+            "catalogSlug": "claude-opus-4-7",
+            "logoUrl": "/logos/orgs/anthropic.svg"
+          },
+          {
+            "key": "claude-opus-4.6",
+            "name": "Claude Opus 4.6",
+            "vendorKey": "anthropic",
+            "vendorName": "Anthropic",
+            "catalogSlug": "claude-opus-4-6",
+            "logoUrl": "/logos/orgs/anthropic.svg"
+          },
+          {
+            "key": "claude-sonnet-5",
+            "name": "Claude Sonnet 5",
+            "vendorKey": "anthropic",
+            "vendorName": "Anthropic",
+            "catalogSlug": "claude-sonnet-5",
+            "logoUrl": "/logos/orgs/anthropic.svg"
+          },
+          {
+            "key": "claude-sonnet-4.6",
+            "name": "Claude Sonnet 4.6",
+            "vendorKey": "anthropic",
+            "vendorName": "Anthropic",
+            "catalogSlug": "claude-sonnet-4-6",
+            "logoUrl": "/logos/orgs/anthropic.svg"
+          },
+          {
+            "key": "claude-opus-5",
+            "name": "Claude Opus 5",
+            "vendorKey": "anthropic",
+            "vendorName": "Anthropic",
+            "catalogSlug": "claude-opus-5",
+            "logoUrl": "/logos/orgs/anthropic.svg"
+          },
+          {
+            "key": "claude-opus-5-5",
+            "name": "Claude Opus 5.5",
+            "vendorKey": "anthropic",
+            "vendorName": "Anthropic",
+            "catalogSlug": "claude-opus-5-5",
+            "logoUrl": "/logos/orgs/anthropic.svg"
+          },
+          {
+            "key": "claude-sonnet-5-5",
+            "name": "Claude Sonnet 5.5",
+            "vendorKey": "anthropic",
+            "vendorName": "Anthropic",
+            "catalogSlug": "claude-sonnet-5-5",
+            "logoUrl": "/logos/orgs/anthropic.svg"
+          },
+          {
+            "key": "claude-haiku-5-5",
+            "name": "Claude Haiku 5.5",
+            "vendorKey": "anthropic",
+            "vendorName": "Anthropic",
+            "catalogSlug": "claude-haiku-5-5",
+            "logoUrl": "/logos/orgs/anthropic.svg"
+          }
+        ],
+        "tools": [],
+        "notes": [
+          {
+            "type": "remark",
+            "title": "",
+            "body": "部分用户订阅时可能被要求实名认证"
+          },
+          {
+            "type": "remark",
+            "title": "",
+            "body": "套餐额度不可用于 OpenClaw、Hermes 等第三方编程 Agent"
+          },
+          {
+            "type": "benefit",
+            "title": "",
+            "body": "原生 Claude 体验"
+          },
+          {
+            "type": "remark",
+            "title": "",
+            "body": "5h限额 150$、周限额 800$、月限额 3200$。适合高频编程需求，每天约 4-5 小时左右。"
+          },
+          {
+            "type": "remark",
+            "title": "",
+            "body": "7 个覆盖模型：Claude Opus 5、Claude Fable 5、Claude Opus 4.8、Claude Opus 4.7、Claude Opus 4.6、Claude Sonnet 5、Claude Sonnet 4.6。适合轻中度 Claude 网页/App 使用；Claude Code 或 Console API 需要单独看限制和计费。"
+          }
+        ]
+      },
+      {
+        "sellerKey": "anthropic_claude",
+        "sellerName": "Claude",
+        "sellerLogoUrl": "/logos/orgs/anthropic.svg",
+        "productKey": "product_subscription",
+        "productName": "Claude 官方订阅",
+        "productType": "product_subscription",
+        "detailSlug": "",
+        "planKey": "team_standard",
+        "planName": "Team Standard",
+        "audienceType": "enterprise",
+        "tierFamily": "pro",
+        "status": "on_sale",
+        "statusNote": "按席位销售；官方提供月付和年付。",
+        "restockAt": null,
+        "lastVerifiedAt": "2026-10-09T00:00:00.000+08:00",
+        "agentConcurrencyMin": null,
+        "agentConcurrencyMax": null,
+        "promptToRequestRatio": null,
+        "tags": [
+          "现货可买",
+          "团队",
+          "坐席",
+          "模型强"
+        ],
+        "recommended": false,
+        "quotaUnitHint": "",
+        "officialUrl": "https://claude.com/pricing",
+        "summary": "Claude Team Standard，官方月付 25 美元/席，年付折合 20 美元/席/月。",
+        "prices": [
+          {
+            "period": "month",
+            "currency": "USD",
+            "kind": "exact",
+            "amountCents": 2500,
+            "listAmountCents": null,
+            "filterAmountCnyCents": 18000,
+            "displayText": "",
+            "note": "每席位每月 25 美元。"
+          },
+          {
+            "period": "year",
+            "currency": "USD",
+            "kind": "exact",
+            "amountCents": 24000,
+            "listAmountCents": 30000,
+            "filterAmountCnyCents": 172800,
+            "displayText": "",
+            "note": "年付折合每席位每月 20 美元，预付 240 美元/席/年。"
+          }
+        ],
+        "quotas": [],
+        "models": [
+          {
+            "key": "claude-fable-5",
+            "name": "Claude Fable 5",
+            "vendorKey": "anthropic",
+            "vendorName": "Anthropic",
+            "catalogSlug": "claudefable5",
+            "logoUrl": "/logos/orgs/anthropic.svg"
+          },
+          {
+            "key": "claude-opus-4.8",
+            "name": "Claude Opus 4.8",
+            "vendorKey": "anthropic",
+            "vendorName": "Anthropic",
+            "catalogSlug": "claude-opus-4-8",
+            "logoUrl": "/logos/orgs/anthropic.svg"
+          },
+          {
+            "key": "claude-opus-4.7",
+            "name": "Claude Opus 4.7",
+            "vendorKey": "anthropic",
+            "vendorName": "Anthropic",
+            "catalogSlug": "claude-opus-4-7",
+            "logoUrl": "/logos/orgs/anthropic.svg"
+          },
+          {
+            "key": "claude-opus-4.6",
+            "name": "Claude Opus 4.6",
+            "vendorKey": "anthropic",
+            "vendorName": "Anthropic",
+            "catalogSlug": "claude-opus-4-6",
+            "logoUrl": "/logos/orgs/anthropic.svg"
+          },
+          {
+            "key": "claude-sonnet-5",
+            "name": "Claude Sonnet 5",
+            "vendorKey": "anthropic",
+            "vendorName": "Anthropic",
+            "catalogSlug": "claude-sonnet-5",
+            "logoUrl": "/logos/orgs/anthropic.svg"
+          },
+          {
+            "key": "claude-sonnet-4.6",
+            "name": "Claude Sonnet 4.6",
+            "vendorKey": "anthropic",
+            "vendorName": "Anthropic",
+            "catalogSlug": "claude-sonnet-4-6",
+            "logoUrl": "/logos/orgs/anthropic.svg"
+          },
+          {
+            "key": "claude-opus-5",
+            "name": "Claude Opus 5",
+            "vendorKey": "anthropic",
+            "vendorName": "Anthropic",
+            "catalogSlug": "claude-opus-5",
+            "logoUrl": "/logos/orgs/anthropic.svg"
+          },
+          {
+            "key": "claude-opus-5-5",
+            "name": "Claude Opus 5.5",
+            "vendorKey": "anthropic",
+            "vendorName": "Anthropic",
+            "catalogSlug": "claude-opus-5-5",
+            "logoUrl": "/logos/orgs/anthropic.svg"
+          },
+          {
+            "key": "claude-sonnet-5-5",
+            "name": "Claude Sonnet 5.5",
+            "vendorKey": "anthropic",
+            "vendorName": "Anthropic",
+            "catalogSlug": "claude-sonnet-5-5",
+            "logoUrl": "/logos/orgs/anthropic.svg"
+          },
+          {
+            "key": "claude-haiku-5-5",
+            "name": "Claude Haiku 5.5",
+            "vendorKey": "anthropic",
+            "vendorName": "Anthropic",
+            "catalogSlug": "claude-haiku-5-5",
+            "logoUrl": "/logos/orgs/anthropic.svg"
+          }
+        ],
+        "tools": [],
+        "notes": [
+          {
+            "type": "remark",
+            "title": "席位与用量",
+            "body": "面向 2 至 150 人团队。Standard 席位用量高于 Pro；可与 Premium 席位混用。"
+          }
+        ]
+      },
+      {
+        "sellerKey": "anthropic_claude",
+        "sellerName": "Claude",
+        "sellerLogoUrl": "/logos/orgs/anthropic.svg",
+        "productKey": "product_subscription",
+        "productName": "Claude 官方订阅",
+        "productType": "product_subscription",
+        "detailSlug": "",
+        "planKey": "team_premium",
+        "planName": "Team Premium",
+        "audienceType": "enterprise",
+        "tierFamily": "max",
+        "status": "on_sale",
+        "statusNote": "按席位销售；官方提供月付和年付。",
+        "restockAt": null,
+        "lastVerifiedAt": "2026-10-09T00:00:00.000+08:00",
+        "agentConcurrencyMin": null,
+        "agentConcurrencyMax": null,
+        "promptToRequestRatio": null,
+        "tags": [
+          "现货可买",
+          "团队",
+          "坐席",
+          "模型强"
+        ],
+        "recommended": false,
+        "quotaUnitHint": "",
+        "officialUrl": "https://claude.com/pricing",
+        "summary": "Claude Team Premium，官方月付 125 美元/席，年付折合 100 美元/席/月；用量为 Standard 的 5 倍。",
+        "prices": [
+          {
+            "period": "month",
+            "currency": "USD",
+            "kind": "exact",
+            "amountCents": 12500,
+            "listAmountCents": null,
+            "filterAmountCnyCents": 90000,
+            "displayText": "",
+            "note": "每席位每月 125 美元。"
+          },
+          {
+            "period": "year",
+            "currency": "USD",
+            "kind": "exact",
+            "amountCents": 120000,
+            "listAmountCents": 150000,
+            "filterAmountCnyCents": 864000,
+            "displayText": "",
+            "note": "年付折合每席位每月 100 美元，预付 1,200 美元/席/年。"
+          }
+        ],
+        "quotas": [],
+        "models": [
+          {
+            "key": "claude-fable-5",
+            "name": "Claude Fable 5",
+            "vendorKey": "anthropic",
+            "vendorName": "Anthropic",
+            "catalogSlug": "claudefable5",
+            "logoUrl": "/logos/orgs/anthropic.svg"
+          },
+          {
+            "key": "claude-opus-4.8",
+            "name": "Claude Opus 4.8",
+            "vendorKey": "anthropic",
+            "vendorName": "Anthropic",
+            "catalogSlug": "claude-opus-4-8",
+            "logoUrl": "/logos/orgs/anthropic.svg"
+          },
+          {
+            "key": "claude-opus-4.7",
+            "name": "Claude Opus 4.7",
+            "vendorKey": "anthropic",
+            "vendorName": "Anthropic",
+            "catalogSlug": "claude-opus-4-7",
+            "logoUrl": "/logos/orgs/anthropic.svg"
+          },
+          {
+            "key": "claude-opus-4.6",
+            "name": "Claude Opus 4.6",
+            "vendorKey": "anthropic",
+            "vendorName": "Anthropic",
+            "catalogSlug": "claude-opus-4-6",
+            "logoUrl": "/logos/orgs/anthropic.svg"
+          },
+          {
+            "key": "claude-sonnet-5",
+            "name": "Claude Sonnet 5",
+            "vendorKey": "anthropic",
+            "vendorName": "Anthropic",
+            "catalogSlug": "claude-sonnet-5",
+            "logoUrl": "/logos/orgs/anthropic.svg"
+          },
+          {
+            "key": "claude-sonnet-4.6",
+            "name": "Claude Sonnet 4.6",
+            "vendorKey": "anthropic",
+            "vendorName": "Anthropic",
+            "catalogSlug": "claude-sonnet-4-6",
+            "logoUrl": "/logos/orgs/anthropic.svg"
+          },
+          {
+            "key": "claude-opus-5",
+            "name": "Claude Opus 5",
+            "vendorKey": "anthropic",
+            "vendorName": "Anthropic",
+            "catalogSlug": "claude-opus-5",
+            "logoUrl": "/logos/orgs/anthropic.svg"
+          },
+          {
+            "key": "claude-opus-5-5",
+            "name": "Claude Opus 5.5",
+            "vendorKey": "anthropic",
+            "vendorName": "Anthropic",
+            "catalogSlug": "claude-opus-5-5",
+            "logoUrl": "/logos/orgs/anthropic.svg"
+          },
+          {
+            "key": "claude-sonnet-5-5",
+            "name": "Claude Sonnet 5.5",
+            "vendorKey": "anthropic",
+            "vendorName": "Anthropic",
+            "catalogSlug": "claude-sonnet-5-5",
+            "logoUrl": "/logos/orgs/anthropic.svg"
+          },
+          {
+            "key": "claude-haiku-5-5",
+            "name": "Claude Haiku 5.5",
+            "vendorKey": "anthropic",
+            "vendorName": "Anthropic",
+            "catalogSlug": "claude-haiku-5-5",
+            "logoUrl": "/logos/orgs/anthropic.svg"
+          }
+        ],
+        "tools": [],
+        "notes": [
+          {
+            "type": "remark",
+            "title": "席位与用量",
+            "body": "Premium 席位用量为 Standard 的 5 倍。团队可混用 Standard 与 Premium 席位。"
+          }
+        ]
+      }
+    ]
+  }
+}

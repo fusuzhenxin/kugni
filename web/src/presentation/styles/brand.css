@@ -1,0 +1,33 @@
+/* Migrated from brand.css; public site only. */
+@scope (.public-site) {
+  /* The blue/cyan symbol is the K; the wordmark supplies the remaining letters. */
+  :scope:scope .brand {
+    gap: 5px;
+  }
+  :scope:scope .brand .brand-mark {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .brand-mark > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  :scope:scope .brand .brand-word {
+    color: #151515;
+    font-weight: 700;
+    letter-spacing: -0.6px;
+  }
+  :scope:scope[data-theme="dark"] .brand .brand-word {
+    color: #f5f7fc;
+  }
+  @media (max-width: 480px) {
+    :scope:scope .header .brand-word {
+      display: flex;
+      font-size: var(--font-title);
+    }
+  }
+}

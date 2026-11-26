@@ -1,0 +1,176 @@
+@scope (.public-site) {
+  .public-model-field {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    min-width: 0;
+    min-height: 44px;
+    padding: 0 10px 0 12px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--paper);
+    color: var(--ink);
+    transition:
+      border-color 150ms ease,
+      box-shadow 150ms ease;
+  }
+  .public-model-field:focus-within {
+    border-color: color-mix(in srgb, var(--accent) 60%, var(--line));
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 8%, transparent);
+  }
+  :scope:scope .public-model-field > input {
+    flex: 1;
+    min-width: 0;
+    width: 100%;
+    min-height: 42px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    outline: 0;
+    background: transparent;
+    box-shadow: none;
+    color: var(--ink);
+    font-size: var(--font-small);
+    line-height: 1.5;
+  }
+  .public-model-mark,
+  .public-model-option-mark {
+    display: grid;
+    place-items: center;
+    width: 22px;
+    height: 22px;
+    flex: 0 0 22px;
+    color: var(--muted);
+  }
+  .public-model-field svg,
+  .public-model-option-mark > svg {
+    width: 20px;
+    height: 20px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .public-model-toggle {
+    display: grid;
+    place-items: center;
+    flex: 0 0 28px;
+    width: 28px;
+    height: 30px;
+    min-height: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 6px;
+    background: transparent;
+    color: var(--muted);
+    cursor: pointer;
+  }
+  .public-model-toggle:hover {
+    background: var(--soft);
+    color: var(--accent);
+  }
+  .public-model-toggle:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+  .public-model-toggle > svg {
+    width: 15px;
+    height: 15px;
+    transition: transform 150ms ease;
+  }
+  .public-model-toggle[aria-expanded="true"] > svg {
+    transform: rotate(180deg);
+  }
+  .public-model-menu {
+    position: fixed;
+    inset: auto;
+    margin: 0;
+    padding: 6px;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: var(--paper);
+    color: var(--ink);
+    box-shadow: 0 12px 36px rgb(15 30 55 / 13%);
+    overflow: auto;
+    overscroll-behavior: contain;
+    scrollbar-width: thin;
+    scrollbar-color: var(--line) transparent;
+    z-index: 100;
+  }
+  .public-model-caption,
+  .public-model-note {
+    margin: 0;
+    padding: 8px 10px;
+    color: var(--muted);
+    font-size: var(--font-caption);
+    line-height: 1.6;
+  }
+  .public-model-caption {
+    position: sticky;
+    top: -6px;
+    background: var(--paper);
+    z-index: 1;
+  }
+  .public-model-note {
+    border-top: 1px solid var(--quiet-line);
+  }
+  .public-model-option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-height: 54px;
+    padding: 8px 10px;
+    border-radius: 7px;
+    color: var(--ink);
+    cursor: pointer;
+  }
+  .public-model-option:hover,
+  .public-model-option.is-active {
+    background: var(--soft);
+  }
+  .public-model-option[aria-selected="true"] {
+    color: var(--accent);
+  }
+  .public-model-option-name {
+    flex: 1;
+    min-width: 0;
+    font-size: var(--font-small);
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+  }
+  .public-model-option-name > small {
+    display: block;
+    margin-top: 2px;
+    font-size: var(--font-caption);
+    color: var(--muted);
+  }
+  .public-model-check {
+    width: 16px;
+    flex: 0 0 16px;
+    color: var(--accent);
+  }
+  .tool-model-row > .public-model-field {
+    flex: 1;
+  }
+  :scope [data-model-brand] {
+    object-fit: contain;
+    flex-shrink: 0;
+    background: transparent;
+    border-radius: 0;
+  }
+  :scope[data-theme="dark"] [data-brand-mono] {
+    filter: invert(1);
+  }
+  :scope[data-theme="dark"] .public-model-menu {
+    box-shadow: 0 12px 36px #0005;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .public-model-field,
+    .public-model-toggle > svg {
+      transition: none;
+    }
+  }
+}

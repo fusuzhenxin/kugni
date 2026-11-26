@@ -1,0 +1,119 @@
+.workspace-select {
+  min-width: 0;
+}
+.workspace-select-trigger {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 42px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--paper);
+  color: var(--ink);
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.5;
+  transition:
+    border-color 0.18s,
+    box-shadow 0.18s;
+}
+.workspace-select-trigger > span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.workspace-select-trigger > svg {
+  color: var(--muted);
+  transition: transform 0.18s;
+}
+.workspace-select-trigger:hover {
+  border-color: #b9c9e7;
+}
+.workspace-select-trigger[aria-expanded="true"] {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px #3868ef12;
+}
+.workspace-select-trigger[aria-expanded="true"] > svg {
+  transform: rotate(180deg);
+}
+.workspace-select-menu {
+  position: fixed;
+  inset: auto;
+  margin: 0;
+  padding: 6px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--paper);
+  color: var(--ink);
+  box-shadow: 0 12px 35px #172b4b1c;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+}
+.workspace-select-menu:popover-open {
+  display: grid;
+  gap: 3px;
+  animation: admin-select-enter 0.14s ease-out;
+}
+.workspace-select-menu > button {
+  width: 100%;
+  padding: 10px 11px;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+.workspace-select-menu > button.highlighted {
+  background: #f5f8ff;
+}
+.workspace-select-menu > button[aria-selected="true"] {
+  color: var(--accent);
+  background: var(--accent-soft);
+  font-weight: 600;
+}
+.admin-heading-actions .workspace-select {
+  min-width: 130px;
+}
+.admin-toolbar .workspace-select {
+  min-width: 136px;
+}
+.binding-group > header > .workspace-select {
+  flex: 1;
+  min-width: 0;
+}
+.binding-group > header > .workspace-select:first-child {
+  max-width: 55%;
+}
+@keyframes admin-select-enter {
+  from {
+    opacity: 0;
+    transform: translateY(-3px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media (max-width: 800px) {
+  .binding-group > header > .workspace-select {
+    grid-column: 1;
+  }
+  .binding-group > header > .workspace-select:first-child {
+    max-width: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .workspace-select-menu:popover-open,
+  .workspace-select-trigger > svg {
+    animation: none;
+    transition: none;
+  }
+}

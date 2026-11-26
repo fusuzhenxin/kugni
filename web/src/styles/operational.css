@@ -1,0 +1,35 @@
+.email-code-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.email-code-row input {
+  min-width: 0;
+  flex: 1;
+}
+.email-code-row button {
+  flex-shrink: 0;
+  color: var(--accent);
+}
+.email-verification {
+  padding-block: 24px;
+}
+.email-verification form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 12px;
+  margin-top: 16px;
+}
+.points-delivery {
+  padding: 16px 0;
+}
+.points-delivery summary {
+  display: flex;
+  gap: 18px;
+}
+.points-delivery p {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  margin-top: 12px;
+}

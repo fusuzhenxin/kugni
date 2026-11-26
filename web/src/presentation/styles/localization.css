@@ -1,0 +1,228 @@
+.public-site .language-menu {
+  position: relative;
+  flex-shrink: 0;
+}
+.public-site .language-switch {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-width: 64px;
+  min-height: 36px;
+  padding: 0 6px;
+  color: var(--ink, #152238);
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+  transition:
+    color 160ms ease,
+    background-color 160ms ease;
+}
+.public-site .language-switch::-webkit-details-marker {
+  display: none;
+}
+.public-site .language-switch svg,
+.public-site .language-option svg {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex-shrink: 0;
+}
+.public-site .language-switch .language-chevron {
+  width: 12px;
+  height: 12px;
+  color: var(--muted);
+  transition: transform 160ms ease;
+}
+.public-site .language-menu[open] .language-chevron {
+  transform: rotate(180deg);
+}
+.public-site .language-options {
+  position: absolute;
+  top: calc(100% + 14px);
+  inset-inline-end: -6px;
+  width: 196px;
+  padding: 7px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--paper);
+  box-shadow: 0 12px 36px rgb(15 30 55 / 13%);
+  z-index: 50;
+  animation: language-menu-in 150ms ease-out;
+}
+.public-site .language-options > p {
+  margin: 3px 9px 5px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.8;
+}
+.public-site .language-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 42px;
+  padding: 8px 9px;
+  border-radius: 8px;
+  color: var(--ink);
+  font-size: 14px;
+  text-decoration: none;
+  transition:
+    background-color 150ms ease,
+    color 150ms ease;
+}
+.public-site .language-option:hover,
+.public-site .language-option:focus-visible {
+  background: var(--soft);
+  color: var(--accent);
+}
+.public-site .language-option:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+}
+.public-site .language-option[aria-current="true"] {
+  color: var(--accent);
+  font-weight: 600;
+}
+.public-site .language-code {
+  min-width: 28px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.public-site .language-option svg {
+  margin-inline-start: auto;
+  opacity: 0;
+}
+.public-site .language-option[aria-current="true"] svg {
+  opacity: 1;
+}
+@keyframes language-menu-in {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.public-site .language-switch:hover {
+  color: #2563eb;
+  background: rgb(37 99 235 / 6%);
+}
+.public-site .language-switch:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 3px;
+}
+html[lang="en"] .public-site .header-nav-link {
+  white-space: nowrap;
+}
+html[lang="en"] .public-site .header-search {
+  flex: 0 0 36px;
+  width: 36px;
+  min-width: 36px;
+  padding: 0;
+  justify-content: center;
+}
+html[lang="en"] .public-site .header-search > span,
+html[lang="en"] .public-site .header-search > kbd {
+  display: none;
+}
+html[lang="en"] .public-site .nav {
+  gap: 20px;
+}
+html[lang="en"] .public-site .atlas-facts strong,
+html[lang="en"] .public-site .detail-fact-value {
+  overflow-wrap: anywhere;
+}
+html[lang="en"] .public-site .connection-intro h1 > span {
+  margin-inline-start: 0.18em;
+}
+html[lang="en"] .public-site .atlas-table {
+  --atlas-model-width: 11%;
+  --atlas-publisher-width: 12%;
+  --atlas-type-width: 8%;
+  --atlas-providers-width: 9%;
+  --atlas-context-width: 8%;
+  --atlas-output-limit-width: 8%;
+  --atlas-input-width: 11%;
+  --atlas-output-width: 6%;
+  --atlas-capabilities-width: 12%;
+  --atlas-price-width: 12%;
+  --atlas-action-width: 3%;
+  min-width: 1240px;
+}
+html[lang="en"] .public-site .atlas-table th,
+html[lang="en"] .public-site .atlas-table td {
+  padding-inline: 10px;
+  overflow-wrap: break-word;
+}
+html[lang="en"] .public-site .atlas-table th {
+  white-space: normal;
+  line-height: 1.5;
+}
+html[lang="en"] .public-site .atlas-table .atlas-price {
+  white-space: normal;
+}
+html[lang="en"] .public-site .service-ledger {
+  --ledger-provider-width: 18%;
+  --ledger-rate-width: 9%;
+  --ledger-description-width: 16%;
+  --ledger-testing-width: 21%;
+  --ledger-stability-width: 17%;
+  --ledger-models-width: 10%;
+  --ledger-actions-width: 9%;
+}
+html[lang="en"] .public-site .station-table.service-ledger table {
+  min-width: 1240px;
+}
+html[lang="en"] .public-site .service-ledger th {
+  white-space: normal;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+}
+@media (max-width: 760px) {
+  html[lang="en"] .public-site .station-table.service-ledger::before {
+    content: "Swipe to compare rates, status and models →";
+  }
+  html[lang="en"] .public-site .cost-provider-scroll::before {
+    content: "Swipe to compare providers →";
+  }
+  html[lang="en"] .public-site .relay-quote-scroll::before {
+    content: "Swipe to compare groups, prices and rates →";
+  }
+  .public-site .language-switch {
+    min-width: 48px;
+    padding: 0 3px;
+    gap: 4px;
+    font-size: 12px;
+  }
+  .public-site .language-switch > svg:first-child {
+    display: none;
+  }
+  html[lang="en"] .public-site .header-actions {
+    gap: 4px;
+  }
+  html[lang="en"] .public-site .hero-model-hub {
+    min-width: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .public-site .language-switch {
+    transition: none;
+  }
+  .public-site .language-options {
+    animation: none;
+  }
+  .public-site .language-option,
+  .public-site .language-chevron {
+    transition: none;
+  }
+}

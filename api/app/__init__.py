@@ -1,0 +1,1 @@
+"""KUGNI application package."""

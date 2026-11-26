@@ -1,0 +1,104 @@
+{
+  "schemaVersion": "1.0",
+  "dataAsOf": "2026-11-12",
+  "isLiveMonitoring": false,
+  "source": "https://www.veridrop.cn/",
+  "licenseNote": "公开来源快照；引用时保留来源、采集日期与站点链接。",
+  "items": [
+    {
+      "slug": "openai",
+      "name": "OpenAI / GPT",
+      "type": "model-ecosystem",
+      "url": "https://www.kugni.com/models/openai/",
+      "stationSlugs": [
+        "aicodemirror",
+        "packycode",
+        "aruhub",
+        "qiuqiutoken",
+        "suannai-ai",
+        "tuzi-api",
+        "fluxlane",
+        "aigocode",
+        "aihubmix",
+        "foxcode",
+        "mnapi",
+        "rightcode",
+        "wawa-zz",
+        "0elog",
+        "8stoken",
+        "302-ai",
+        "7code",
+        "xisu-ai"
+      ]
+    },
+    {
+      "slug": "claude",
+      "name": "Claude",
+      "type": "model-ecosystem",
+      "url": "https://www.kugni.com/models/claude/",
+      "stationSlugs": [
+        "aicodemirror",
+        "packycode",
+        "aruhub",
+        "qiuqiutoken",
+        "suannai-ai",
+        "tuzi-api",
+        "fluxlane",
+        "aigocode",
+        "aihubmix",
+        "foxcode",
+        "mnapi",
+        "rightcode",
+        "wawa-zz",
+        "0elog",
+        "8stoken",
+        "302-ai",
+        "7code",
+        "xisu-ai"
+      ]
+    },
+    {
+      "slug": "gemini",
+      "name": "Gemini",
+      "type": "model-ecosystem",
+      "url": "https://www.kugni.com/models/gemini/",
+      "stationSlugs": [
+        "aicodemirror",
+        "packycode",
+        "aruhub",
+        "qiuqiutoken",
+        "suannai-ai",
+        "tuzi-api",
+        "fluxlane",
+        "aigocode",
+        "aihubmix",
+        "foxcode",
+        "mnapi",
+        "wawa-zz",
+        "8stoken",
+        "302-ai",
+        "7code",
+        "xisu-ai"
+      ]
+    },
+    {
+      "slug": "deepseek",
+      "name": "DeepSeek",
+      "type": "model-ecosystem",
+      "url": "https://www.kugni.com/models/deepseek/",
+      "stationSlugs": [
+        "packycode",
+        "aruhub",
+        "qiuqiutoken",
+        "suannai-ai",
+        "tuzi-api",
+        "fluxlane",
+        "aihubmix",
+        "wawa-zz",
+        "8stoken",
+        "302-ai",
+        "7code"
+      ]
+    }
+  ]
+}

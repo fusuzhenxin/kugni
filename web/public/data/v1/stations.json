@@ -1,0 +1,570 @@
+{
+  "schemaVersion": "1.0",
+  "dataAsOf": "2026-11-12",
+  "isLiveMonitoring": false,
+  "source": "https://www.veridrop.cn/",
+  "licenseNote": "公开来源快照；引用时保留来源、采集日期与站点链接。",
+  "items": [
+    {
+      "slug": "aicodemirror",
+      "name": "AICodeMirror",
+      "domain": "www.aicodemirror.ai",
+      "url": "https://www.kugni.com/stations/aicodemirror/",
+      "homepage": "https://www.aicodemirror.ai/",
+      "sourceUrl": "https://www.veridrop.cn/site/3-aicodemirror-ai",
+      "modelEcosystems": [
+        "GPT",
+        "Claude",
+        "Gemini"
+      ],
+      "payments": [
+        "支付宝",
+        "USDT",
+        "银行卡"
+      ],
+      "category": "商业站",
+      "sourceAvailabilityPercent": 100,
+      "sourceLatencyMs": 100,
+      "minRecharge": "¥1",
+      "invoice": "—",
+      "refund": "—",
+      "apiCheckStatus": "not-tested",
+      "modelIdentityStatus": "not-tested",
+      "kugniScore": null
+    },
+    {
+      "slug": "packycode",
+      "name": "PackyCode",
+      "domain": "www.packyapi.com",
+      "url": "https://www.kugni.com/stations/packycode/",
+      "homepage": "https://www.packyapi.com/",
+      "sourceUrl": "https://www.veridrop.cn/site/25-packyapi-com",
+      "modelEcosystems": [
+        "DeepSeek",
+        "Claude",
+        "Qwen",
+        "Gemini",
+        "GPT",
+        "Kimi",
+        "GLM",
+        "Grok"
+      ],
+      "payments": [],
+      "category": "商业站",
+      "sourceAvailabilityPercent": 99,
+      "sourceLatencyMs": 700,
+      "minRecharge": "—",
+      "invoice": "—",
+      "refund": "—",
+      "apiCheckStatus": "not-tested",
+      "modelIdentityStatus": "not-tested",
+      "kugniScore": null
+    },
+    {
+      "slug": "aruhub",
+      "name": "aruhub API",
+      "domain": "aruhub.com",
+      "url": "https://www.kugni.com/stations/aruhub/",
+      "homepage": "https://aruhub.com/",
+      "sourceUrl": "https://www.veridrop.cn/site/1852-aruhub-com",
+      "modelEcosystems": [
+        "Claude",
+        "DeepSeek",
+        "Gemini",
+        "Grok",
+        "GPT",
+        "GLM",
+        "Kimi",
+        "Qwen"
+      ],
+      "payments": [
+        "支付宝",
+        "微信"
+      ],
+      "category": "商业站",
+      "sourceAvailabilityPercent": 100,
+      "sourceLatencyMs": 900,
+      "minRecharge": "¥1",
+      "invoice": "– 是",
+      "refund": "不满意可退款",
+      "apiCheckStatus": "not-tested",
+      "modelIdentityStatus": "not-tested",
+      "kugniScore": null
+    },
+    {
+      "slug": "qiuqiutoken",
+      "name": "球球Token",
+      "domain": "qiuqiutoken.net",
+      "url": "https://www.kugni.com/stations/qiuqiutoken/",
+      "homepage": "https://qiuqiutoken.net/",
+      "sourceUrl": "https://www.veridrop.cn/site/1354-qiuqiutoken-net",
+      "modelEcosystems": [
+        "Claude",
+        "GPT",
+        "DeepSeek",
+        "GLM",
+        "Gemini",
+        "Kimi",
+        "Grok"
+      ],
+      "payments": [
+        "银行卡",
+        "对公转账"
+      ],
+      "category": "商业站",
+      "sourceAvailabilityPercent": 100,
+      "sourceLatencyMs": 600,
+      "minRecharge": "—",
+      "invoice": "– 是",
+      "refund": "– 否",
+      "apiCheckStatus": "not-tested",
+      "modelIdentityStatus": "not-tested",
+      "kugniScore": null
+    },
+    {
+      "slug": "suannai-ai",
+      "name": "酸奶AI",
+      "domain": "closedai.kylenqaq.com",
+      "url": "https://www.kugni.com/stations/suannai-ai/",
+      "homepage": "https://closedai.kylenqaq.com/",
+      "sourceUrl": "https://www.veridrop.cn/site/1383-closedai-kylenqaq-com",
+      "modelEcosystems": [
+        "GPT",
+        "Kimi",
+        "DeepSeek",
+        "Gemini",
+        "Claude",
+        "Qwen",
+        "GLM",
+        "Grok"
+      ],
+      "payments": [],
+      "category": "商业站",
+      "sourceAvailabilityPercent": 100,
+      "sourceLatencyMs": 700,
+      "minRecharge": "—",
+      "invoice": "—",
+      "refund": "—",
+      "apiCheckStatus": "not-tested",
+      "modelIdentityStatus": "not-tested",
+      "kugniScore": null
+    },
+    {
+      "slug": "tuzi-api",
+      "name": "兔子API",
+      "domain": "api.tu-zi.com",
+      "url": "https://www.kugni.com/stations/tuzi-api/",
+      "homepage": "https://api.tu-zi.com/",
+      "sourceUrl": "https://www.veridrop.cn/site/24-api-tu-zi-com",
+      "modelEcosystems": [
+        "GPT",
+        "Kimi",
+        "DeepSeek",
+        "Gemini",
+        "Claude",
+        "GLM",
+        "Qwen",
+        "Grok"
+      ],
+      "payments": [
+        "支付宝",
+        "USDT"
+      ],
+      "category": "商业站",
+      "sourceAvailabilityPercent": 99,
+      "sourceLatencyMs": 900,
+      "minRecharge": "¥1",
+      "invoice": "—",
+      "refund": "—",
+      "apiCheckStatus": "not-tested",
+      "modelIdentityStatus": "not-tested",
+      "kugniScore": null
+    },
+    {
+      "slug": "wawa-ai",
+      "name": "瓦瓦AI",
+      "domain": "wawapii.com",
+      "url": "https://www.kugni.com/stations/wawa-ai/",
+      "homepage": "https://wawapii.com/",
+      "sourceUrl": "https://www.veridrop.cn/site/1356-wawapii-com",
+      "modelEcosystems": [],
+      "payments": [],
+      "category": "商业站",
+      "sourceAvailabilityPercent": 100,
+      "sourceLatencyMs": 400,
+      "minRecharge": "—",
+      "invoice": "– 是",
+      "refund": "—",
+      "apiCheckStatus": "not-tested",
+      "modelIdentityStatus": "not-tested",
+      "kugniScore": null
+    },
+    {
+      "slug": "fluxlane",
+      "name": "智流 FluxLane",
+      "domain": "fluxlane.cn",
+      "url": "https://www.kugni.com/stations/fluxlane/",
+      "homepage": "https://fluxlane.cn/",
+      "sourceUrl": "https://www.veridrop.cn/site/4659-fluxlane-cn",
+      "modelEcosystems": [
+        "GPT",
+        "Claude",
+        "Gemini",
+        "Grok",
+        "DeepSeek",
+        "Kimi",
+        "GLM"
+      ],
+      "payments": [
+        "对公转账"
+      ],
+      "category": "商业站",
+      "sourceAvailabilityPercent": 100,
+      "sourceLatencyMs": 800,
+      "minRecharge": "—",
+      "invoice": "– 是",
+      "refund": "—",
+      "apiCheckStatus": "not-tested",
+      "modelIdentityStatus": "not-tested",
+      "kugniScore": null
+    },
+    {
+      "slug": "aigocode",
+      "name": "aigocode",
+      "domain": "www.aigocode.net",
+      "url": "https://www.kugni.com/stations/aigocode/",
+      "homepage": "https://www.aigocode.net/",
+      "sourceUrl": "https://www.veridrop.cn/site/4-aigocode-com",
+      "modelEcosystems": [
+        "GPT",
+        "Claude",
+        "Gemini",
+        "Grok",
+        "Kimi",
+        "GLM"
+      ],
+      "payments": [
+        "支付宝",
+        "微信",
+        "USDT",
+        "银行卡"
+      ],
+      "category": "商业站",
+      "sourceAvailabilityPercent": 100,
+      "sourceLatencyMs": 300,
+      "minRecharge": "¥5",
+      "invoice": "– 是",
+      "refund": "—",
+      "apiCheckStatus": "not-tested",
+      "modelIdentityStatus": "not-tested",
+      "kugniScore": null
+    },
+    {
+      "slug": "aihubmix",
+      "name": "AIHUBMIX",
+      "domain": "aihubmix.com",
+      "url": "https://www.kugni.com/stations/aihubmix/",
+      "homepage": "https://aihubmix.com/",
+      "sourceUrl": "https://www.veridrop.cn/site/21-aihubmix-com",
+      "modelEcosystems": [
+        "GPT",
+        "Kimi",
+        "DeepSeek",
+        "Gemini",
+        "GLM",
+        "Grok",
+        "Claude",
+        "Qwen"
+      ],
+      "payments": [
+        "支付宝",
+        "USDT",
+        "银行卡"
+      ],
+      "category": "商业站",
+      "sourceAvailabilityPercent": 100,
+      "sourceLatencyMs": 600,
+      "minRecharge": "¥1",
+      "invoice": "—",
+      "refund": "—",
+      "apiCheckStatus": "not-tested",
+      "modelIdentityStatus": "not-tested",
+      "kugniScore": null
+    },
+    {
+      "slug": "foxcode",
+      "name": "foxcode",
+      "domain": "foxcode.rjj.cc",
+      "url": "https://www.kugni.com/stations/foxcode/",
+      "homepage": "https://foxcode.rjj.cc/",
+      "sourceUrl": "https://www.veridrop.cn/site/5-foxcode-rjj-cc",
+      "modelEcosystems": [
+        "Claude",
+        "GPT",
+        "Grok",
+        "Gemini"
+      ],
+      "payments": [
+        "银行卡",
+        "支付宝",
+        "USDT"
+      ],
+      "category": "商业站",
+      "sourceAvailabilityPercent": 100,
+      "sourceLatencyMs": 800,
+      "minRecharge": "¥5",
+      "invoice": "– 是",
+      "refund": "—",
+      "apiCheckStatus": "not-tested",
+      "modelIdentityStatus": "not-tested",
+      "kugniScore": null
+    },
+    {
+      "slug": "mnapi",
+      "name": "MNAPI",
+      "domain": "www.mnapi.com",
+      "url": "https://www.kugni.com/stations/mnapi/",
+      "homepage": "https://www.mnapi.com/",
+      "sourceUrl": "https://www.veridrop.cn/site/20-mnapi-com",
+      "modelEcosystems": [
+        "GPT",
+        "Claude",
+        "Gemini",
+        "Grok",
+        "Qwen"
+      ],
+      "payments": [
+        "支付宝"
+      ],
+      "category": "商业站",
+      "sourceAvailabilityPercent": 100,
+      "sourceLatencyMs": 400,
+      "minRecharge": "—",
+      "invoice": "—",
+      "refund": "—",
+      "apiCheckStatus": "not-tested",
+      "modelIdentityStatus": "not-tested",
+      "kugniScore": null
+    },
+    {
+      "slug": "rightcode",
+      "name": "RightCode",
+      "domain": "rightapi.io",
+      "url": "https://www.kugni.com/stations/rightcode/",
+      "homepage": "https://rightapi.io/",
+      "sourceUrl": "https://www.veridrop.cn/site/6-right-codes",
+      "modelEcosystems": [
+        "GPT",
+        "Claude"
+      ],
+      "payments": [
+        "支付宝"
+      ],
+      "category": "商业站",
+      "sourceAvailabilityPercent": 100,
+      "sourceLatencyMs": 500,
+      "minRecharge": "¥1",
+      "invoice": "—",
+      "refund": "—",
+      "apiCheckStatus": "not-tested",
+      "modelIdentityStatus": "not-tested",
+      "kugniScore": null
+    },
+    {
+      "slug": "wawa-zz",
+      "name": "WAWA ZZ",
+      "domain": "wawazz.xyz",
+      "url": "https://www.kugni.com/stations/wawa-zz/",
+      "homepage": "https://wawazz.xyz/",
+      "sourceUrl": "https://www.veridrop.cn/site/1367-wawazz-xyz",
+      "modelEcosystems": [
+        "GPT",
+        "Grok",
+        "DeepSeek",
+        "Claude",
+        "Gemini",
+        "GLM",
+        "Kimi"
+      ],
+      "payments": [],
+      "category": "商业站",
+      "sourceAvailabilityPercent": 100,
+      "sourceLatencyMs": 300,
+      "minRecharge": "—",
+      "invoice": "– 是",
+      "refund": "—",
+      "apiCheckStatus": "not-tested",
+      "modelIdentityStatus": "not-tested",
+      "kugniScore": null
+    },
+    {
+      "slug": "zetatechs-api",
+      "name": "ZetaTechs API",
+      "domain": "api.zetatechs.com",
+      "url": "https://www.kugni.com/stations/zetatechs-api/",
+      "homepage": "https://api.zetatechs.com/",
+      "sourceUrl": "https://www.veridrop.cn/site/13-api-zetatechs-com",
+      "modelEcosystems": [
+        "Grok"
+      ],
+      "payments": [
+        "支付宝"
+      ],
+      "category": "商业站",
+      "sourceAvailabilityPercent": 100,
+      "sourceLatencyMs": 600,
+      "minRecharge": "¥10",
+      "invoice": "– 是",
+      "refund": "—",
+      "apiCheckStatus": "not-tested",
+      "modelIdentityStatus": "not-tested",
+      "kugniScore": null
+    },
+    {
+      "slug": "0elog",
+      "name": "0elog",
+      "domain": "api.0elog.com",
+      "url": "https://www.kugni.com/stations/0elog/",
+      "homepage": "https://api.0elog.com/",
+      "sourceUrl": "https://www.veridrop.cn/site/1455-api-0elog-com",
+      "modelEcosystems": [
+        "GPT",
+        "Grok",
+        "Claude"
+      ],
+      "payments": [],
+      "category": "商业站",
+      "sourceAvailabilityPercent": 99,
+      "sourceLatencyMs": 2700,
+      "minRecharge": "—",
+      "invoice": "—",
+      "refund": "—",
+      "apiCheckStatus": "not-tested",
+      "modelIdentityStatus": "not-tested",
+      "kugniScore": null
+    },
+    {
+      "slug": "8stoken",
+      "name": "8sToken",
+      "domain": "8stoken.com",
+      "url": "https://www.kugni.com/stations/8stoken/",
+      "homepage": "https://8stoken.com/",
+      "sourceUrl": "https://www.veridrop.cn/site/1831-8stoken-com",
+      "modelEcosystems": [
+        "Kimi",
+        "Qwen",
+        "Claude",
+        "GPT",
+        "GLM",
+        "Gemini",
+        "DeepSeek",
+        "Grok"
+      ],
+      "payments": [
+        "支付宝",
+        "USDT",
+        "银行卡",
+        "对公转账",
+        "微信",
+        "PayPal"
+      ],
+      "category": "商业站",
+      "sourceAvailabilityPercent": 100,
+      "sourceLatencyMs": 1900,
+      "minRecharge": "—",
+      "invoice": "– 是",
+      "refund": "– 是",
+      "apiCheckStatus": "not-tested",
+      "modelIdentityStatus": "not-tested",
+      "kugniScore": null
+    },
+    {
+      "slug": "302-ai",
+      "name": "302.AI",
+      "domain": "302.ai",
+      "url": "https://www.kugni.com/stations/302-ai/",
+      "homepage": "https://302.ai/",
+      "sourceUrl": "https://www.veridrop.cn/site/197-302-ai",
+      "modelEcosystems": [
+        "GPT",
+        "Claude",
+        "Gemini",
+        "Grok",
+        "DeepSeek",
+        "Kimi",
+        "Qwen",
+        "GLM"
+      ],
+      "payments": [
+        "支付宝",
+        "USDT"
+      ],
+      "category": "商业站",
+      "sourceAvailabilityPercent": 100,
+      "sourceLatencyMs": 2500,
+      "minRecharge": "—",
+      "invoice": "—",
+      "refund": "—",
+      "apiCheckStatus": "not-tested",
+      "modelIdentityStatus": "not-tested",
+      "kugniScore": null
+    },
+    {
+      "slug": "7code",
+      "name": "7Code",
+      "domain": "ai.7code.cc",
+      "url": "https://www.kugni.com/stations/7code/",
+      "homepage": "https://ai.7code.cc/",
+      "sourceUrl": "https://www.veridrop.cn/site/1464-ai-7code-cc",
+      "modelEcosystems": [
+        "GPT",
+        "Grok",
+        "Kimi",
+        "Gemini",
+        "GLM",
+        "DeepSeek",
+        "Claude",
+        "Qwen"
+      ],
+      "payments": [
+        "银行卡"
+      ],
+      "category": "商业站",
+      "sourceAvailabilityPercent": 99,
+      "sourceLatencyMs": 1900,
+      "minRecharge": "—",
+      "invoice": "—",
+      "refund": "—",
+      "apiCheckStatus": "not-tested",
+      "modelIdentityStatus": "not-tested",
+      "kugniScore": null
+    },
+    {
+      "slug": "xisu-ai",
+      "name": "犀速AI",
+      "domain": "www.xisu.ai",
+      "url": "https://www.kugni.com/stations/xisu-ai/",
+      "homepage": "https://www.xisu.ai/",
+      "sourceUrl": "https://www.veridrop.cn/site/900039-xisu-ai",
+      "modelEcosystems": [
+        "Claude",
+        "GPT",
+        "Gemini",
+        "Grok"
+      ],
+      "payments": [
+        "支付宝",
+        "微信"
+      ],
+      "category": "商业站",
+      "sourceAvailabilityPercent": 100,
+      "sourceLatencyMs": 3700,
+      "minRecharge": "¥10",
+      "invoice": "—",
+      "refund": "非平台原因不退。模型掺假、重复扣费等核实后可退。",
+      "apiCheckStatus": "not-tested",
+      "modelIdentityStatus": "not-tested",
+      "kugniScore": null
+    }
+  ]
+}
